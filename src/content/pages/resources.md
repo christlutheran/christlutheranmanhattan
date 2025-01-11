@@ -9,9 +9,10 @@ order: 6
 
 ## Websites
 
-- [LCMS.org](https://www.lcms.org) - The Lutheran Church—Missouri Synod
-- [CPH.org](https://www.cph.org) - Concordia Publishing House
-- [BookOfConcord.org](https://bookofconcord.org) - Book of Concord - The Lutheran Confessions
+- [lcms.org](https://www.lcms.org) - The Lutheran Church—Missouri Synod (LCMS)
+- [kslcms.org](https://kslcms.org/) - LCMS Kansas District
+- [cph.org](https://www.cph.org) - Concordia Publishing House
+- [bookofconcord.org](https://bookofconcord.org) - Book of Concord - The Lutheran Confessions
 
 ## Media
 
@@ -20,7 +21,7 @@ order: 6
 - **The Word of the Lord Endures Forever** - Daily Bible study with Pastor Will Weedon
 
 ### Worship & Music
-- **Lutheran Public Radioe** - 24/7 sacred music
+- **Lutheran Public Radio** - 24/7 sacred music
 
 ## Books
 

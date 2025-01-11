@@ -42,7 +42,7 @@ When you visit Christ Lutheran Church, you'll experience:
 
 - Jesus as the center in both our preaching and teaching
 - The forgiveness of sins is at the heart of the Divine Service
-- Traditional Lutheran liturgy from Lutheran Service Book
+- Traditional Lutheran Liturgy from Lutheran Service Book
 - Historic vestments
 - Congregational singing of Lutheran hymns
 - Bible Study and Sunday School for all ages
@@ -52,7 +52,7 @@ For first time visitors to the Divine Service, here are some important things to
 
 - Take a bulletin (available in the narthex / entryway)
 - Feel free to sit anywhere, please fill out the red attendence book available in each row after being seated
-- Grab a service book (under the chairs) that we will follow during the Divine Service
+- Grab a Lutheran Service Book (under the chairs) that we will follow during the Divine Service
 - The service typically lasts a little over an hour
 - We practice closed communion ***see note below***
 - Our Pastor will greet everyone as they leave

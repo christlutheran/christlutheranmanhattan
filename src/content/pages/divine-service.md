@@ -5,17 +5,11 @@ image: /assets/images/sanctuary.jpg
 order: 3
 ---
 
-## Service Times
+# Divine Service
 
-- Divine Service: Sunday 10:30 AM
-- Bible Study & Sunday School: 9:30 AM
+**In the Divine Service, God comes to us with His gifts of forgiveness, life, and salvation**. We receive these gifts, then we give Him thanksgiving and praise. Please join us to receive these gifts and give God praise and thanksgiving on Sundays at 10:30 AM.
 
-## Introduction
-
-**In the Divine Service, God comes to us with His gifts of forgiveness, life, and salvation**. We receive these gifts, then we give Him thanksgiving and praise.
-
-> We should not consider the Divine Service as something that we do for God but as something that God does for us.
-> <cite>Martin Luther</cite>
+## Overview
 
 **The Divine Service should be Christ–centered and not man–centered.** It should focus on the forgiveness of sins and not on what the people want. It should be a “heaven on earth” and not like the local pop concert. It should be holy and not casual. It should be centered on building faith in Christ and not on building up the emotions. It should be a common form and language for everyone (old and young, rich and poor, parents, and children) and not cater to one particular generation. 
 
@@ -117,7 +111,7 @@ When you visit for the Divine Service, you'll experience:
 
 - Jesus as the center in both our preaching and teaching
 - The forgiveness of sins is at the heart of the Divine Service
-- Traditional Lutheran liturgy from Lutheran Service Book
+- Traditional Lutheran Liturgy from the Lutheran Service Book
 - Historic vestments
 - Congregational singing of Lutheran hymns
 - The Lord's Supper is served every Sunday
@@ -126,7 +120,7 @@ For first time visitors to the Divine Service, here are some important things to
 
 - Take a bulletin (available in the narthex / entryway)
 - Feel free to sit anywhere, please fill out the red attendence book available in each row after being seated
-- Grab a service book (under the chairs) that we will follow during the Divine Service
+- Grab a Lutheran Service Book (under the chairs) that we will follow during the Divine Service
 - The service typically lasts a little over an hour
 - We practice closed communion ***see note below***
 - Our Pastor will greet everyone as they leave
