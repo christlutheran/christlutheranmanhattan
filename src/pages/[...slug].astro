@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import PageLayout from '../layouts/PageLayout.astro';
+import ContactLayout from '../layouts/ContactLayout.astro';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.map(page => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+
+// Use ContactLayout for contact page, PageLayout for others
+const Layout = page.slug === 'contact' ? ContactLayout : PageLayout;
+---
+
+<Layout
+  title={page.data.title}
+  description={page.data.description}
+  content={page.body}
+  image={page.data.image}
+/>

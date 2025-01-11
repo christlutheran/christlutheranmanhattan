@@ -1,0 +1,53 @@
+---
+import { churchConfig } from '../config/church';
+import SocialLinks from './footer/SocialLinks.astro';
+import FooterSection from './footer/FooterSection.astro';
+import Container from './Container.astro';
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-liturgical-black text-white mt-12 relative">
+  <div class="absolute inset-0 bg-chi-rho-pattern opacity-5"></div>
+  
+  <Container size="lg" class="py-12 relative">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <FooterSection title="Christ Lutheran">
+        <p class="text-gray-300">{churchConfig.address.street}</p>
+        <p class="text-gray-300">{churchConfig.address.city}, {churchConfig.address.state} {churchConfig.address.zip}</p>
+        <p class="text-gray-300"><a href="/contact" class="text-gray-300 hover:text-liturgical-gold transition-colors">Contact Us</a></p>
+        <div class="mt-6">
+          <SocialLinks />
+        </div>
+      </FooterSection>
+      
+      <FooterSection title="Service Times">
+        <p class="text-gray-300">Divine Service: Sunday {churchConfig.services.sunday.divine}</p>
+        <p class="text-gray-300">Bible Study & Sunday School: {churchConfig.services.sunday.bibleStudy}</p>
+      </FooterSection>
+      
+      <FooterSection title="Quick Links">
+        <ul class="space-y-2">
+          <li><a href="/about" class="text-gray-300 hover:text-liturgical-gold transition-colors">About Us</a></li>
+          <li><a href="/beliefs" class="text-gray-300 hover:text-liturgical-gold transition-colors">What We Believe</a></li>
+          <li><a href="/divine-service" class="text-gray-300 hover:text-liturgical-gold transition-colors">Divine Service</a></li>
+          <li><a href="/our-pastor" class="text-gray-300 hover:text-liturgical-gold transition-colors">Our Pastor</a></li>
+        </ul>
+      </FooterSection>
+      
+      <FooterSection title="Resources">
+        <ul class="space-y-2">
+          <li><a href="https://www.lcms.org/worship/lutheran-service-builder" class="text-gray-300 hover:text-liturgical-gold transition-colors" target="_blank">LCMS</a></li>
+          <li><a href="https://www.lcms.org/about/beliefs/faqs" class="text-gray-300 hover:text-liturgical-gold transition-colors" target="_blank">LCMS Beliefs</a></li>
+          <li><a href="https://www.biblegateway.com/versions/English-Standard-Version-ESV-Bible/" class="text-gray-300 hover:text-liturgical-gold transition-colors" target="_blank">Bible (ESV)</a></li>
+          <li><a href="https://www.bookofconcord.org" class="text-gray-300 hover:text-liturgical-gold transition-colors" target="_blank">Book of Concord</a></li>
+        </ul>
+      </FooterSection>
+    </div>
+    
+    <div class="border-t border-gray-800 pt-8 text-center">
+      <p class="text-gray-400">{churchConfig.name} Manhattan, Kansas</p>
+      <p class="text-sm text-gray-500 mt-2">A congregation of The Lutheran Church—Missouri Synod (LCMS)</p>
+    </div>
+  </Container>
+</footer>

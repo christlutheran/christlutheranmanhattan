@@ -1,0 +1,103 @@
+---
+import Layout from './Layout.astro';
+import ContactForm from '../components/ContactForm.astro';
+import GoogleMap from '../components/GoogleMap.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Container from '../components/Container.astro';
+import { marked } from 'marked';
+
+interface Props {
+  title: string;
+  description?: string;
+  content: string;
+  image?: string;
+}
+
+const { title, description, content, image } = Astro.props;
+
+const contentSections = content.split('## Send Us a Message')[0];
+const htmlContent = await marked.parse(contentSections);
+---
+
+<Layout title={title} description={description}>
+  <PageHeader title={title} image={image} />
+  
+  <div class="py-8 md:py-12">
+    <Container size="lg">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Contact Information -->
+        <div>
+          <div class="bg-white/80 backdrop-blur-sm rounded-lg shadow-xl p-6 md:p-8 border border-liturgical-gold/10">
+            <h2 class="font-cinzel text-xl sm:text-2xl text-liturgical-red mb-6 relative pb-4 mt-0">
+              Location & Contacts
+              <span class="absolute bottom-0 left-0 w-16 h-0.5 bg-gradient-to-r from-liturgical-red to-transparent"></span>
+            </h2>
+            <div class="space-y-6">
+              <div>
+                <h3 class="font-cinzel text-lg text-liturgical-burgundy mb-2">Church Address</h3>
+                <p class="leading-relaxed">
+                  Christ Lutheran Church<br>
+                  4592 Green Valley Rd<br>
+                  Manhattan, KS 66502
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-cinzel text-lg text-liturgical-burgundy mb-2">Contact Details</h3>
+                <div class="space-y-4">
+                  <div>
+                    <p class="font-semibold mb-1">Pastor Woelmer</p>
+                    <p class="leading-relaxed">
+                      Phone: (972) 704-6722<br>
+                      Email: jwoelmer@verizon.net
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <p class="font-semibold mb-1">Church Office</p>
+                    <p class="leading-relaxed">
+                      Phone: (785) 776-2227<br>
+                      Email: christlutheran.mhk@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-sm italic text-liturgical-burgundy">
+                For emergencies requiring immediate pastoral care, please contact Pastor Woelmer directly.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Map -->
+        <div>
+          <div class="bg-white/80 backdrop-blur-sm rounded-lg shadow-xl p-6 md:p-8 border border-liturgical-gold/10">
+            <h2 class="font-cinzel text-xl sm:text-2xl text-liturgical-red mb-6 relative pb-4 mt-0">
+              Find Us
+              <span class="absolute bottom-0 left-0 w-16 h-0.5 bg-gradient-to-r from-liturgical-red to-transparent"></span>
+            </h2>
+            <GoogleMap />
+          </div>
+        </div>
+      </div>
+    </Container>
+  </div>
+</Layout>
+
+<style>
+  /* Base text styles */
+  p {
+    @apply text-base text-liturgical-black;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    h3 {
+      @apply text-base;
+    }
+    p {
+      @apply text-sm;
+    }
+  }
+</style>

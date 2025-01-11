@@ -1,0 +1,27 @@
+---
+interface Props {
+  variant?: 'gold' | 'red';
+  className?: string;
+}
+
+const { variant = 'gold', className = '' } = Astro.props;
+---
+<div class:list={[
+  'flex items-center justify-center my-8 px-4',
+  className
+]}>
+  <div class:list={[
+    'h-px flex-grow max-w-md',
+    variant === 'gold' ? 'bg-gradient-to-r from-transparent via-liturgical-gold to-transparent' : 
+    'bg-gradient-to-r from-transparent via-liturgical-red to-transparent'
+  ]}></div>
+  <div class:list={[
+    'mx-4',
+    variant === 'gold' ? 'text-liturgical-gold' : 'text-liturgical-red'
+  ]}>☧</div>
+  <div class:list={[
+    'h-px flex-grow max-w-md',
+    variant === 'gold' ? 'bg-gradient-to-r from-transparent via-liturgical-gold to-transparent' : 
+    'bg-gradient-to-r from-transparent via-liturgical-red to-transparent'
+  ]}></div>
+</div>

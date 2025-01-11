@@ -1,0 +1,109 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/assets/images" 
+public_folder: "/assets/images"
+media_library:
+  name: uploadcare
+  config:
+    publicKey: "YOUR_UPLOADCARE_PUBLIC_KEY"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "src/content/pages"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "SEO Description", name: "description", widget: "text" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Pastor Portrait", name: "pastorImage", widget: "image", required: false, hint: "Only used on Our Pastor page" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Order", name: "order", widget: "number", default: 1 }
+    sortable_fields: ["order", "title"]
+
+  - name: "resources"
+    label: "Resources"
+    files:
+      - name: "lutheran-resources"
+        label: "Lutheran Resources"
+        file: "src/content/pages/resources.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Featured Image", name: "image", widget: "image", required: false }
+          - label: "Podcasts"
+            name: "podcasts"
+            widget: "object"
+            fields:
+              - label: "Lutheran Podcasts"
+                name: "lutheran"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string", required: false }
+              - label: "LCMS Podcasts"
+                name: "lcms"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string", required: false }
+          - label: "YouTube Channels"
+            name: "youtube"
+            widget: "object"
+            fields:
+              - label: "Lutheran Content"
+                name: "content"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string", required: false }
+              - label: "Worship & Music"
+                name: "worship"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string", required: false }
+          - label: "Websites"
+            name: "websites"
+            widget: "object"
+            fields:
+              - label: "Official Sites"
+                name: "official"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+              - label: "Study Resources"
+                name: "study"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+          - label: "Books"
+            name: "books"
+            widget: "object"
+            fields:
+              - label: "Essential Lutheran Books"
+                name: "essential"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Author", name: "author", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "URL", name: "url", widget: "string", required: false }
+              - label: "Recommended Reading"
+                name: "recommended"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Author", name: "author", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "URL", name: "url", widget: "string", required: false }

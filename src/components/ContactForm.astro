@@ -1,0 +1,51 @@
+---
+import FormInput from './form/FormInput.astro';
+import FormTextarea from './form/FormTextarea.astro';
+import FormButton from './form/FormButton.astro';
+
+---
+<form 
+  name="contact" 
+  method="POST" 
+  data-netlify="true" 
+  class="space-y-4 sm:space-y-6"
+  netlify-honeypot="bot-field"
+>
+  <p class="hidden">
+    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+  
+  <FormInput
+    label="Name"
+    type="text"
+    name="name"
+    id="name"
+    required
+  />
+
+  <FormInput
+    label="Email"
+    type="email"
+    name="email"
+    id="email"
+    required
+  />
+
+  <FormInput
+    label="Phone (optional)"
+    type="tel"
+    name="phone"
+    id="phone"
+  />
+
+  <FormTextarea
+    label="Message"
+    name="message"
+    id="message"
+    required
+  />
+
+  <FormButton type="submit">
+    Send Message
+  </FormButton>
+</form>

@@ -1,0 +1,40 @@
+---
+import Container from './Container.astro';
+import LiturgicalDivider from './LiturgicalDivider.astro';
+
+const features = [
+  {
+    title: "Divine Service",
+    description: "Join us Sundays at 10:30 AM for the Divine Service, where Christ serves His people through Word and Sacrament. Our traditional service follows the Liturgy from the Lutheran Service Book with Holy Communion served every Sunday.",
+    icon: "🕊️"
+  },
+  {
+    title: "Bible Study",
+    description: "Sundays at 9:30 AM, come and participate in Bible Study for adults and youth and Sunday School for children, providing opportunities for fellowship and deepening our understanding of God's Word.",
+    icon: "📖"
+  },
+  {
+    title: "Catechesis",
+    description: "Instruction for youth and adults in Christian teaching and Confessional Lutheran doctrine based on God's Word in the Holy Scriptures, Luther's Small Catechism, and the Lutheran Confessions.",
+    icon: "✝️"
+  }
+];
+---
+<section class="py-16 bg-white">
+  <Container size="lg">
+    <div class="text-center mb-12">
+      <h2 class="font-cinzel text-3xl md:text-4xl text-liturgical-red">Services and Instruction</h2>
+      <LiturgicalDivider variant="red" className="mt-6" />
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {features.map(feature => (
+        <div class="text-center p-6 rounded-lg border-2 border-liturgical-red/10 hover:border-liturgical-red/30 transition-colors">
+          <div class="text-4xl mb-4">{feature.icon}</div>
+          <h3 class="font-cinzel text-2xl mb-4 text-liturgical-red">{feature.title}</h3>
+          <p class="text-lg">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </Container>
+</section>

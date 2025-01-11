@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+import stainedGlass from '../assets/images/stained-glass.jpg';
+import Container from './Container.astro';
+---
+<section class="relative min-h-[60vh] md:h-[80vh] overflow-hidden">
+  <div class="absolute inset-0 bg-liturgical-black/70 z-10"></div>
+  <Image 
+    src={stainedGlass}
+    alt="Historic Lutheran Stained Glass Window" 
+    width={1920}
+    height={1080}
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+  <Container size="lg" class="relative z-20 h-full flex flex-col items-center justify-center text-center py-16">
+    <h1 class="font-cinzel text-3xl sm:text-4xl md:text-5xl lg:text-7xl mb-4 tracking-wide text-white">
+      Christ Lutheran Church
+    </h1>
+    <p class="font-crimson text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-white/90">
+      Manhattan, Kansas
+    </p>
+    <p class="font-crimson text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl text-white/90">
+      A congregation of The Lutheran Church—Missouri Synod, proclaiming Christ crucified through Word and Sacrament
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+      <a 
+        href="/about" 
+        class="bg-liturgical-red hover:bg-liturgical-burgundy text-white px-6 py-3 rounded font-cinzel transition-colors text-center"
+      >
+        Visitor Information
+      </a>
+      <a 
+        href="/beliefs" 
+        class="bg-white hover:bg-liturgical-cream text-liturgical-red hover:text-liturgical-burgundy border-2 border-white px-6 py-3 rounded font-cinzel transition-colors text-center"
+      >
+        Our Beliefs
+      </a>
+    </div>
+  </Container>
+</section>

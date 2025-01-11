@@ -1,0 +1,62 @@
+---
+import { Image } from 'astro:assets';
+import church from '../assets/images/church.jpg';
+import Container from './Container.astro';
+
+interface Props {
+  title: string;
+  image?: ImageMetadata;
+  description?: string;
+}
+
+const { title, description, image } = Astro.props;
+---
+
+<header class="relative">
+  {image ? (
+    <div class="relative h-52 md:h-72 overflow-hidden">
+      <!-- Background overlay -->
+      <div class="absolute inset-0 bg-gradient-to-b from-liturgical-black/70 to-liturgical-black/40 z-10"></div>
+      
+      <!-- Background image -->
+      <Image
+        src={church}
+        alt={title}
+        width={1920}
+        height={1080}
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      
+      <!-- Content -->
+      <Container size="lg" class="relative h-full z-20">
+        <div class="flex flex-col items-center justify-center h-full text-center px-4">
+          <h1 class="font-cinzel text-4xl md:text-5xl text-white mb-4 tracking-wide">
+            {title}
+          </h1>
+          {description && (
+            <p class="text-white/90 text-lg md:text-xl max-w-2xl mx-auto mb-6">
+              {description}
+            </p>
+          )}
+          <div class="w-32 h-0.5 bg-gradient-to-r from-transparent via-liturgical-gold to-transparent"></div>
+        </div>
+      </Container>
+    </div>
+  ) : (
+    <div class="py-12 bg-gradient-to-b from-liturgical-red/10 to-transparent">
+      <Container size="lg">
+        <div class="text-center">
+          <h1 class="font-cinzel text-4xl md:text-5xl text-liturgical-red tracking-wide mb-4">
+            {title}
+          </h1>
+          {description && (
+            <p class="text-liturgical-black/80 text-lg md:text-xl max-w-2xl mx-auto mb-6">
+              {description}
+            </p>
+          )}
+          <div class="w-32 h-0.5 bg-gradient-to-r from-transparent via-liturgical-red to-transparent mx-auto"></div>
+        </div>
+      </Container>
+    </div>
+  )}
+</header>

@@ -1,0 +1,131 @@
+---
+import { navItems } from '../lib/navigation';
+import NavLink from './NavLink.astro';
+import NavDropdown from './NavDropdown.astro';
+import NavBackground from './nav/NavBackground.astro';
+import Container from './Container.astro';
+
+const currentPath = Astro.url.pathname;
+const isCurrentPath = (path: string) => {
+  if (path === '/') {
+    return currentPath === path;
+  }
+  return currentPath.startsWith(path);
+};
+---
+
+<header class="fixed w-full top-0 z-50">
+  <NavBackground />
+  
+  <Container size="lg" class="relative">
+    <nav class="flex items-center justify-between h-16">
+      <a href="/" class="font-cinzel text-lg sm:text-xl lg:text-2xl text-white hover:text-liturgical-gold transition-colors shrink-0">
+        Christ Lutheran Church
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:block h-full">
+        <ul class="flex items-center gap-4 xl:gap-6 h-full">
+          {navItems.map(item => (
+            <li class="h-full flex items-center">
+              {item.children ? (
+                <NavDropdown 
+                  item={item}
+                  isActive={isCurrentPath(item.path)}
+                />
+              ) : (
+                <NavLink 
+                  href={item.path}
+                  isActive={isCurrentPath(item.path)}
+                >
+                  {item.title}
+                </NavLink>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="menuButton"
+        class="lg:hidden p-2 text-white hover:text-liturgical-gold transition-colors"
+        aria-label="Toggle menu"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden absolute left-0 right-0 mt-2 bg-liturgical-red rounded-lg shadow-lg border border-white/10 overflow-hidden">
+      <div class="relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-black/10"></div>
+        <ul class="relative py-2">
+          {navItems.map(item => (
+            <li class="border-b border-white/10 last:border-none">
+              {item.children ? (
+                <div class="py-2">
+                  <div class="py-2 px-4 font-cinzel text-sm text-liturgical-gold">
+                    {item.title}
+                  </div>
+                  <ul class="bg-white/5 rounded">
+                    {item.children.map(child => (
+                      <li>
+                        <NavLink 
+                          href={child.path}
+                          isActive={isCurrentPath(child.path)}
+                          class="block w-full py-2 px-6 font-cinzel text-sm hover:bg-white/5"
+                        >
+                          {child.title}
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <NavLink 
+                  href={item.path}
+                  isActive={isCurrentPath(item.path)}
+                  class="block w-full py-2 px-4 font-cinzel text-sm hover:bg-white/5"
+                >
+                  {item.title}
+                </NavLink>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </Container>
+</header>
+
+<div class="h-16"></div>
+
+<script>
+  const menuButton = document.getElementById('menuButton');
+  const mobileMenu = document.getElementById('mobileMenu');
+  
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener('click', (event) => {
+      event.stopPropagation();
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', (event) => {
+      const isClickInside = menuButton.contains(event.target as Node) || 
+                           mobileMenu.contains(event.target as Node);
+      
+      if (!isClickInside && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  }
+</script>

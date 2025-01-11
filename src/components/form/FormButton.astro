@@ -1,0 +1,17 @@
+---
+interface Props {
+  type?: "submit" | "button" | "reset";
+  className?: string;
+}
+
+const { type = "submit", className = "" } = Astro.props;
+---
+<button
+  type={type}
+  class:list={[
+    "w-full bg-liturgical-red text-white py-2 px-4 rounded hover:bg-liturgical-burgundy transition-colors font-cinzel text-base sm:text-lg",
+    className
+  ]}
+>
+  <slot />
+</button>

@@ -1,0 +1,128 @@
+---
+import Layout from './Layout.astro';
+import { marked } from 'marked';
+import PageHeader from '../components/PageHeader.astro';
+import Container from '../components/Container.astro';
+import { Image } from 'astro:assets';
+import pastorImage from '../assets/images/pastor.jpg';
+
+interface Props {
+  title: string;
+  description?: string;
+  content: string;
+  image?: ImageMetadata | string;
+}
+
+const { title, description, content, image } = Astro.props;
+
+const htmlContent = await marked.parse(content);
+
+// Check if this is the pastor page
+const isPastorPage = title === "Our Pastor";
+---
+
+<Layout title={title} description={description}>
+  <PageHeader 
+    title={title} 
+    description={description}
+    image={image} 
+  />
+  
+  <div class="pt-8 pb-16">
+    <Container size="lg">
+      <div class="bg-white/80 backdrop-blur-sm rounded-lg shadow-xl p-6 sm:p-8 border border-liturgical-gold/10">
+        {isPastorPage ? (
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 prose prose-lg max-w-none">
+              <Fragment set:html={htmlContent} />
+            </div>
+            <div class="space-y-6">
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <Image 
+                  src={pastorImage} 
+                  alt="Rev. James Woelmer"
+                  class="w-full h-auto"
+                />
+              </div>
+              <div class="bg-liturgical-cream p-6 rounded-lg">
+                <h3 class="font-cinzel text-xl text-liturgical-red mb-4">Contact Pastor Woelmer</h3>
+                <p class="mb-4">If you have questions about attending Christ Lutheran Church or would like to schedule a meeting with Pastor Woelmer, you may contact him directly:</p>
+                <ul class="space-y-2">
+                  <li>Office: (972) 704-6722</li>
+                  <li>Email: jwoelmer@verizon.net</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div class="prose prose-lg max-w-none">
+            <Fragment set:html={htmlContent} />
+          </div>
+        )}
+      </div>
+    </Container>
+  </div>
+</Layout>
+
+<style>
+  /* Typography Styles */
+  .prose :global(h1) {
+    @apply font-cinzel text-3xl sm:text-4xl text-liturgical-red mb-6;
+  }
+
+  .prose :global(h2) {
+    @apply font-cinzel text-2xl sm:text-3xl text-liturgical-red mt-8 mb-4 relative pb-4;
+  }
+  
+  .prose :global(h2)::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-16 h-0.5;
+    background: linear-gradient(to right, var(--color-red), transparent);
+  }
+
+  .prose :global(h3) {
+    @apply font-cinzel text-xl sm:text-2xl text-liturgical-red mt-6 mb-3;
+  }
+
+  /* Content Spacing */
+  .prose :global(p) {
+    @apply mb-4 text-base sm:text-lg leading-relaxed;
+  }
+
+  .prose :global(ul), .prose :global(ol) {
+    @apply my-4 pl-6;
+  }
+
+  .prose :global(li) {
+    @apply mb-2;
+  }
+
+  /* Blockquote Styling */
+  .prose :global(blockquote) {
+    @apply pl-6 pr-4 py-3 my-6 border-l-4 border-liturgical-gold bg-liturgical-cream/50 rounded;
+  }
+
+  .prose :global(blockquote cite) {
+    @apply block mt-2 text-sm font-cinzel text-liturgical-red;
+  }
+
+  /* Link Styling */
+  .prose :global(a) {
+    @apply text-liturgical-red hover:text-liturgical-burgundy transition-colors;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 640px) {
+    .prose :global(h1) {
+      @apply text-2xl;
+    }
+
+    .prose :global(h2) {
+      @apply text-xl;
+    }
+
+    .prose :global(h3) {
+      @apply text-lg;
+    }
+  }
+</style>

@@ -1,0 +1,92 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HomeHero from '../components/HomeHero.astro';
+import HomeFeatures from '../components/HomeFeatures.astro';
+import WelcomeSection from '../components/home/WelcomeSection.astro';
+import { churchConfig } from '../config/church';
+import { Image } from 'astro:assets';
+import pastorImage from '../assets/images/pastor.jpg';
+---
+
+<Layout title="Welcome">
+  <HomeHero />
+  <HomeFeatures />
+  <WelcomeSection 
+    image="/src/assets/images/altar.jpg"
+    imageAlt="Christ Lutheran Church Sanctuary"
+  />
+  
+  <section class="py-16 bg-liturgical-red text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <!-- Message Content -->
+          <div class="lg:col-span-8">
+            <h2 class="font-cinzel text-3xl mb-8 text-center lg:text-left">A Message from Pastor Woelmer</h2>
+            <div class="space-y-4 text-lg">
+              <p>
+                Jesus is the Son of God in human flesh. He paid for our sin, and He rose from the dead. He is our one and only Savior through whom we receive forgiveness, life, and salvation.
+              </p>
+              <p>
+                Living in a fallen world is not easy. We suffer from our own sin and from trial and tribulation. Yet, because of Christ's death and resurrection, there is hope, comfort and a peace which the world can never give.
+              </p>
+              <p>
+                Come to Christ Lutheran Church and hear about repentance, God's love for us in Christ Jesus, and about our love for one another. 
+              </p>
+              <p>
+                If I can help you in any way, please contact me.
+              </p>
+            </div>
+
+            <!-- Contact and Location Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+          <div class="p-6 border-2 border-white/20 rounded-lg">
+            <h3 class="font-cinzel text-2xl mb-4">Service Times</h3>
+            <p>Divine Service: {churchConfig.services.sunday.divine}</p>
+            <p>Bible Study & Sunday School: {churchConfig.services.sunday.bibleStudy}</p>
+            <p class="mt-4">
+              <a href="/about" class="text-liturgical-gold hover:text-white transition-colors">Learn More →</a>
+            </p>
+          </div>
+          <div class="p-6 border-2 border-white/20 rounded-lg">
+            <h3 class="font-cinzel text-2xl mb-4">Location</h3>
+            <p>{churchConfig.address.street}</p>
+            <p>{churchConfig.address.city}, {churchConfig.address.state} {churchConfig.address.zip}</p>
+            <p class="mt-4">
+              <a href="/contact" class="text-liturgical-gold hover:text-white transition-colors">Get Directions →</a>
+            </p>
+          </div>
+        </div>
+            
+          </div>
+
+          <!-- Pastor's Photo and Contact -->
+          <div class="lg:col-span-4">
+            <div class="bg-white/10 rounded-lg overflow-hidden">
+              <div class="aspect-w-4 aspect-h-5 relative">
+                <Image 
+                  src={pastorImage}
+                  alt="Pastor James Woelmer"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-6 text-center">
+                <h3 class="font-cinzel text-2xl mb-4">Rev. James Woelmer</h3>
+                <p class="mb-2">{churchConfig.pastor.phone}</p>
+                <p class="mb-4">{churchConfig.pastor.email}</p>
+                <a 
+                  href="/our-pastor" 
+                  class="inline-block bg-white text-liturgical-red hover:bg-liturgical-cream px-6 py-2 rounded font-cinzel transition-colors"
+                >
+                  Meet Our Pastor
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
+</Layout>

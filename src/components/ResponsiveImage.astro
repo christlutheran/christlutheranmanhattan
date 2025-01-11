@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  src: ImageMetadata;
+  alt: string;
+  class?: string;
+  width?: number;
+  height?: number;
+}
+
+const { src, alt, class: className, width = 1920, height = 1080 } = Astro.props;
+---
+<div class:list={["relative overflow-hidden", className]}>
+  <Image
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    class="w-full h-full object-cover"
+    loading="lazy"
+    decoding="async"
+  />
+</div>
