@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import church from '../assets/images/church.jpg';
+import church from '../assets/images/stained-glass.jpg';
 import Container from './Container.astro';
 
 interface Props {
@@ -14,7 +14,7 @@ const { title, description, image } = Astro.props;
 
 <header class="relative">
   {image ? (
-    <div class="relative h-52 md:h-72 overflow-hidden">
+    <div class="relative h-64 md:h-[23.5rem] overflow-hidden">
       <!-- Background overlay -->
       <div class="absolute inset-0 bg-gradient-to-b from-liturgical-black/70 to-liturgical-black/40 z-10"></div>
       
@@ -43,7 +43,7 @@ const { title, description, image } = Astro.props;
       </Container>
     </div>
   ) : (
-    <div class="py-12 bg-gradient-to-b from-liturgical-red/10 to-transparent">
+    <div class="py-16 bg-gradient-to-b from-liturgical-red/10 to-transparent">
       <Container size="lg">
         <div class="text-center">
           <h1 class="font-cinzel text-4xl md:text-5xl text-liturgical-red tracking-wide mb-4">
