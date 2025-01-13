@@ -25,5 +25,10 @@ export default defineConfig({
     remarkPlugins: [
       [remarkExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]
     ]
+  },
+  vite: {
+    build: {
+      assetsInlineLimit: 0 // Ensures all assets are copied rather than inlined
+    }
   }
 });

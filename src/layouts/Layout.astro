@@ -20,9 +20,32 @@ const { title, description = "Christ Lutheran Church (LCMS) in Manhattan, KS - A
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Standard favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#5c2228">
+    
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <!-- Windows -->
+    <meta name="msapplication-TileColor" content="#5c2228">
+    <meta name="msapplication-TileImage" content="/android-chrome-192x192.png">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/site.webmanifest">
+    
     <meta name="generator" content={Astro.generator} />
-    <title>{title} | Christ Lutheran Church</title>
+    <title>{title} | Christ Lutheran Church, Manhattan, KS</title>
     <script src="https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js" type="text/javascript"></script>
   </head>
   <body class="min-h-screen bg-liturgical-cream text-liturgical-black">

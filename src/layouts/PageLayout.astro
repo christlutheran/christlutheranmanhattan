@@ -5,6 +5,7 @@ import PageHeader from '../components/PageHeader.astro';
 import Container from '../components/Container.astro';
 import { Image } from 'astro:assets';
 import pastorImage from '../assets/images/pastor.jpg';
+import churchImage from '../assets/images/church.jpg';
 
 interface Props {
   title: string;
@@ -17,8 +18,9 @@ const { title, description, content, image } = Astro.props;
 
 const htmlContent = await marked.parse(content);
 
-// Check if this is the pastor page
+// Check if this is the pastor page or about page
 const isPastorPage = title === "Our Pastor";
+const isAboutPage = title === "About Our Church";
 ---
 
 <Layout title={title} description={description}>
@@ -51,6 +53,35 @@ const isPastorPage = title === "Our Pastor";
                   <li>Office: (972) 704-6722</li>
                   <li>Email: jwoelmer@verizon.net</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        ) : isAboutPage ? (
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+            <div class="lg:col-span-3 prose prose-lg max-w-none">
+              <Fragment set:html={htmlContent} />
+            </div>
+            <div class="lg:col-span-2 space-y-6">
+              <div class="sticky top-24">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                  <Image 
+                    src={churchImage} 
+                    alt="Christ Lutheran Church building"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <div class="mt-4 bg-liturgical-cream p-6 rounded-lg">
+                  <h3 class="font-cinzel text-xl text-liturgical-red mb-4">Service Times</h3>
+                  <ul class="space-y-2">
+                    <li>Divine Service: 10:30 AM</li>
+                    <li>Bible Study & Sunday School: 9:30 AM</li>
+                  </ul>
+                  <div class="mt-4">
+                    <a href="/contact" class="text-liturgical-red hover:text-liturgical-burgundy transition-colors">
+                      Contact / Find Us →
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
