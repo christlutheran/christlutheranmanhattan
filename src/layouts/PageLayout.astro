@@ -117,20 +117,47 @@ const isAboutPage = title === "About Our Church";
 
   /* Content Spacing */
   .prose :global(p) {
-    @apply mb-4 text-base sm:text-lg leading-relaxed;
+    @apply mb-4 text-base sm:text-lg leading-relaxed font-crimson;
   }
 
+  /* Strong Text Styling - Updated for darker text and heavier weight */
+  .prose :global(strong), .prose :global(b) {
+    @apply font-black text-[#000000] tracking-tight;
+  }
+
+  /* List Styling */
   .prose :global(ul), .prose :global(ol) {
-    @apply my-4 pl-6;
+    @apply my-4 pl-6 space-y-2 font-crimson text-base sm:text-lg;
+  }
+
+  .prose :global(ul) {
+    @apply list-disc;
+  }
+
+  .prose :global(ol) {
+    @apply list-decimal;
   }
 
   .prose :global(li) {
+    @apply mb-2 leading-relaxed;
+  }
+
+  .prose :global(li > ul), .prose :global(li > ol) {
+    @apply mt-2 mb-0;
+  }
+
+  .prose :global(li p) {
     @apply mb-2;
+  }
+
+  /* Nested List Styling */
+  .prose :global(ul ul), .prose :global(ol ol), .prose :global(ul ol), .prose :global(ol ul) {
+    @apply ml-4 mt-2;
   }
 
   /* Blockquote Styling */
   .prose :global(blockquote) {
-    @apply pl-6 pr-4 py-3 my-6 border-l-4 border-liturgical-gold bg-liturgical-cream/50 rounded;
+    @apply pl-6 pr-4 py-3 my-6 border-l-4 border-liturgical-gold bg-liturgical-cream/50 rounded font-crimson;
   }
 
   .prose :global(blockquote cite) {
@@ -139,7 +166,7 @@ const isAboutPage = title === "About Our Church";
 
   /* Link Styling */
   .prose :global(a) {
-    @apply text-liturgical-red hover:text-liturgical-burgundy transition-colors;
+    @apply text-liturgical-red hover:text-liturgical-burgundy transition-colors no-underline border-b border-liturgical-red/30 hover:border-liturgical-burgundy;
   }
 
   /* Responsive Adjustments */
@@ -154,6 +181,10 @@ const isAboutPage = title === "About Our Church";
 
     .prose :global(h3) {
       @apply text-lg;
+    }
+
+    .prose :global(ul), .prose :global(ol), .prose :global(p) {
+      @apply text-base;
     }
   }
 </style>

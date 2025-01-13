@@ -23,7 +23,6 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'chi-rho-pattern': 'url("/assets/patterns/chi-rho-pattern.svg")',
       },
       typography: theme => ({
         DEFAULT: {

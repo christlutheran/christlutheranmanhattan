@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import remarkExternalLinks from 'remark-external-links';
 
 export default defineConfig({
-  site: 'https://christlutheranmanhattan.org',
+  site: 'https://www.christlutheranmhk.org',
   integrations: [
     tailwind(),
     sitemap({
