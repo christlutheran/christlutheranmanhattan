@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import remarkExternalLinks from 'remark-external-links';
 
 export default defineConfig({
   site: 'https://christlutheranmanhattan.org',
@@ -19,5 +20,10 @@ export default defineConfig({
     service: {
       entrypoint: 'astro/assets/services/sharp'
     }
+  },
+  markdown: {
+    remarkPlugins: [
+      [remarkExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]
+    ]
   }
 });

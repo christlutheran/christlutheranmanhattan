@@ -1,21 +1,18 @@
 ---
 import { churchConfig } from '../config/church';
 
-const mapUrl = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodeURIComponent(churchConfig.address.full)}`;
-const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(churchConfig.address.full)}`;
+const address = encodeURIComponent(churchConfig.address.full);
+// Updated embed code with proper center coordinates and zoom level for Christ Lutheran Church
+const mapSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.867589064138!2d-96.55178128459375!3d39.21257887952037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bdcd67c1fc3e43%3A0x1d9398e0c5333afe!2sChrist%20Lutheran%20Church!5e0!3m2!1sen!2sus!4v1710441361649!5m2!1sen!2sus`;
+const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${address}`;
 ---
+
 <div class="space-y-4">
-  <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-md">
-    <iframe
-      width="100%"
-      height="100%"
-      style="border:0"
-      loading="lazy"
-      allowfullscreen
-      src={mapUrl}
-      title="Church Location"
-      class="w-full h-full"
-    ></iframe>
+  <div class="relative w-full rounded-lg overflow-hidden shadow-md bg-white">
+    <!-- 16:9 aspect ratio wrapper -->
+    <div class="relative pb-[56.25%] h-0">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d465286.93554394756!2d-96.74085583990829!3d39.20636545152885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bdd3e6fdfe3659%3A0x2b10b792a26e11f5!2sChrist%20Lutheran%20Church!5e1!3m2!1sen!2sus!4v1736784989614!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
   <div class="text-center">
     <a 
