@@ -84,14 +84,16 @@ At Christ Lutheran Church, we receive the Lord's Supper every Sunday because Chr
 As a congregation of The LCMS, we hold fast to the historic, confessional Lutheran faith. We subscribe unconditionally to:
 
 - The Three Ecumenical Creeds
-  - Apostles'
-  - Nicene
-  - Athanasian
-- The Unaltered Augsburg Confession
-- The Apology of the Augsburg Confession
-- The Smalcald Articles
-- The Treatise on the Power and Primacy of the Pope
-- Luther's Small and Large Catechisms
-- The Formula of Concord
+  - <a href="https://bookofconcord.org/ecumenical-creeds/apostles-creed/" target="_blank">Apostles'</a>
+  - <a href="https://bookofconcord.org/ecumenical-creeds/nicene-creed/" target="_blank">Nicene</a>
+  - <a href="https://bookofconcord.org/ecumenical-creeds/athanasian-creed/" target="_blank">Athanasian</a>
+- <a href="https://bookofconcord.org/augsburg-confession/" target="_blank">The Augsburg Confession</a>
+- <a href="https://bookofconcord.org/defense/" target="_blank">The Apology of the Augsburg Confession</a>
+- <a href="https://bookofconcord.org/smalcald-articles/" target="_blank">The Smalcald Articles</a>
+- <a href="https://bookofconcord.org/power-and-primacy/" target="_blank">The Treatise on the Power and Primacy of the Pope</a>
+- <a href="https://bookofconcord.org/small-catechism/" target="_blank">Luther's Small Catechism</a>
+- <a href="https://bookofconcord.org/large-catechism/" target="_blank">Luther's Large Catechism</a>
+- <a href="https://bookofconcord.org/epitome/" target="_blank">The Formula of Concord - Epitome</a>
+- <a href="https://bookofconcord.org/solid-declaration/" target="_blank">The Formula of Concord - Solid Declaration</a>
 
 Together these documents form the Book of Concord of 1580, which we believe to be a true and faithful exposition of Holy Scripture.
