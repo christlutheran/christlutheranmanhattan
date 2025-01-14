@@ -21,7 +21,7 @@ Christ Lutheran Church is distinctly Lutheran in theology, historic in worship, 
 
 Christ Lutheran Church is faithful to the Scriptures and to the Lutheran Confessions
 
-[Our Beliefs →](/beliefs)
+[Find out more about our beliefs →](/beliefs)
 
 ## Our Pastor
 
@@ -37,13 +37,13 @@ When you visit Christ Lutheran Church, you'll experience:
 
 - Jesus as the center in both our preaching and teaching
 - The forgiveness of sins is at the heart of the Divine Service
-- Traditional Lutheran Liturgy from Lutheran Service Book
+- Traditional Lutheran Liturgy from the Lutheran Service Book
 - Historic vestments
 - Congregational singing of Lutheran hymns
 - Bible Study and Sunday School for all ages
 - A welcoming congregation
 
-For first time visitors to the Divine Service, here are some important things to know:
+### For First Time Visitors
 
 - Take a bulletin (available in the narthex / entryway)
 - Feel free to sit anywhere, please fill out the red attendence book available in each row after being seated
@@ -52,6 +52,6 @@ For first time visitors to the Divine Service, here are some important things to
 - We practice closed communion ***see note below***
 - Our Pastor will greet everyone as they leave
 
-**Regarding Holy Communion**: Closed communion is an ancient practice dating back to the Apostles' themselves. Those who do not properly confess what Scripture teaches regarding Christ and His Supper must not be given the Sacrament (1 Cor 10:17| 1 Cor 11:27 | 1 Cor 11:29). Those who are members of the Lutheran Church – Missouri Synod are invited to the Lord's Supper. We invite others to learn about the Gospel and Sacrament in a new member class before taking communion.
+**Regarding Holy Communion**: Closed communion is an ancient practice dating back to the Apostles' themselves. Those who do not properly confess what Scripture teaches regarding Christ and His Supper must not be given the Sacrament (1 Cor 10:17 | 1 Cor 11:27 | 1 Cor 11:29). Those who are members of the Lutheran Church – Missouri Synod are invited to the Lord's Supper. We invite others to learn about the Gospel and Sacrament in a new member class before taking communion.
 
-[Learn about the Divine Service →](/divine-service)
+[Learn more about the Divine Service →](/divine-service)

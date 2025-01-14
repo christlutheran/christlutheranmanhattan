@@ -29,7 +29,7 @@ The devil brought sin into the world by tempting Adam and Eve, who willingly yie
 
 ## Jesus
 
-Jesus is the eternal Son of God, who entered human history, born as a man with a body and soul, in fulfillment of God's Old Testament promises. Thus, He is both Creator and creature, God and man, in one person except without sin (Col 1:16-17 | Jn 1:1 | Matt 1:20). By Jesus' death on the cross, He paid for our sin, He appeased the wrath of God, and He reconciled us to God (Is 53:4-5 | Gal 3:13). On the third day, He rose from the dead (1 Cor 15:5-9). Forty day later, He ascended to the right hand of God (Eph 1:20-23). Finally, He will return in glory on the Last Day (Matt 25:31-46).
+Jesus is the eternal Son of God, who entered human history, born as a man with a body and soul, in fulfillment of God's Old Testament promises. Thus, He is both Creator and creature, God and man, in one person except without sin (Col 1:16-17 | Jn 1:1 | Matt 1:20). By Jesus' death on the cross, He paid for our sin, He appeased the wrath of God, and He reconciled us to God (Is 53:4-5 | Gal 3:13). On the third day, He rose from the dead (1 Cor 15:5-9). Forty days later, He ascended to the right hand of God (Eph 1:20-23). Finally, He will return in glory on the Last Day (Matt 25:31-46).
 
 ## Justification
 
@@ -75,7 +75,7 @@ There are two parts to repentance: We first confess our sins. We admit that our 
 
 In the Lord's Supper, Christ gives His own body and blood. The bread is the real body of Christ, and the wine is the real blood of Christ (Matt 26:26 | Matt 26:28 | 1 Cor 10:16). This is a great mystery. However, we simply believe in what Christ said on the night in which He was betrayed. The words of Christ are not picture language nor are they to be understood symbolically. The chief blessing of the Sacrament is the forgiveness of sins which Christ's body and blood have won for us on the cross (Matt 26:28). But together with forgiveness, God gives all other blessings as well, that is, life and salvation.
 
-Closed communion is an ancient practice dating back to the Apostles' themselves. Those who do not properly confess what Scripture teaches regarding Christ and His Supper must not be given the Sacrament (1 Cor 10:17 | 1 Cor 11:27 | 1 Cor 11:29). Those who are members of the Lutheran Church – Missouri Synod are invited to the Lord's Supper. We invite others to learn about the Gospel and Sacrament in a new member class before taking communion.
+Closed communion is an ancient practice dating back to the Apostles' themselves. Those who do not properly confess what Scripture teaches regarding Christ and His Supper must not be given the Sacrament (1 Cor 10:17 | 1 Cor 11:27 | 1 Cor 11:29). Those who are members of the Lutheran Church–-Missouri Synod are invited to the Lord's Supper. We invite others to learn about the Gospel and Sacrament in a new member class before taking communion.
 
 At Christ Lutheran Church, we receive the Lord's Supper every Sunday because Christ urgently invites us saying, "This do in remembrance of Me" and because we need the forgiveness of sins and the strength for a new and holy life.
 

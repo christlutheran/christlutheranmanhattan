@@ -21,7 +21,12 @@ order: 3
 
 In the Divine Service, God gives us the Gospel from the baptismal font, the pulpit, and the altar. We receive these gifts of salvation, then we give Him thanksgiving in word and in song.
 
+> We do not abolish the Mass, but religiously maintain and defend it. For among us masses are celebrated every Lord’s Day and on the other festivals, in which the Sacrament is offered to those who wish to use it, after they have been examined and absolved. And the usual public ceremonies are observed, the series of lessons, of prayers, vestments, and other like things
+> <cite>Apology to the Augsburg Confession, Article XXIV.1, "The Mass"</cite>
+
 ## The Liturgy
+
+We follow the Lutheran Service Book (LSB) during the Liturgy along with the printed bulletin for that day that will guide us through the Divine Service with LSB page number references included for each section.
 
 ### Preparation
 
@@ -31,13 +36,10 @@ The service begins with confession of sins and the pronouncement of absolution. 
 > If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.
 > <cite>1 John 1:9</cite>
 
-#### Introit
-A Psalm that introduces the theme of the day. The Apology of the Augsburg Confession states:
-
-> We keep traditional liturgical forms, such as the order of readings, prayers, vestments, and other similar things.
-> <cite>Apology XXIV.1</cite>
-
 ### Service of the Word
+
+#### Introit
+A Psalm that introduces the theme of the day.
 
 #### Kyrie
 The congregation cries "Lord, have mercy" (Greek: Kyrie eleison), echoing the blind man's plea:
@@ -51,7 +53,12 @@ The song of the angels at Christ's birth:
 > Glory to God in the highest, and on earth peace among those with whom He is pleased!
 > <cite>Luke 2:14</cite>
 
+#### Salutation and Collect of the Day
+Greeting of "The Lord be with you" from the Pastor and the congregation responding with "And with thy spirit". The collect (short prayer) of the day follows after this.
+
 #### The Readings
+We use the historic One-Year Lectionary for readings throughout the Church Year which can be found in the Lutheran Service Book
+
 - Old Testament
 - Epistle
 - Holy Gospel
@@ -62,9 +69,9 @@ As our Lord promises:
 > <cite>John 6:63</cite>
 
 #### Creed
-We confess either the Nicene or Apostles' Creed, as the Formula of Concord states:
+We confess the Nicene Creed, as the Formula of Concord states:
 
-> We believe, teach, and confess that these symbols are the true and pure exposition of the Word of God.
+> And because directly after the times of the apostles, and even while they were still living, false teachers and heretics arose, and symbols, i. e., brief, succinct confessions, were composed against them in the early Church, which were regarded as the unanimous, universal Christian faith and confession of the orthodox and true Church, namely, the Apostles’ Creed, the Nicene Creed, and the Athanasian Creed, we pledge ourselves to them, and hereby reject all heresies and dogmas which, contrary to them, have been introduced into the Church of God.
 > <cite>Formula of Concord, Epitome</cite>
 
 #### Sermon
@@ -72,6 +79,15 @@ The proclamation of Law and Gospel, as St. Paul writes:
 
 > Preach the word; be ready in season and out of season; reprove, rebuke, and exhort, with complete patience and teaching.
 > <cite>2 Timothy 4:2</cite>
+
+#### Offertory
+After hearing the sermon, the congregation responds with Ps 51:10-12
+
+#### Offering
+As an expression of worship and thanksgiving, the congregation responds to God’s blessing in their lives and offers back a portion of what He has entrusted to them. The offering is used to provide for the continuation of the church's pastoral ministry and the costs for maintaining the church facilities and expenses.
+
+#### Prayer of the Church
+Petitions brought before God with the Pastor ending each petition with "Lord in your mercy" followed by the congregation responding "hear our prayer"
 
 ### Service of the Sacrament
 
@@ -82,24 +98,24 @@ The congregation joins the song of the seraphim:
 > <cite>Isaiah 6:3</cite>
 
 #### The Lord's Prayer
-As Christ taught us to pray.
+As Christ taught us to pray (Matt 6:9-13)
 
-#### Words of Institution
+#### The Words of Our Lord - Pax Domini - Agnus Dei
 Christ's own words establish His real presence:
 
 > This is My body... This is My blood of the covenant, which is poured out for many for the forgiveness of sins.
-> <cite>Matthew 26:26, 28</cite>
+> <cite>Matt 26:26, Matt 26:28</cite>
 
 #### Distribution
 Luther explains in the Large Catechism:
 
-> We must never regard the sacrament as a harmful thing from which we should flee, but as a pure, wholesome, soothing medicine which aids and quickens us in both soul and body.
-> <cite>Large Catechism V.68</cite>
+> We must never regard the Sacrament as a harmful thing from which we should flee, but as a pure, wholesome, soothing medicine which aids and quickens us in both soul and body. For where the soul is healed, the body has benefited also. Here in the Sacrament you receive from Christ’s lips the forgiveness of sins, protection, defense, and power against death and the devil and all evils.
+> <cite>Luther’s Large Catechism, Part V – The Sacrament of the Altar, paragraphs 68 & 70</cite>
 
-#### Post-Communion Collect
+#### Nunc Dimittis - Thankgsiving - Post-Communion Collect
 Giving thanks for the gifts received.
 
-#### Benediction
+#### Salutation - Benedicamus - Benediction
 The service concludes with the Aaronic blessing:
 
 > The Lord bless you and keep you; the Lord make His face to shine upon you and be gracious to you; the Lord lift up His countenance upon you and give you peace.
@@ -116,7 +132,7 @@ When you visit for the Divine Service, you'll experience:
 - Congregational singing of Lutheran hymns
 - The Lord's Supper is served every Sunday
 
-For first time visitors to the Divine Service, here are some important things to know:
+### For First Time Vistors
 
 - Take a bulletin (available in the narthex / entryway)
 - Feel free to sit anywhere, please fill out the red attendence book available in each row after being seated
