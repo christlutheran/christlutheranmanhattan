@@ -37,9 +37,10 @@ When you visit Christ Lutheran Church, you'll experience:
 
 - Jesus as the center in both our preaching and teaching
 - The forgiveness of sins is at the heart of the Divine Service
-- Traditional Lutheran Liturgy from the Lutheran Service Book
-- Historic vestments
+- The Lord's Supper is served every Sunday
+- Traditional Liturgy from the Lutheran Service Book
 - Congregational singing of Lutheran hymns
+- Historic vestments
 - Bible Study and Sunday School for all ages
 - A welcoming congregation
 

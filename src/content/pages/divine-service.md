@@ -17,7 +17,7 @@ order: 3
 
 **The liturgy serves to provide the structure through which forgiveness, life, and salvation are delivered to us.** It provides the form and shape of the service. Just because a self–chosen form of worship may appeal to a person’s feelings; it should not be used. When a homemade order of service seeks to be “relevant”, it runs the risk of turning attention away from God and onto us.
 
-**The hymnal is one of the most important books in teaching the Christian faith.** It should always remain faithful to the Word of God. Hymns are simply doctrine put into poetic form. They are not the work of one person, one culture, or one generation. They not only reflect the great Lutheran tradition, but they also come from ancient Hebrew, Greek, Latin, European, African, North American, and African American sources.
+**The hymnal is one of the most important books in teaching the Christian faith.** It should always remain faithful to the Word of God. Hymns are simply doctrine put into poetic form. They are not the work of one person, one culture, or one generation. They not only reflect the great Lutheran tradition, but they also come from other ancient, medieval, and more recent sources.
 
 In the Divine Service, God gives us the Gospel from the baptismal font, the pulpit, and the altar. We receive these gifts of salvation, then we give Him thanksgiving in word and in song.
 
@@ -57,7 +57,7 @@ The song of the angels at Christ's birth:
 Greeting of "The Lord be with you" from the Pastor and the congregation responding with "And with thy spirit". The collect (short prayer) of the day follows after this.
 
 #### The Readings
-We use the historic One-Year Lectionary for readings throughout the Church Year which can be found in the Lutheran Service Book
+Christ Lutheran Church uses the historic One-Year Lectionary for readings throughout the Church Year which can be found in the Lutheran Service Book. Each Sunday will typically include the following lectionary readings:
 
 - Old Testament
 - Epistle
@@ -100,13 +100,15 @@ The congregation joins the song of the seraphim:
 #### The Lord's Prayer
 As Christ taught us to pray (Matt 6:9-13)
 
-#### The Words of Our Lord - Pax Domini - Agnus Dei
+#### The Words of Our Lord (Institution) - Pax Domini - Agnus Dei
 Christ's own words establish His real presence:
 
 > This is My body... This is My blood of the covenant, which is poured out for many for the forgiveness of sins.
 > <cite>Matt 26:26, Matt 26:28</cite>
 
 #### Distribution
+We practice closed communion ***see note at the bottom of this page***.
+
 Luther explains in the Large Catechism:
 
 > We must never regard the Sacrament as a harmful thing from which we should flee, but as a pure, wholesome, soothing medicine which aids and quickens us in both soul and body. For where the soul is healed, the body has benefited also. Here in the Sacrament you receive from Christ’s lips the forgiveness of sins, protection, defense, and power against death and the devil and all evils.
@@ -127,12 +129,12 @@ When you visit for the Divine Service, you'll experience:
 
 - Jesus as the center in both our preaching and teaching
 - The forgiveness of sins is at the heart of the Divine Service
-- Traditional Lutheran Liturgy from the Lutheran Service Book
-- Historic vestments
-- Congregational singing of Lutheran hymns
 - The Lord's Supper is served every Sunday
+- Traditional Liturgy from the Lutheran Service Book
+- Congregational singing of Lutheran hymns
+- Historic vestments
 
-### For First Time Vistors
+### For First Time Visitors
 
 - Take a bulletin (available in the narthex / entryway)
 - Feel free to sit anywhere, please fill out the red attendence book available in each row after being seated
