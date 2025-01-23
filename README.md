@@ -1,8 +1,8 @@
 # Christ Lutheran MHK Website
 
-New [website for Christ Lutheran Church](https://www.christlutheranmhk.org) in Manhattan, Kansas. A congregation of the [Lutheran Church – Missouri Synod (LCMS)](https://www.lcms.org).
+[Website for Christ Lutheran Church](https://www.christlutheranmhk.org) in Manhattan, Kansas.
 
-Built with the [Astro JS framework](https://astro.build/) and setup with [Decap CMS](https://decapcms.org/) as a headless CMS for content editing. Changes are auto deployed from GitHub to [Netlify](https://www.netlify.com) for hosting.
+Built with the [Astro JS framework](https://astro.build/) and setup with [Decap CMS](https://decapcms.org/) as a headless CMS for content editing.
 
 ## Commands
 

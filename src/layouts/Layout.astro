@@ -3,6 +3,7 @@ import '@fontsource/cinzel';
 import '@fontsource/crimson-text';
 import '../styles/colors.css';
 import '../styles/typography.css';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import { Image } from 'astro:assets';
@@ -15,7 +16,7 @@ interface Props {
 
 const { 
   title, 
-  description = "Christ Lutheran Church (LCMS) in Manhattan, KS - A congregation committed to historic Lutheran worship and teaching.",
+  description = "Christ Lutheran Church (LCMS) in Manhattan, KS - A congregation committed to tradtional Lutheran worship and teaching.",
   image
 } = Astro.props;
 
@@ -26,7 +27,7 @@ const socialImageURL = image
   : new URL('/android-chrome-512x512.png', Astro.site);
 
 // Prepare meta title
-const metaTitle = `${title} | Christ Lutheran Church, Manhattan, KS`;
+const metaTitle = `${title} | Christ Lutheran Church Manhattan, KS`;
 ---
 
 <!doctype html>
@@ -46,7 +47,7 @@ const metaTitle = `${title} | Christ Lutheran Church, Manhattan, KS`;
     <meta property="og:title" content={metaTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={socialImageURL} />
-    <meta property="og:site_name" content="Christ Lutheran Church" />
+    <meta property="og:site_name" content="Christ Lutheran Church Manhattan, KS" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />

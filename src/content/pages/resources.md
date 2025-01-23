@@ -27,7 +27,7 @@ order: 6
 - **<a href="https://www.youtube.com/playlist?list=PL25VGM2PKRc9YRXq2iU4QI-oSN8gS9Wtj" target="_blank" rel="noopener noreferrer">Lutheran Public Radio Choir Recordings</a>** - Lutheran Public Radio Choir Recordings of hymns in the Lutheran Service Book
 
 ### Video
-- <a href="https://www.youtube.com/@jwoelmer" target="_blank" rel="noopener noreferrer">Pastor Woelmer's Channel</a> - Pastor Woelmer's Instructional Videos
+- <a href="https://www.youtube.com/@jwoelmer" target="_blank" rel="noopener noreferrer">Pastor Woelmer's Channel</a> - Bible Study and Instructional Videos
 
 ## Books
 

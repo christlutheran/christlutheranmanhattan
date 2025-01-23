@@ -1,22 +1,24 @@
 ---
 import Container from './Container.astro';
 import LiturgicalDivider from './LiturgicalDivider.astro';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChurch, faBookBible, faCross } from '@fortawesome/free-solid-svg-icons';
 
 const features = [
   {
     title: "Divine Service",
     description: "Join us Sundays at 10:30 AM for the Divine Service, where Christ serves His people through Word and Sacrament. Our traditional service follows the Liturgy from the Lutheran Service Book with Holy Communion served every Sunday.",
-    icon: "🕊️"
+    icon: faChurch
   },
   {
     title: "Bible Study",
     description: "Sundays at 9:30 AM, come and participate in Bible Study for adults and youth and Sunday School for children, providing opportunities for fellowship and deepening our understanding of God's Word.",
-    icon: "📖"
+    icon: faBookBible
   },
   {
     title: "Catechesis",
     description: "Instruction for youth and adults in Christian teaching and Confessional Lutheran doctrine based on God's Word in the Holy Scriptures, Luther's Small Catechism, and the Lutheran Confessions.",
-    icon: "✝️"
+    icon: faCross
   }
 ];
 ---
@@ -30,7 +32,9 @@ const features = [
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       {features.map(feature => (
         <div class="text-center p-6 rounded-lg border-2 border-liturgical-red/10 hover:border-liturgical-red/30 transition-colors">
-          <div class="text-4xl mb-4">{feature.icon}</div>
+          <div class="text-liturgical-red mb-4">
+            <FontAwesomeIcon icon={feature.icon} size="2xl" fixedWidth />
+          </div>
           <h3 class="font-cinzel text-2xl mb-4 text-liturgical-red">{feature.title}</h3>
           <p class="text-lg">{feature.description}</p>
         </div>
