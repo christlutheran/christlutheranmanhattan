@@ -41,7 +41,7 @@ When you visit for the Divine Service, you'll experience:
 - We practice closed communion ***see note below***
 - Our Pastor will greet everyone as they leave
 
-**Regarding Holy Communion**: Closed communion is an ancient practice dating back to the Apostles' themselves. Those who do not properly confess what Scripture teaches regarding Christ and His Supper must not be given the Sacrament (1 Cor 10:17 | 1 Cor 11:27 | 1 Cor 11:29). Those who are members of the Lutheran Church – Missouri Synod are invited to the Lord's Supper. We invite others to learn about the Gospel and Sacrament in a new member class before taking communion.
+**Regarding Holy Communion**: Closed communion is an ancient practice dating back to the Apostles' themselves. Those who do not properly confess what Scripture teaches regarding Christ and His Supper must not be given the Sacrament (1 Cor 10:17 | 1 Cor 11:27 | 1 Cor 11:29). Those who are members of the Lutheran Church—Missouri Synod are invited to the Lord's Supper. We invite others to learn about the Gospel and Sacrament in a new member class before taking communion.
 
 ## The Liturgy
 
@@ -79,10 +79,10 @@ The song of the angels at Christ's birth:
 Greeting of "The Lord be with you" from the Pastor and the congregation responding with "And with thy spirit". The collect (short prayer) of the day follows after this.
 
 #### The Readings
-Christ Lutheran Church uses the historic One-Year Lectionary for readings throughout the Church Year which can be found in the Lutheran Service Book. Each Sunday will include the following readings:
+Christ Lutheran Church uses the historic One-Year Lectionary for readings throughout the Church Year. Each Sunday will include the following readings:
 
 - Old Testament
-- Epistle (New Testament)
+- Epistle (or New Testament)
 - Holy Gospel
 
 As our Lord promises:

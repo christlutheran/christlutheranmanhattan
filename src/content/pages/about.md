@@ -7,7 +7,7 @@ order: 2
 
 # About Christ Lutheran Church
 
-Christ Lutheran Church is a congregation of The Lutheran Church—Missouri Synod (LCMS) located on the east side of Manhattan, Kansas. Founded in 1997, we have faithfully served our community by proclaiming the Gospel of Jesus Christ in its truth and purity. 
+Christ Lutheran Church is a congregation of The Lutheran Church—Missouri Synod (LCMS) located on the east side of Manhattan, Kansas. Founded in 1997, we have faithfully served our community by proclaiming the Gospel of Jesus Christ in its truth and purity.
 
 ### Our Mission
 
@@ -53,6 +53,6 @@ When you visit Christ Lutheran Church, you'll experience:
 - We practice closed communion ***see note below***
 - Our Pastor will greet everyone as they leave
 
-**Regarding Holy Communion**: Closed communion is an ancient practice dating back to the Apostles' themselves. Those who do not properly confess what Scripture teaches regarding Christ and His Supper must not be given the Sacrament (1 Cor 10:17 | 1 Cor 11:27 | 1 Cor 11:29). Those who are members of the Lutheran Church – Missouri Synod are invited to the Lord's Supper. We invite others to learn about the Gospel and Sacrament in a new member class before taking communion.
+**Regarding Holy Communion**: Closed communion is an ancient practice dating back to the Apostles' themselves. Those who do not properly confess what Scripture teaches regarding Christ and His Supper must not be given the Sacrament (1 Cor 10:17 | 1 Cor 11:27 | 1 Cor 11:29). Those who are members of the Lutheran Church—Missouri Synod are invited to the Lord's Supper. We invite others to learn about the Gospel and Sacrament in a new member class before taking communion.
 
 [Learn more about the Divine Service →](/divine-service)
