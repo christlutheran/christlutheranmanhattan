@@ -1,0 +1,25 @@
+[[redirects]]
+from = "/about.html"
+to = "/about"
+status = 301
+
+[[redirects]]
+from = "/mission.html"
+to = "/about"
+status = 301
+
+[[redirects]]
+from = "/what-we-believe.html"
+to = "/beliefs"
+status = 301
+
+[[redirects]]
+from = "/our-pastor.html"
+to = "/our-pastor"
+status = 301
+
+[[redirects]]
+from = "/photo-gallery.html"
+to = "/"
+status = 301
+
