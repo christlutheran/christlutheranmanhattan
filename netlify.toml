@@ -1,4 +1,40 @@
 [[redirects]]
+from = "https://www.christlutheranmhk.org/*"
+to = "https://www.christlutheranmanhattan.org/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://christlutheranmhk.org/*"
+to = "https://www.christlutheranmanhattan.org/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.christlutheranmanhattan.com/*"
+to = "https://www.christlutheranmanhattan.org/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://christlutheranmanhattan.com/*"
+to = "https://www.christlutheranmanhattan.org/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.christlutheranmhk.com/*"
+to = "https://www.christlutheranmanhattan.org/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://christlutheranmhk.com/*"
+to = "https://www.christlutheranmanhattan.org/:splat"
+status = 301
+force = true
+
+[[redirects]]
 from = "/about.html"
 to = "/about"
 status = 301
