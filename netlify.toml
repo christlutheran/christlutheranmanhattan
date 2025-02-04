@@ -36,22 +36,22 @@ force = true
 
 [[redirects]]
 from = "/about.html"
-to = "/about"
+to = "/about/"
 status = 301
 
 [[redirects]]
 from = "/mission.html"
-to = "/about"
+to = "/about/"
 status = 301
 
 [[redirects]]
 from = "/what-we-believe.html"
-to = "/beliefs"
+to = "/beliefs/"
 status = 301
 
 [[redirects]]
 from = "/our-pastor.html"
-to = "/our-pastor"
+to = "/our-pastor/"
 status = 301
 
 [[redirects]]
