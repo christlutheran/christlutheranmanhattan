@@ -55,6 +55,16 @@ to = "/our-pastor/"
 status = 301
 
 [[redirects]]
+from = "/about/our-pastor/"
+to = "/our-pastor/"
+status = 301
+
+[[redirects]]
+from = "/about/our-pastor"
+to = "/our-pastor/"
+status = 301
+
+[[redirects]]
 from = "/photo-gallery.html"
 to = "/"
 status = 301
