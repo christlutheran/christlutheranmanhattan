@@ -13,7 +13,8 @@ export const navItems: NavItem[] = [
       { title: 'About Us', path: '/about' },
       { title: 'Beliefs', path: '/beliefs' },
       { title: 'Divine Service', path: '/divine-service' },
-      { title: 'Our Pastor', path: '/our-pastor' }
+      { title: 'Our Pastor', path: '/our-pastor' },
+      { title: 'Service Times', path: '/service-times' },
     ]
   },
   {
