@@ -13,6 +13,7 @@ export default {
         'liturgical-black': '#1A1A1A',
         'liturgical-cream': '#F5F5F0',
         'liturgical-burgundy': '#800020',
+        'liturgical-purple-dark': '#3B355E'
       },
       fontFamily: {
         'cinzel': ['Cinzel', 'serif'],

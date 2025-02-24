@@ -21,9 +21,10 @@ const currentYear = new Date().getFullYear();
         </div>
       </FooterSection>
       
-      <FooterSection title="Service Times">
-        <p class="text-gray-300">Divine Service: Sunday {churchConfig.services.sunday.divine}</p>
+      <FooterSection title="Sunday Services">
+        <p class="text-gray-300">Divine Service: {churchConfig.services.sunday.divine}</p>
         <p class="text-gray-300">Bible Study & Sunday School: {churchConfig.services.sunday.bibleStudy}</p>
+        <p class="text-gray-300"><a href="/service-times" class="text-gray-300 hover:text-liturgical-gold transition-colors">Full Schedule →</a></p>
       </FooterSection>
       
       <FooterSection title="Quick Links">
@@ -39,8 +40,8 @@ const currentYear = new Date().getFullYear();
         <ul class="space-y-2">
           <li><a href="https://www.lcms.org/" class="text-gray-300 hover:text-liturgical-gold transition-colors" target="_blank">LCMS</a></li>
           <li><a href="https://www.kslcms.org" class="text-gray-300 hover:text-liturgical-gold transition-colors" target="_blank">LCMS Kansas</a></li>
+          <li><a href="/divine-service" class="text-gray-300 hover:text-liturgical-gold transition-colors">Divine Service</a></li>
           <li><a href="/resources" class="text-gray-300 hover:text-liturgical-gold transition-colors">Lutheran Resources</a></li>
-          <li><a href="/catechism" class="text-gray-300 hover:text-liturgical-gold transition-colors">Small Catechism</a></li>
         </ul>
       </FooterSection>
     </div>

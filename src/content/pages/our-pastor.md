@@ -9,7 +9,7 @@ order: 5
 
 ### Background
 
-Pastor Woelmer has served as pastor of Christ Lutheran Church since he was installed on August 26, 2023. He was born and raised in Monroe, Michigan. He and his wife Rachel have 5 children and 16 grandchildren. He served on the Board of Regents for Concordia University Nebraska and as a board member on the Randolph Foundation. His hobbies are gardening and brewing beer.
+Pastor Woelmer has served as pastor of Christ Lutheran Church since he was installed on August 26, 2023. He was born and raised in Monroe, Michigan. He and his wife Rachel have 5 children and 17 grandchildren. He served on the Board of Regents for Concordia University Nebraska and as a board member on the Randolph Foundation. His hobbies are gardening and brewing beer.
 
 ### Ministry Experience
 
