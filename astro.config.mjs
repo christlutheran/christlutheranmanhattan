@@ -20,8 +20,7 @@ export default defineConfig({
   },
   image: {
     service: {
-      entrypoint: 'astro/assets/services/sharp',
-      formats: ['jpeg', 'png']
+      entrypoint: 'astro/assets/services/sharp'
     }
   },
   markdown: {
