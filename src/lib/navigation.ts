@@ -25,5 +25,6 @@ export const navItems: NavItem[] = [
       { title: 'Lutheran Resources', path: '/resources/' }
     ]
   },
-  { title: 'Contact', path: '/contact/' }
+  { title: 'Contact', path: '/contact/' },
+  { title: 'School', path: 'https://www.christclassicalmanhattan.org' }
 ];
