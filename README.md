@@ -2,7 +2,7 @@
 
 [Website for Christ Lutheran Church](https://www.christlutheranmanhattan.org) in Manhattan, Kansas.
 
-Built with the [Astro JS framework](https://astro.build/) and setup with [Decap CMS](https://decapcms.org/) as a headless CMS for content editing.
+Built with the [Astro JS framework](https://astro.build/).
 
 ## Commands
 
