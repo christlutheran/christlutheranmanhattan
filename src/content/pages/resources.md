@@ -22,6 +22,18 @@ order: 6
 - **<a href="https://www.facebook.com/people/Christ-Classical-Academy-Manhattan-KS/61572215054968/" target="_blank">Christ Classical Academy Facebook Page</a>**
 - **<a href="https://www.youtube.com/@jwoelmer" target="_blank">Pastor Woelmer's YouTube Channel</a>** - Bible Study and Instructional Videos
 
+### Book of Concord
+
+- **<a href="https://thebookofconcord.org/three-universal-or-ecumenical-creeds/" target="_blank">The Three Universal or Ecumenical Creeds</a>**
+- **<a href="https://thebookofconcord.org/augsburg-confession/" target="_blank">The Augsburg Confession</a>**
+- **<a href="https://thebookofconcord.org/apology-of-the-augsburg-confession/" target="_blank">The Apology of the Augsburg Confession</a>**
+- **<a href="https://thebookofconcord.org/smalcald-articles/" target="_blank">The Smalcald Articles</a>**
+- **<a href="https://thebookofconcord.org/power-and-primacy-of-the-pope/" target="_blank">The Treatise on the Power and Primacy of the Pope</a>**
+- **<a href="https://thebookofconcord.org/small-catechism/" target="_blank">Luther's Small Catechism</a>**
+- **<a href="https://thebookofconcord.org/large-catechism/" target="_blank">Luther's Large Catechism</a>**
+- **<a href="https://thebookofconcord.org/formula-of-concord-epitome/" target="_blank">The Formula of Concord: Epitome</a>**
+- **<a href="https://thebookofconcord.org/formula-of-concord-solid-declaration/" target="_blank">The Formula of Concord: Solid Declaration</a>**
+
 ## Media
 
 ### Podcasts

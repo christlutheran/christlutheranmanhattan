@@ -17,14 +17,7 @@ export const navItems: NavItem[] = [
       { title: 'Service Times', path: '/service-times/' },
     ]
   },
-  {
-    title: 'Resources',
-    path: '/resources/',
-    children: [
-      { title: 'Luther\'s Small Catechism', path: '/catechism/' },
-      { title: 'Lutheran Resources', path: '/resources/' }
-    ]
-  },
+  { title: 'Resources', path: '/resources/' },
   { title: 'Give Online', path: 'https://secure.myvanco.com/L-ZWKM/home' },
   { title: 'Contact', path: '/contact/' },
   { title: 'School', path: 'https://www.christclassicalmanhattan.org' }
