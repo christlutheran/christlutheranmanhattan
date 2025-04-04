@@ -16,7 +16,7 @@ order: 4
 
 ### Midweek Lent - “Places of the Passion”
 
-“Places of the Passion” is the theme for our midweek Lenten services. We will focus on the physical places of the Passion (see below). These are places where Jesus demonstrates His strength in the midst of our weakness and His love in the midst of our sin. Join us anytime from 5:30 PM - 6:15 PM for a light meal before Wednesday services.
+“Places of the Passion” is the theme for our midweek Lenten services. We will focus on the physical places of the Passion (see below). These are places where Jesus demonstrates His strength in the midst of our weakness and His love in the midst of our sin. Join us anytime between 5:30 pm - 6:15 pm for a light meal before Wednesday services.
 
 ### Ash Wednesday – March 5
 ***6:30 pm Divine Service***
