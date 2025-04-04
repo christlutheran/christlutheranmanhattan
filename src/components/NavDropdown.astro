@@ -5,9 +5,10 @@ import NavLink from './NavLink.astro';
 interface Props {
   item: NavItem;
   isActive: boolean;
+  target?: string;
 }
 
-const { item, isActive } = Astro.props;
+const { item, isActive, target } = Astro.props;
 ---
 
 <div class="relative group h-full flex items-center">
@@ -31,6 +32,7 @@ const { item, isActive } = Astro.props;
           <NavLink
             href={child.path}
             isActive={isActive}
+            target={target}
             class="block px-4 py-2 hover:bg-white/5 w-full text-left whitespace-normal break-words"
           >
             {child.title}

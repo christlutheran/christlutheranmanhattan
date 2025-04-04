@@ -2,6 +2,7 @@ export interface NavItem {
   title: string;
   path: string;
   children?: NavItem[];
+  target?: string; // Optional property for specifying link target
 }
 
 export const navItems: NavItem[] = [
@@ -18,7 +19,7 @@ export const navItems: NavItem[] = [
     ]
   },
   { title: 'Resources', path: '/resources/' },
-  { title: 'Give Online', path: 'https://secure.myvanco.com/L-ZWKM/home' },
+  { title: 'Give Online', path: 'https://secure.myvanco.com/L-ZWKM/home', target: '_blank' },
   { title: 'Contact', path: '/contact/' },
-  { title: 'School', path: 'https://www.christclassicalmanhattan.org' }
+  { title: 'School', path: 'https://www.christclassicalmanhattan.org', target: '_blank' }
 ];

@@ -3,9 +3,10 @@ interface Props {
   href: string;
   isActive: boolean;
   class?: string;
+  target?: string;
 }
 
-const { href, isActive, class: className } = Astro.props;
+const { href, isActive, class: className, target } = Astro.props;
 ---
 <a 
   href={href}
@@ -14,6 +15,8 @@ const { href, isActive, class: className } = Astro.props;
     { "text-liturgical-gold font-medium": isActive },
     className
   ]}
+  target={target || '_self'}
+  rel={target === '_blank' ? 'noopener noreferrer' : undefined}
 >
   <slot />
 </a>
