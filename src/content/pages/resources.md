@@ -11,27 +11,26 @@ order: 6
 
 - **<a href="https://www.lcms.org" target="_blank">LCMS</a>** - The Lutheran Church—Missouri Synod (LCMS)
 - **<a href="https://kslcms.org/" target="_blank">LCMS Kansas</a>** - LCMS Kansas District
-- **<a href="https://www.biblegateway.com/versions/English-Standard-Version-ESV-Bible/" target="_blank">Bible (ESV)</a>** - Holy Bible (English Standard Version) online
-- **<a href="https://bookofconcord.org" target="_blank">Book of Concord</a>** -  The Lutheran Confessions online
+- **<a href="https://www.biblegateway.com/versions/New-King-James-Version-NKJV-Bible/" target="_blank">Bible (NKJV)</a>** - Holy Bible (New King James Version) online
+- **<a href="https://thebookofconcord.org/" target="_blank">The Book of Concord</a>** -  The Lutheran Confessions online
 - **<a href="https://www.cph.org" target="_blank">CPH</a>** - Concordia Publishing House
 - **<a href="https://www.lutheranliturgy.org/" target="_blank">Evangelical-Lutheran Liturgical Congregations</a>** - Find other confessional, liturgical Lutheran congregations to attend when traveling
 
-### Social Media
+### Christ Lutheran Church Online
 
 - **<a href="https://www.facebook.com/people/Christ-Lutheran-Church-Missouri-Synod/100064606092871/" target="_blank">Christ Lutheran Church Facebook Page</a>**
+- **<a href="https://www.facebook.com/people/Christ-Classical-Academy-Manhattan-KS/61572215054968/" target="_blank">Christ Classical Academy Facebook Page</a>**
+- **<a href="https://www.youtube.com/@jwoelmer" target="_blank">Pastor Woelmer's YouTube Channel</a>** - Bible Study and Instructional Videos
 
 ## Media
 
 ### Podcasts
-- **<a href="https://issuesetc.org/" target="_blank">Issues, Etc.</a>** - Syndicated Lutheran radio talk show and podcast featuring expert guests in theology, Biblical interpretation, apologetics, ethics, philosophy, law and culture
+- **<a href="https://issuesetc.org/" target="_blank">Issues, Etc.</a>** - Podcast featuring expert guests in theology, Biblical interpretation, apologetics, ethics, philosophy, law and culture
 - **<a href="https://thewordendures.org/" target="_blank">The Word of the Lord Endures Forever</a>** - Study the Bible with the Church, Past and Present with Pr. William Weedon
 
 ### Worship & Music
 - **<a href="https://lutheranpublicradio.org/" target="_blank">Lutheran Public Radio</a>** - Lutheran Public Radio streams Sacred Music for the World, 24/7, following the course of the Church Year
 - **<a href="https://www.youtube.com/playlist?list=PL25VGM2PKRc9YRXq2iU4QI-oSN8gS9Wtj" target="_blank">Lutheran Public Radio Choir Recordings</a>** - Lutheran Public Radio Choir Recordings of hymns in the Lutheran Service Book
-
-### Video
-- **<a href="https://www.youtube.com/@jwoelmer" target="_blank">Pastor Woelmer's Channel</a>** - Bible Study and Instructional Videos
 
 ## Books
 
