@@ -16,37 +16,39 @@ order: 4
 
 ### Midweek Lent - “Places of the Passion”
 
-“Places of the Passion” is the theme for our midweek Lenten services. We will focus on the physical places of the Passion (see below). These are places where Jesus demonstrates His strength in the midst of our weakness and His love in the midst of our sin.
+“Places of the Passion” is the theme for our midweek Lenten services. We will focus on the physical places of the Passion (see below). These are places where Jesus demonstrates His strength in the midst of our weakness and His love in the midst of our sin. Join us anytime from 5:30 PM - 6:15 PM for a light meal before Wednesday services.
 
-### Wednesday Services
-- **Light Dinner**: 5:30 PM - 6:15 PM (join us anytime in between)
-- **Vespers**: 6:30 PM
+### Ash Wednesday – March 5
+***6:30 pm Divine Service***
 
-#### Ash Wednesday – March 5
-*Beginning  of Lent*
+### Lent I Midweek – March 12
 
-#### Lent I Midweek – March 12
-***The Upper Room***
-&nbsp;
+#### The Upper Room
+***6:30 pm Vespers Service***
 
-#### Lent II Midweek – March 19
-***Gethsemane***
-&nbsp;
+### Lent II Midweek – March 19
 
-#### Lent III Midweek – March 26
-***The Palace of the High Priest***
-&nbsp;
+#### Gethsemane
+***6:30 pm Vespers Service***
 
-#### Lent IV Midweek – April 2
-***The Praetorium (Headquarters of Pontius Pilate)***
-&nbsp;
+### Lent III Midweek – March 26
 
-#### Lent V Midweek – April 9
-***Calvary***
+#### The Palace of the High Priest
+***6:30 pm Vespers Service***
+
+### Lent IV Midweek – April 2
+
+#### The Praetorium (Headquarters of Pontius Pilate)
+***6:30 pm Vespers Service***
+
+### Lent V Midweek – April 9
+
+#### Calvary
+***6:30 pm Vespers Service***
 
 ## Holy Week Services
 
-### Palm Sunday - April 13
+### Palm Sunday - April 13
 ***10:30 am Divine Service***
 
 ### Maundy Thursday - April 17
