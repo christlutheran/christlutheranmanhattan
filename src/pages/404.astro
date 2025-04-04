@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Page Not Found";
+const description = "The page you are looking for does not exist. You can return to the homepage using the link below.";
+---
+
+<Layout title={title} description={description}>
+  <section class="min-h-screen flex flex-col items-center justify-center text-center bg-white text-liturgical-black py-16">
+    <h1 class="font-cinzel text-4xl md:text-6xl mb-4">Not Found</h1>
+    <p class="font-crimson text-lg md:text-xl mb-8 max-w-2xl">
+      The page you are looking for does not exist. You can return to the homepage using the link below.
+    </p>
+    <a 
+      href="/" 
+      class="bg-liturgical-red hover:bg-liturgical-burgundy text-white px-6 py-3 rounded font-cinzel transition-colors"
+    >
+      Go to Homepage
+    </a>
+  </section>
+</Layout>
