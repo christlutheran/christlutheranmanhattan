@@ -11,16 +11,15 @@ order: 6
 
 - **<a href="https://www.lcms.org" target="_blank">LCMS</a>** - The Lutheran Church—Missouri Synod (LCMS)
 - **<a href="https://kslcms.org/" target="_blank">LCMS Kansas</a>** - LCMS Kansas District
-- **<a href="https://www.biblegateway.com/versions/New-King-James-Version-NKJV-Bible/" target="_blank">Bible (NKJV)</a>** - Holy Bible (New King James Version) online
-- **<a href="https://thebookofconcord.org/" target="_blank">The Book of Concord</a>** -  The Lutheran Confessions online
 - **<a href="https://www.cph.org" target="_blank">CPH</a>** - Concordia Publishing House
 - **<a href="https://www.lutheranliturgy.org/" target="_blank">Evangelical-Lutheran Liturgical Congregations</a>** - Find other confessional, liturgical Lutheran congregations to attend when traveling
 
 ### Christ Lutheran Church Online
 
 - **<a href="https://www.facebook.com/people/Christ-Lutheran-Church-Missouri-Synod/100064606092871/" target="_blank">Christ Lutheran Church Facebook Page</a>**
+- **<a href="https://www.christclassicalmanhattan.org" target="_blank">Christ Classical Academy Website</a>**
 - **<a href="https://www.facebook.com/people/Christ-Classical-Academy-Manhattan-KS/61572215054968/" target="_blank">Christ Classical Academy Facebook Page</a>**
-- **<a href="https://www.youtube.com/@jwoelmer" target="_blank">Pastor Woelmer's YouTube Channel</a>** - Bible Study and Instructional Videos
+- **<a href="https://www.youtube.com/@jwoelmer" target="_blank">Pastor Woelmer's Bible Study YouTube Channel</a>**
 
 ### Book of Concord
 
