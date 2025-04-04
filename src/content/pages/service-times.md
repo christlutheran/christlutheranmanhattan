@@ -12,7 +12,7 @@ order: 4
 - **Divine Service**: 10:30 AM
 - **Bible Study & Sunday School**: 9:30 AM
 
-## Lenten Services - 2025
+## Lenten Services
 
 ### Midweek Lent - “Places of the Passion”
 
@@ -44,3 +44,18 @@ order: 4
 #### Lent V Midweek – April 9
 ***Calvary***
 
+## Holy Week Services
+
+### Palm Sunday - April 13
+***10:30 am Divine Service***
+
+### Maundy Thursday - April 17
+***6:30 pm Divine Service***
+
+### Good Friday - April 18
+***6:30 pm Tenebrae Service***
+
+## Easter
+
+### The Resurrection of our Lord - April 20
+***10:30 am Divine Service***
