@@ -12,7 +12,7 @@ order: 4
 - **Divine Service**: 10:30 AM
 - **Bible Study & Sunday School**: 9:30 AM
 
-## Lenten Services
+## Lenten Services 2025
 
 ### Midweek Lent - “Places of the Passion”
 
@@ -46,7 +46,7 @@ order: 4
 #### Calvary
 ***6:30 pm Vespers Service***
 
-## Holy Week Services
+## Holy Week Services 2025
 
 ### Palm Sunday - April 13
 ***10:30 am Divine Service***
