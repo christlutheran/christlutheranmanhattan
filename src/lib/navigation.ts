@@ -19,7 +19,7 @@ export const navItems: NavItem[] = [
     ]
   },
   { title: 'Resources', path: '/resources/' },
-  { title: 'Give Online', path: 'https://secure.myvanco.com/L-ZWKM/home', target: '_blank' },
+  { title: 'Giving', path: '/giving/' },
   { title: 'Contact', path: '/contact/' },
   { title: 'School', path: 'https://www.christclassicalmanhattan.org', target: '_blank' }
 ];
