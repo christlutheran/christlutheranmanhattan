@@ -13,6 +13,7 @@ order: 6
 - **<a href="https://kslcms.org/" target="_blank">LCMS Kansas</a>** - LCMS Kansas District
 - **<a href="https://www.cph.org" target="_blank">CPH</a>** - Concordia Publishing House
 - **<a href="https://www.lutheranliturgy.org/" target="_blank">Evangelical-Lutheran Liturgical Congregations</a>** - Find other confessional, liturgical Lutheran congregations to attend when traveling
+- **<a href="https://thebookofconcord.org/" target="_blank">The Book of Concord (1580)</a>** - The Lutheran Confessions
 
 ### Christ Lutheran Church Online
 
@@ -20,18 +21,6 @@ order: 6
 - **<a href="https://www.christclassicalmanhattan.org" target="_blank">Christ Classical Academy Website</a>**
 - **<a href="https://www.facebook.com/people/Christ-Classical-Academy-Manhattan-KS/61572215054968/" target="_blank">Christ Classical Academy Facebook Page</a>**
 - **<a href="https://www.youtube.com/@jwoelmer" target="_blank">Pastor Woelmer's Bible Study YouTube Channel</a>**
-
-### Book of Concord
-
-- **<a href="https://thebookofconcord.org/three-universal-or-ecumenical-creeds/" target="_blank">The Three Universal or Ecumenical Creeds</a>**
-- **<a href="https://thebookofconcord.org/augsburg-confession/" target="_blank">The Augsburg Confession</a>**
-- **<a href="https://thebookofconcord.org/apology-of-the-augsburg-confession/" target="_blank">The Apology of the Augsburg Confession</a>**
-- **<a href="https://thebookofconcord.org/smalcald-articles/" target="_blank">The Smalcald Articles</a>**
-- **<a href="https://thebookofconcord.org/power-and-primacy-of-the-pope/" target="_blank">The Treatise on the Power and Primacy of the Pope</a>**
-- **<a href="https://thebookofconcord.org/small-catechism/" target="_blank">Luther's Small Catechism</a>**
-- **<a href="https://thebookofconcord.org/large-catechism/" target="_blank">Luther's Large Catechism</a>**
-- **<a href="https://thebookofconcord.org/formula-of-concord-epitome/" target="_blank">The Formula of Concord: Epitome</a>**
-- **<a href="https://thebookofconcord.org/formula-of-concord-solid-declaration/" target="_blank">The Formula of Concord: Solid Declaration</a>**
 
 ## Media
 
