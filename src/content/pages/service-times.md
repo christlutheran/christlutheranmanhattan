@@ -12,52 +12,46 @@ order: 4
 - **Divine Service**: 10:30 AM
 - **Bible Study & Sunday School**: 9:30 AM
 
-## Lenten Services 2025
+## Church Year 2025
 
-### Midweek Lent - “Places of the Passion”
+### Upcoming Services
 
-“Places of the Passion” is the theme for our midweek Lenten services. We will focus on the physical places of the Passion (see below). These are places where Jesus demonstrates His strength in the midst of our weakness and His love in the midst of our sin. Join us anytime between 5:30 pm - 6:15 pm for a light meal before Wednesday services.
-
-### Ash Wednesday – March 5
+#### The Ascension of our Lord – Thursday, May 29th
 ***6:30 pm Divine Service***
 
-### Lent I Midweek – March 12
+[View Full Calendar of Services and Events →](/calendar/)
 
-#### The Upper Room
+<hr/>
+
+
+### Previous Services
+
+#### Ash Wednesday – March 5
+***6:30 pm Divine Service***
+
+#### Lent I Midweek – March 12
 ***6:30 pm Vespers Service***
 
-### Lent II Midweek – March 19
-
-#### Gethsemane
+#### Lent II Midweek – March 19
 ***6:30 pm Vespers Service***
 
-### Lent III Midweek – March 26
-
-#### The Palace of the High Priest
+#### Lent III Midweek – March 26
 ***6:30 pm Vespers Service***
 
-### Lent IV Midweek – April 2
-
-#### The Praetorium (Headquarters of Pontius Pilate)
+#### Lent IV Midweek – April 2
 ***6:30 pm Vespers Service***
 
-### Lent V Midweek – April 9
-
-#### Calvary
+#### Lent V Midweek – April 9
 ***6:30 pm Vespers Service***
 
-## Holy Week Services 2025
-
-### Palm Sunday - April 13
+#### Palm Sunday - April 13
 ***10:30 am Divine Service***
 
-### Maundy Thursday - April 17
+#### Maundy Thursday - April 17
 ***6:30 pm Divine Service***
 
-### Good Friday - April 18
+#### Good Friday - April 18
 ***6:30 pm Tenebrae Service***
 
-## Easter
-
-### The Resurrection of our Lord - April 20
+#### Easter - The Resurrection of our Lord - April 20
 ***10:30 am Divine Service***
