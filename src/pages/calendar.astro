@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Church Calendar";
+const description = "View upcoming events and services at Christ Lutheran Church. Subscribe to our calendar for updates.";
+
+const icsUrl = "https://calendar.google.com/calendar/ical/c_8ab0516ed622252f3f8a52805440ed80c1bc4a6d4dde760f7dc0bb257bc491d2%40group.calendar.google.com/public/basic.ics";
+const webcalUrl = icsUrl.replace(/^https?:\/\//, "webcal://");
+---
+<Layout title={title} description={description}>
+  <section class="py-16 bg-white text-liturgical-black">
+    <div class="container mx-auto px-4">
+      <h1 class="font-cinzel text-3xl md:text-4xl mb-6 text-center">Church Calendar</h1>
+      <p class="text-center mb-8">
+        Stay up to date with upcoming services and events. You can also subscribe to our calendar using the links below.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-6">
+        <a 
+          href={webcalUrl}
+          class="inline-block bg-liturgical-red hover:bg-liturgical-burgundy text-white px-6 py-2 rounded font-cinzel transition-colors"
+        >
+          Subscribe via iCal (Apple)
+        </a>
+        <a 
+          href={icsUrl}
+          class="inline-block bg-liturgical-red hover:bg-liturgical-burgundy text-white px-6 py-2 rounded font-cinzel transition-colors"
+          target="_blank" rel="noopener noreferrer"
+        >
+          Download iCal (.ics)
+        </a>
+      </div>
+      <div class="w-full max-w-6xl mx-auto aspect-w-16 aspect-h-9">
+        <iframe 
+          src="https://calendar.google.com/calendar/embed?src=c_8ab0516ed622252f3f8a52805440ed80c1bc4a6d4dde760f7dc0bb257bc491d2%40group.calendar.google.com&ctz=America%2FChicago"
+          style="border:0"
+          class="w-full h-full min-h-[600px] rounded shadow"
+          frameborder="0"
+          scrolling="no"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </section>
+</Layout>
