@@ -12,46 +12,43 @@ order: 4
 - **Divine Service**: 10:30 AM
 - **Bible Study & Sunday School**: 9:30 AM
 
+[View Full Calendar of Services and Events →](/calendar/)
+
 ## Church Year 2025
 
 ### Upcoming Services
 
+### Previous Services
+
 #### The Ascension of our Lord – Thursday, May 29th
 ***6:30 pm Divine Service***
 
-[View Full Calendar of Services and Events →](/calendar/)
+#### Easter - The Resurrection of our Lord - April 20
+***10:30 am Divine Service***
 
-<hr/>
+#### Good Friday - April 18
+***6:30 pm Tenebrae Service***
 
-
-### Previous Services
-
-#### Ash Wednesday – March 5
+#### Maundy Thursday - April 17
 ***6:30 pm Divine Service***
 
-#### Lent I Midweek – March 12
-***6:30 pm Vespers Service***
+#### Palm Sunday - April 13
+***10:30 am Divine Service***
 
-#### Lent II Midweek – March 19
-***6:30 pm Vespers Service***
-
-#### Lent III Midweek – March 26
+#### Lent V Midweek – April 9
 ***6:30 pm Vespers Service***
 
 #### Lent IV Midweek – April 2
 ***6:30 pm Vespers Service***
 
-#### Lent V Midweek – April 9
+#### Lent III Midweek – March 26
 ***6:30 pm Vespers Service***
 
-#### Palm Sunday - April 13
-***10:30 am Divine Service***
+#### Lent II Midweek – March 19
+***6:30 pm Vespers Service***
 
-#### Maundy Thursday - April 17
+#### Lent I Midweek – March 12
+***6:30 pm Vespers Service***
+
+#### Ash Wednesday – March 5
 ***6:30 pm Divine Service***
-
-#### Good Friday - April 18
-***6:30 pm Tenebrae Service***
-
-#### Easter - The Resurrection of our Lord - April 20
-***10:30 am Divine Service***

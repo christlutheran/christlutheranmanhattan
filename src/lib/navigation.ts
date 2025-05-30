@@ -17,6 +17,7 @@ export const navItems: NavItem[] = [
       { title: 'Our Pastor', path: '/our-pastor/' },
       { title: 'Service Times', path: '/service-times/' },
       { title: 'Calendar', path: '/calendar/' },
+      { title: 'Vacation Bible School', path: '/vacation-bible-school/' },
     ]
   },
   { title: 'Resources', path: '/resources/' },
