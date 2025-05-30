@@ -22,7 +22,7 @@ order: 4
     <a href="https://vbsmate.com/events/ChristLutheranMHK/30999#about" target="_blank" class="inline-block mt-4 bg-liturgical-red hover:bg-liturgical-burgundy text-white !text-white px-4 py-2 rounded font-cinzel transition-colors">Register for VBS →</a>
   </div>
   <div>
-    <img src="/src/assets/images/2025vbs.png" alt="Vacation Bible School 2025" class="mx-auto w-full max-w-md md:max-w-lg mb-6" />
+    <img src="/2025vbs.png" alt="Vacation Bible School 2025" class="mx-auto w-full max-w-md md:max-w-lg mb-6" />
      
   </div>
 </div>
