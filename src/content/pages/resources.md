@@ -15,12 +15,13 @@ order: 6
 - **<a href="https://www.lutheranliturgy.org/" target="_blank">Evangelical-Lutheran Liturgical Congregations</a>** - Find other confessional, liturgical Lutheran congregations to attend when traveling
 - **<a href="https://thebookofconcord.org/" target="_blank">The Book of Concord (1580)</a>** - The Lutheran Confessions
 
-### Christ Lutheran Church Online
+### Christ Lutheran Church & Related Online
 
 - **<a href="https://www.facebook.com/people/Christ-Lutheran-Church-Missouri-Synod/100064606092871/" target="_blank">Christ Lutheran Church Facebook Page</a>**
 - **<a href="https://www.christclassicalmanhattan.org" target="_blank">Christ Classical Academy Website</a>**
 - **<a href="https://www.facebook.com/people/Christ-Classical-Academy-Manhattan-KS/61572215054968/" target="_blank">Christ Classical Academy Facebook Page</a>**
 - **<a href="https://www.youtube.com/@jwoelmer" target="_blank">Pastor Woelmer's Bible Study YouTube Channel</a>**
+- **<a href="https://www.facebook.com/LcmsUAtKansasStateUniversity/" target="_blank">LCMS U at Kansas State University (K-State)</a>**
 
 ## Media
 
