@@ -48,7 +48,7 @@ const siteUrl = Astro.site ? Astro.site.toString() : '';
 const canonicalUrl = siteUrl ? `${siteUrl}/sermons/${sermon.data.slug}/` : undefined;
 const metaDescription = sermon.data.title + (sermon.data.series ? ` | ${sermon.data.series}` : '') + ' - Sermon at Christ Lutheran Church, Manhattan, KS.';
 ---
-<PageLayout title={sermon.data.title} description={sermon.data.title}>
+<PageLayout title={sermon.data.title} description={sermon.data.description}>
   <Fragment slot="head">
     <meta name="description" content={metaDescription} />
     <meta property="og:title" content={`${sermon.data.title} | Christ Lutheran Church Manhattan KS`} />
