@@ -39,11 +39,64 @@ const pageSize = 10;
 const totalPages = Math.ceil(sortedSermons.length / pageSize);
 const page = Number(Astro.url.searchParams.get('page') || 1);
 const paginatedSermons = sortedSermons.slice((page - 1) * pageSize, page * pageSize);
+
+const siteUrl = Astro.site ? Astro.site.toString() : '';
+const canonicalUrl = siteUrl ? `${siteUrl}/sermons${page > 1 ? `?page=${page}` : ''}` : undefined;
+const metaDescription = 'Listen to and read sermons from Christ Lutheran Church, Manhattan, KS. Explore our archive of Gospel-centered preaching.';
 ---
 <Layout title="Sermons">
+  <Fragment slot="head">
+    <meta name="description" content={metaDescription} />
+    <meta property="og:title" content="Sermons | Christ Lutheran Church Manhattan KS" />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:type" content="website" />
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <meta name="robots" content="index, follow" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sermons | Christ Lutheran Church Manhattan KS" />
+    <meta name="twitter:description" content={metaDescription} />
+    <script type="application/ld+json">{JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: 'Sermons',
+      description: metaDescription,
+      url: canonicalUrl,
+      mainEntity: paginatedSermons.map(sermon => ({
+        '@type': 'CreativeWork',
+        name: sermon.data.title,
+        url: `${siteUrl}/sermons/${sermon.data.slug}/`,
+        datePublished: sermon.data.date instanceof Date ? sermon.data.date.toISOString().split('T')[0] : sermon.data.date,
+        author: sermon.data.preacher || sermon.data.pastor || 'Unknown',
+        about: sermon.data.series || undefined,
+      }))
+    })}</script>
+  </Fragment>
   <section class="py-16 bg-white text-liturgical-black">
     <div class="container mx-auto px-4">
       <h1 class="font-cinzel text-3xl md:text-4xl mb-8 text-center">Sermons</h1>
+      <div class="flex flex-col items-center mb-10">
+        <div class="font-cinzel text-lg mb-2 text-liturgical-black">Listen On</div>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="https://podcasts.apple.com/us/podcast/christ-lutheran-church-manhattan-ks/id1820822361" target="_blank" rel="noopener" title="Apple Podcasts" class="hover:scale-110 transition-transform">
+            <img src="/src/assets/images/apple.svg" alt="Apple Podcasts" class="w-8 h-8" />
+          </a>
+          <a href="https://music.amazon.com/podcasts/92f71b50-b4ba-4e71-b727-e4fe1ca4c5ac" target="_blank" rel="noopener" title="Amazon Music" class="hover:scale-110 transition-transform">
+            <img src="/src/assets/images/amazonmusic.svg" alt="Amazon Music" class="w-8 h-8" />
+          </a>
+          <a href="https://christlutheranmanhattan.podbean.com/" target="_blank" rel="noopener" title="Amazon Music" class="hover:scale-110 transition-transform">
+            <img src="/src/assets/images/podbean.svg" alt="Podbean" class="w-8 h-8" />
+          </a>
+          <a href="#" rel="noopener" title="Spotify" class="hover:scale-110 transition-transform">
+            <img src="/src/assets/images/spotify.svg" alt="Spotify" class="w-8 h-8" />
+          </a>
+          <a href="https://www.youtube.com/@ChristLutheranManhattan" target="_blank" rel="noopener" title="YouTube" class="hover:scale-110 transition-transform">
+            <img src="/src/assets/images/youtube.svg" alt="YouTube" class="w-8 h-8" />
+          </a>
+          <a href="https://feed.podbean.com/christlutheranmanhattan/feed.xml" target="_blank" rel="noopener" title="YouTube" class="hover:scale-110 transition-transform">
+            <img src="/src/assets/images/rss.svg" alt="RSS" class="w-8 h-8" />
+          </a>
+        </div>
+      </div>
       <div class="space-y-6 mb-12 flex flex-col items-center">
         {paginatedSermons.map(sermon => (
           <a href={`/sermons/${sermon.data.slug}/`} class="w-full max-w-[600px] flex items-center bg-liturgical-cream rounded-lg shadow hover:shadow-lg transition-shadow border border-liturgical-red/10 hover:border-liturgical-red/30 p-4 md:p-6 gap-4 md:gap-8 group">

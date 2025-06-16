@@ -43,8 +43,34 @@ if (!sermon) {
   throw new Error('Sermon not found');
 }
 const { Content } = await sermon.render();
+
+const siteUrl = Astro.site ? Astro.site.toString() : '';
+const canonicalUrl = siteUrl ? `${siteUrl}/sermons/${sermon.data.slug}/` : undefined;
+const metaDescription = sermon.data.title + (sermon.data.series ? ` | ${sermon.data.series}` : '') + ' - Sermon at Christ Lutheran Church, Manhattan, KS.';
 ---
 <Layout title={sermon.data.title} description={sermon.data.title}>
+  <Fragment slot="head">
+    <meta name="description" content={metaDescription} />
+    <meta property="og:title" content={`${sermon.data.title} | Christ Lutheran Church Manhattan KS`} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:type" content="article" />
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <meta name="robots" content="index, follow" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${sermon.data.title} | Christ Lutheran Church Manhattan KS`} />
+    <meta name="twitter:description" content={metaDescription} />
+    <script type="application/ld+json">{JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Sermon',
+      name: sermon.data.title,
+      description: metaDescription,
+      url: canonicalUrl,
+      datePublished: sermon.data.date instanceof Date ? sermon.data.date.toISOString().split('T')[0] : sermon.data.date,
+      author: sermon.data.preacher || sermon.data.pastor || 'Unknown',
+      about: sermon.data.series || undefined,
+      text: undefined,
+    })}</script>
+  </Fragment>
   <section class="py-16 bg-white text-liturgical-black">
     <div class="container mx-auto px-4 max-w-3xl">
       <h1 class="font-cinzel text-3xl md:text-4xl mb-4 text-liturgical-red">{sermon.data.title}</h1>
