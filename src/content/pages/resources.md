@@ -20,10 +20,17 @@ order: 6
 - **<a href="https://www.facebook.com/people/Christ-Lutheran-Church-Missouri-Synod/100064606092871/" target="_blank">Christ Lutheran Church Facebook Page</a>**
 - **<a href="https://www.christclassicalmanhattan.org" target="_blank">Christ Classical Academy Website</a>**
 - **<a href="https://www.facebook.com/people/Christ-Classical-Academy-Manhattan-KS/61572215054968/" target="_blank">Christ Classical Academy Facebook Page</a>**
-- **<a href="https://www.youtube.com/@jwoelmer" target="_blank">Pastor Woelmer's Bible Study YouTube Channel</a>**
 - **<a href="https://www.facebook.com/LcmsUAtKansasStateUniversity/" target="_blank">LCMS U at Kansas State University (K-State)</a>**
 
 ## Media
+
+### Christ Lutheran Church Sermons & More
+
+- **<a href="https://podcasts.apple.com/us/podcast/christ-lutheran-church-manhattan-ks/id1820822361" target="_blank" rel="noopener" title="Apple Podcasts">Apple Podcasts</a>**
+- **<a href="https://music.amazon.com/podcasts/92f71b50-b4ba-4e71-b727-e4fe1ca4c5ac" target="_blank" rel="noopener" title="Amazon Music">Amazon Music</a>**
+- **<a href="https://christlutheranmanhattan.podbean.com/" target="_blank" rel="noopener" title="Podbean">Podbean</a>**
+- **<a href="https://open.spotify.com/show/6BvV5xhO1bsqMRKgOHchbv" target="_blank" rel="noopener" title="Spotify">Spotify</a>**
+- **<a href="https://www.youtube.com/@ChristLutheranManhattan" target="_blank" rel="noopener" title="YouTube">YouTube</a>**
 
 ### Podcasts
 - **<a href="https://issuesetc.org/" target="_blank">Issues, Etc.</a>** - Podcast featuring expert guests in theology, Biblical interpretation, apologetics, ethics, philosophy, law and culture
