@@ -1,6 +1,6 @@
 ---
 import { getEntryBySlug, getCollection } from 'astro:content';
-import Layout from '../../layouts/Layout.astro';
+import PageLayout from '../../layouts/PageLayout.astro';
 
 function formatSermonDate(dateInput) {
   let date;
@@ -48,7 +48,7 @@ const siteUrl = Astro.site ? Astro.site.toString() : '';
 const canonicalUrl = siteUrl ? `${siteUrl}/sermons/${sermon.data.slug}/` : undefined;
 const metaDescription = sermon.data.title + (sermon.data.series ? ` | ${sermon.data.series}` : '') + ' - Sermon at Christ Lutheran Church, Manhattan, KS.';
 ---
-<Layout title={sermon.data.title} description={sermon.data.title}>
+<PageLayout title={sermon.data.title} description={sermon.data.title}>
   <Fragment slot="head">
     <meta name="description" content={metaDescription} />
     <meta property="og:title" content={`${sermon.data.title} | Christ Lutheran Church Manhattan KS`} />
@@ -71,9 +71,8 @@ const metaDescription = sermon.data.title + (sermon.data.series ? ` | ${sermon.d
       text: undefined,
     })}</script>
   </Fragment>
-  <section class="py-16 bg-white text-liturgical-black">
+  <section class="py-4 bg-white text-liturgical-black">
     <div class="container mx-auto px-4 max-w-3xl">
-      <h1 class="font-cinzel text-3xl md:text-4xl mb-4 text-liturgical-red">{sermon.data.title}</h1>
       <div class="mb-2 text-sm text-liturgical-burgundy">{formatSermonDate(sermon.data.date)}</div>
       <div class="mb-2 text-sm text-liturgical-black">Pastor: {sermon.data.pastor}</div>
       {sermon.data.series && <div class="mb-2 text-xs text-liturgical-gold">Series: {sermon.data.series}</div>}
@@ -86,4 +85,4 @@ const metaDescription = sermon.data.title + (sermon.data.series ? ` | ${sermon.d
       </div>
     </div>
   </section>
-</Layout>
+</PageLayout>
