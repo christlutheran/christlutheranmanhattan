@@ -4,18 +4,79 @@ import HomeHero from '../components/HomeHero.astro';
 import HomeFeatures from '../components/HomeFeatures.astro';
 import WelcomeSection from '../components/home/WelcomeSection.astro';
 import { churchConfig } from '../config/church';
+import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import pastorImage from '../assets/images/pastor.jpg';
----
 
+const sermons = await getCollection('sermons');
+const sortedSermons = sermons.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+const latestSermon = sortedSermons[0];
+
+function formatSermonDate(dateInput) {
+  let date;
+  if (dateInput instanceof Date) {
+    date = dateInput;
+  } else if (typeof dateInput === 'string') {
+    const [year, month, day] = dateInput.split('-').map(Number);
+    date = new Date(Date.UTC(year, month - 1, day));
+  } else {
+    return '';
+  }
+  const dayNum = date.getUTCDate();
+  const daySuffix = (d) => {
+    if (d > 3 && d < 21) return 'th';
+    switch (d % 10) {
+      case 1: return 'st';
+      case 2: return 'nd';
+      case 3: return 'rd';
+      default: return 'th';
+    }
+  };
+  return date.toLocaleDateString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'UTC',
+  }).replace(/(\d{1,2})(,)/, (m, d, c) => `${d}${daySuffix(Number(d))}${c}`);
+}
+---
 <Layout title="Historic Worship and Teaching">
   <HomeHero />
   <HomeFeatures />
-  <WelcomeSection 
-    image="/src/assets/images/altar.jpg"
-    imageAlt="Christ Lutheran Church Sanctuary"
-  />
-  
+  <WelcomeSection image="/src/assets/images/altar.jpg" imageAlt="Christ Lutheran Church Sanctuary" />
+
+  {latestSermon && (
+    <section class="py-12 bg-white text-liturgical-black">
+      <div class="container mx-auto px-4">
+        <h2 class="font-cinzel text-2xl md:text-3xl font-bold text-center mb-8 text-liturgical-red drop-shadow-sm tracking-tight">Latest Sermon</h2>
+        <div class="max-w-3xl mx-auto rounded-2xl shadow-xl border border-liturgical-red/20 bg-liturgical-cream flex flex-col md:flex-row items-center gap-6 md:gap-10 p-6 md:p-10">
+          <div class="flex-shrink-0 w-24 h-24 md:w-36 md:h-36 rounded-xl overflow-hidden bg-white border border-liturgical-red/20 flex items-center justify-center">
+            <img src="/logo_sm.jpg" alt="Sermon Thumbnail" class="object-cover w-full h-full rounded-xl" />
+          </div>
+          <div class="flex-1 min-w-0 flex flex-col gap-2">
+            <div class="font-cinzel text-lg md:text-2xl text-liturgical-red font-bold leading-tight truncate">{latestSermon.data.title}</div>
+            <div class="flex flex-wrap gap-3 items-center text-sm md:text-base font-crimson text-liturgical-black/80">
+              <span>{formatSermonDate(latestSermon.data.date)}</span>
+              <span>•</span>
+              <span>{latestSermon.data.pastor}</span>
+            </div>
+            {(latestSermon.data.series || latestSermon.data.scripture) && (
+              <div class="flex flex-wrap gap-3 items-center text-xs md:text-sm text-liturgical-gold font-semibold">
+                {latestSermon.data.series && <span>{latestSermon.data.series}</span>}
+                {latestSermon.data.series && latestSermon.data.scripture && <span>|</span>}
+                {latestSermon.data.scripture && <span class="text-liturgical-black font-normal">{latestSermon.data.scripture}</span>}
+              </div>
+            )}
+            <a href={`/sermons/${latestSermon.data.slug}/`} class="inline-block mt-3 px-6 py-2 rounded font-cinzel bg-liturgical-red text-white hover:bg-liturgical-burgundy transition-colors text-base md:text-lg shadow-md font-semibold w-fit">
+              Read & Listen →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
   <section class="py-16 bg-liturgical-red text-white">
     <div class="container mx-auto px-4">
       <div class="max-w-6xl mx-auto">
