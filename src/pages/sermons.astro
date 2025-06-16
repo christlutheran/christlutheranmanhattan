@@ -77,29 +77,7 @@ const metaDescription = 'Listen to and read sermons from Christ Lutheran Church,
   </Fragment>
   <section class="py-16 bg-white text-liturgical-black">
     <div class="container mx-auto px-4">
-      <div class="flex flex-col items-center">
-        <div class="font-cinzel text-lg mb-2 text-liturgical-black">Listen On</div>
-        <div class="flex flex-wrap gap-4 justify-center listen-on-icons">
-          <a href="https://podcasts.apple.com/us/podcast/christ-lutheran-church-manhattan-ks/id1820822361" target="_blank" rel="noopener" title="Apple Podcasts">
-            <img src="/src/assets/images/apple.svg" alt="Apple Podcasts" class="w-8 h-8" />
-          </a>
-          <a href="https://music.amazon.com/podcasts/92f71b50-b4ba-4e71-b727-e4fe1ca4c5ac" target="_blank" rel="noopener" title="Amazon Music">
-            <img src="/src/assets/images/amazonmusic.svg" alt="Amazon Music" class="w-8 h-8" />
-          </a>
-          <a href="https://christlutheranmanhattan.podbean.com/" target="_blank" rel="noopener" title="Amazon Music">
-            <img src="/src/assets/images/podbean.svg" alt="Podbean" class="w-8 h-8" />
-          </a>
-          <a href="#" rel="noopener" title="Spotify">
-            <img src="/src/assets/images/spotify.svg" alt="Spotify" class="w-8 h-8" />
-          </a>
-          <a href="https://www.youtube.com/@ChristLutheranManhattan" target="_blank" rel="noopener" title="YouTube">
-            <img src="/src/assets/images/youtube.svg" alt="YouTube" class="w-8 h-8" />
-          </a>
-          <a href="https://feed.podbean.com/christlutheranmanhattan/feed.xml" target="_blank" rel="noopener" title="YouTube">
-            <img src="/src/assets/images/rss.svg" alt="RSS" class="w-8 h-8" />
-          </a>
-        </div>
-      </div>
+      
       <div class="sermon-list">
         {paginatedSermons.map(sermon => (
           <a href={`/sermons/${sermon.data.slug}/`} class="sermon-modern-card" tabindex="0">
@@ -125,15 +103,50 @@ const metaDescription = 'Listen to and read sermons from Christ Lutheran Church,
           </a>
         ))}
       </div>
-      <div class="flex justify-center gap-2 mt-8">
-        {Array.from({ length: totalPages }, (_, i) => (
-          <a
-            href={`?page=${i + 1}`}
-            class={`sermon-pagination-btn${page === i + 1 ? ' active' : ''}`}
-          >
-            {i + 1}
+
+      
+
+      <div class="flex justify-center gap-2 mt-8 mb-10">
+        {Array.from({ length: totalPages }, (_, i) => {
+          const pageNum = i + 1;
+          const isActive = page === pageNum;
+          return (
+            <a
+              href={pageNum === 1 ? '/sermons' : `/sermons?page=${pageNum}`}
+              class={`sermon-pagination-btn${isActive ? ' active' : ''}`}
+              rel={isActive ? 'nofollow' : undefined}
+              aria-current={isActive ? 'page' : undefined}
+            >
+              {pageNum}
+            </a>
+          );
+        })}
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="font-cinzel text-lg text-liturgical-black mb-2">Listen On</div>
+        <div class="flex flex-wrap gap-4 justify-center listen-on-icons">
+          <a href="https://podcasts.apple.com/us/podcast/christ-lutheran-church-manhattan-ks/id1820822361" target="_blank" rel="noopener" title="Apple Podcasts">
+            <img src="/src/assets/images/apple.svg" alt="Apple Podcasts" class="w-8 h-8" />
           </a>
-        ))}
+          <a href="https://music.amazon.com/podcasts/92f71b50-b4ba-4e71-b727-e4fe1ca4c5ac" target="_blank" rel="noopener" title="Amazon Music">
+            <img src="/src/assets/images/amazonmusic.svg" alt="Amazon Music" class="w-8 h-8" />
+          </a>
+          <a href="https://christlutheranmanhattan.podbean.com/" target="_blank" rel="noopener" title="Amazon Music">
+            <img src="/src/assets/images/podbean.svg" alt="Podbean" class="w-8 h-8" />
+          </a>
+          <!--
+          <a href="#" rel="noopener" title="Spotify">
+            <img src="/src/assets/images/spotify.svg" alt="Spotify" class="w-8 h-8" />
+          </a>
+          -->
+          <a href="https://www.youtube.com/@ChristLutheranManhattan" target="_blank" rel="noopener" title="YouTube">
+            <img src="/src/assets/images/youtube.svg" alt="YouTube" class="w-8 h-8" />
+          </a>
+          <a href="https://feed.podbean.com/christlutheranmanhattan/feed.xml" target="_blank" rel="noopener" title="YouTube">
+            <img src="/src/assets/images/rss.svg" alt="RSS" class="w-8 h-8" />
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -156,6 +169,8 @@ const metaDescription = 'Listen to and read sermons from Christ Lutheran Church,
       border: none !important;
       background: none !important;
       box-shadow: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
       display: inline-block;
     }
     .sermon-list {
