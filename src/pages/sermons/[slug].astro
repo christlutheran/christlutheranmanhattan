@@ -1,0 +1,63 @@
+---
+import { getEntryBySlug, getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+function formatSermonDate(dateInput) {
+  let date;
+  if (dateInput instanceof Date) {
+    date = dateInput;
+  } else if (typeof dateInput === 'string') {
+    // Parse as UTC
+    const [year, month, day] = dateInput.split('-').map(Number);
+    date = new Date(Date.UTC(year, month - 1, day));
+  } else {
+    return '';
+  }
+  const dayNum = date.getUTCDate();
+  const daySuffix = (d) => {
+    if (d > 3 && d < 21) return 'th';
+    switch (d % 10) {
+      case 1: return 'st';
+      case 2: return 'nd';
+      case 3: return 'rd';
+      default: return 'th';
+    }
+  };
+  return date.toLocaleDateString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'UTC',
+  }).replace(/(\d{1,2})(,)/, (m, d, c) => `${d}${daySuffix(Number(d))}${c}`);
+}
+
+export async function getStaticPaths() {
+  const sermons = await getCollection('sermons');
+  return sermons.map((sermon) => ({ params: { slug: sermon.slug } }));
+}
+
+const { slug } = Astro.params;
+const sermon = await getEntryBySlug('sermons', slug);
+if (!sermon) {
+  throw new Error('Sermon not found');
+}
+const { Content } = await sermon.render();
+---
+<Layout title={sermon.data.title} description={sermon.data.title}>
+  <section class="py-16 bg-white text-liturgical-black">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <h1 class="font-cinzel text-3xl md:text-4xl mb-4 text-liturgical-red">{sermon.data.title}</h1>
+      <div class="mb-2 text-sm text-liturgical-burgundy">{formatSermonDate(sermon.data.date)}</div>
+      <div class="mb-2 text-sm text-liturgical-black">Pastor: {sermon.data.pastor}</div>
+      {sermon.data.series && <div class="mb-2 text-xs text-liturgical-gold">Series: {sermon.data.series}</div>}
+      {sermon.data.scripture && <div class="mb-4 text-xs text-liturgical-black">Text: {sermon.data.scripture}</div>}
+      <article class="prose prose-lg max-w-none">
+        <Content />
+      </article>
+      <div class="mt-8">
+        <a href="/sermons" class="text-liturgical-red hover:underline font-cinzel">← Back to Sermons</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -10,6 +10,19 @@ const pages = defineCollection({
   }),
 });
 
+const sermons = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    date: z.date(),
+    slug: z.string(),
+    preacher: z.string(),
+    series: z.string().optional(),
+    scripture: z.string().optional(),
+  }),
+});
+
 export const collections = {
   pages,
+  sermons,
 };

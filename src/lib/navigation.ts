@@ -20,7 +20,14 @@ export const navItems: NavItem[] = [
       { title: 'Vacation Bible School', path: '/vacation-bible-school/' },
     ]
   },
-  { title: 'Resources', path: '/resources/' },
+  { 
+    title: 'Resources', 
+    path: '/resources/',
+    children: [
+      { title: 'Sermons', path: '/sermons/' },
+      { title: 'Lutheran Resources', path: '/resources/' },
+    ]
+  },
   { title: 'Giving', path: '/giving/' },
   { title: 'Contact', path: '/contact/' },
   { title: 'School', path: 'https://www.christclassicalmanhattan.org', target: '_blank' }

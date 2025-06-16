@@ -1,0 +1,73 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+function formatSermonDate(dateInput) {
+  let date;
+  if (dateInput instanceof Date) {
+    date = dateInput;
+  } else if (typeof dateInput === 'string') {
+    // Parse as UTC
+    const [year, month, day] = dateInput.split('-').map(Number);
+    date = new Date(Date.UTC(year, month - 1, day));
+  } else {
+    return '';
+  }
+  const dayNum = date.getUTCDate();
+  const daySuffix = (d) => {
+    if (d > 3 && d < 21) return 'th';
+    switch (d % 10) {
+      case 1: return 'st';
+      case 2: return 'nd';
+      case 3: return 'rd';
+      default: return 'th';
+    }
+  };
+  return date.toLocaleDateString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'UTC',
+  }).replace(/(\d{1,2})(,)/, (m, d, c) => `${d}${daySuffix(Number(d))}${c}`);
+}
+
+const sermons = await getCollection('sermons');
+const sortedSermons = sermons.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+
+const pageSize = 10;
+const totalPages = Math.ceil(sortedSermons.length / pageSize);
+const page = Number(Astro.url.searchParams.get('page') || 1);
+const paginatedSermons = sortedSermons.slice((page - 1) * pageSize, page * pageSize);
+---
+<Layout title="Sermons">
+  <section class="py-16 bg-white text-liturgical-black">
+    <div class="container mx-auto px-4">
+      <h1 class="font-cinzel text-3xl md:text-4xl mb-8 text-center">Sermons</h1>
+      <div class="space-y-6 mb-12 flex flex-col items-center">
+        {paginatedSermons.map(sermon => (
+          <a href={`/sermons/${sermon.data.slug}/`} class="w-full max-w-[600px] flex items-center bg-liturgical-cream rounded-lg shadow hover:shadow-lg transition-shadow border border-liturgical-red/10 hover:border-liturgical-red/30 p-4 md:p-6 gap-4 md:gap-8 group">
+            <img src="/src/assets/images/logo_sm.jpg" alt="Sermon Thumbnail" class="w-20 h-20 md:w-28 md:h-28 object-cover rounded-lg flex-shrink-0 border border-liturgical-red/20 group-hover:border-liturgical-red/40 transition-all" />
+            <div class="flex-1 min-w-0">
+              <h2 class="font-cinzel text-xl md:text-2xl text-liturgical-red mb-1 truncate">{sermon.data.title}</h2>
+              <div class="text-sm text-liturgical-burgundy mb-1">{formatSermonDate(sermon.data.date)}</div>
+              <div class="text-sm text-liturgical-black mb-1">{sermon.data.pastor}</div>
+              {sermon.data.series && <div class="text-xs text-liturgical-gold mb-1">Series: {sermon.data.series}</div>}
+              {sermon.data.scripture && <div class="text-xs text-liturgical-black">Text: {sermon.data.scripture}</div>}
+            </div>
+          </a>
+        ))}
+      </div>
+      <div class="flex justify-center gap-2">
+        {Array.from({ length: totalPages }, (_, i) => (
+          <a
+            href={`?page=${i + 1}`}
+            class={`px-3 py-1 rounded font-cinzel border transition-colors ${page === i + 1 ? 'bg-liturgical-red text-white border-liturgical-red' : 'bg-white text-liturgical-red border-liturgical-red/30 hover:bg-liturgical-cream'}`}
+          >
+            {i + 1}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
