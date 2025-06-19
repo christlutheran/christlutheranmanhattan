@@ -80,27 +80,32 @@ const metaDescription = 'Listen to and read sermons from Christ Lutheran Church,
       
       <div class="sermon-list">
         {paginatedSermons.map(sermon => (
-          <a href={`/sermons/${sermon.data.slug}/`} class="sermon-modern-card" tabindex="0">
-            <div class="sermon-modern-card-img-wrap">
-              <img src="/logo_sm.jpg" alt="Sermon Thumbnail" class="sermon-modern-card-img" />
+          <div class="max-w-3xl w-full mx-auto rounded-2xl shadow-xl border border-liturgical-red/20 bg-liturgical-cream flex flex-col md:flex-row items-center gap-6 md:gap-10 p-6 md:p-10 mb-8" key={sermon.data.slug}>
+            <div class="flex-shrink-0 w-24 h-24 md:w-36 md:h-36 rounded-xl overflow-hidden bg-white border border-liturgical-red/20 flex items-center justify-center">
+              <img src="/logo_sm.jpg" alt="Sermon Thumbnail" class="object-cover w-full h-full rounded-xl" />
             </div>
-            <div class="sermon-modern-card-content">
-              <div class="sermon-modern-title">{sermon.data.title}</div>
-              <div class="sermon-modern-meta">
+            <div class="flex-1 min-w-0 flex flex-col gap-2">
+              <div class="font-cinzel text-lg md:text-2xl text-liturgical-red font-bold leading-tight truncate">{sermon.data.title}</div>
+              <div class="flex flex-wrap gap-3 items-center text-sm md:text-base font-crimson text-liturgical-black/80">
                 <span>{formatSermonDate(sermon.data.date)}</span>
                 <span>•</span>
                 <span>{sermon.data.pastor}</span>
               </div>
               {(sermon.data.series || sermon.data.scripture) && (
-                <div class="sermon-modern-extra">
-                  {sermon.data.series && <span class="sermon-modern-series">{sermon.data.series}</span>}
-                  {sermon.data.series && sermon.data.scripture && <span class="mx-2">|</span>}
-                  {sermon.data.scripture && <span class="sermon-modern-scripture">{sermon.data.scripture}</span>}
+                <div class="flex flex-wrap gap-3 items-center text-xs md:text-sm text-liturgical-gold font-semibold">
+                  {sermon.data.series && <span>{sermon.data.series}</span>}
+                  {sermon.data.series && sermon.data.scripture && <span>|</span>}
+                  {sermon.data.scripture && <span class="text-liturgical-black font-normal">{sermon.data.scripture}</span>}
                 </div>
               )}
+              <a
+                href={`/sermons/${sermon.data.slug}/`}
+                class="inline-block mt-3 px-6 py-2 rounded font-cinzel bg-liturgical-red text-white !text-white hover:bg-liturgical-burgundy transition-colors text-base md:text-lg shadow-md font-semibold w-fit"
+              >
+                Read & Listen →
+              </a>
             </div>
-            <span class="sermon-modern-arrow">→</span>
-          </a>
+          </div>
         ))}
       </div>
 
