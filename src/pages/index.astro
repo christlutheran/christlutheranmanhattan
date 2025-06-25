@@ -56,6 +56,7 @@ function formatSermonDate(dateInput) {
           </div>
           <div class="flex-1 min-w-0 flex flex-col gap-2">
             <div class="font-cinzel text-lg md:text-2xl text-liturgical-red font-bold leading-tight truncate">{latestSermon.data.title}</div>
+            <div class="font-cinzel text-lg md:text-xl text-liturgical-red font-bold leading-tight truncate">{latestSermon.data.theme}</div>
             <div class="flex flex-wrap gap-3 items-center text-sm md:text-base font-crimson text-liturgical-black/80">
               <span>{formatSermonDate(latestSermon.data.date)}</span>
               <span>•</span>
@@ -63,8 +64,6 @@ function formatSermonDate(dateInput) {
             </div>
             {(latestSermon.data.series || latestSermon.data.scripture) && (
               <div class="flex flex-wrap gap-3 items-center text-xs md:text-sm text-liturgical-gold font-semibold">
-                {latestSermon.data.series && <span>{latestSermon.data.series}</span>}
-                {latestSermon.data.series && latestSermon.data.scripture && <span>|</span>}
                 {latestSermon.data.scripture && <span class="text-liturgical-black font-normal">{latestSermon.data.scripture}</span>}
               </div>
             )}

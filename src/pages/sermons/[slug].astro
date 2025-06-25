@@ -46,7 +46,7 @@ const { Content } = await sermon.render();
 
 const siteUrl = Astro.site ? Astro.site.toString() : '';
 const canonicalUrl = siteUrl ? `${siteUrl}/sermons/${sermon.data.slug}/` : undefined;
-const metaDescription = sermon.data.title + (sermon.data.series ? ` | ${sermon.data.series}` : '') + ' - Sermon at Christ Lutheran Church, Manhattan, KS.';
+const metaDescription = sermon.data.title + (sermon.data.theme ? ` | ${sermon.data.theme}` : '') + ' - Sermon at Christ Lutheran Church, Manhattan, KS.';
 ---
 <PageLayout title={sermon.data.title} description={sermon.data.description}>
   <Fragment slot="head">
@@ -67,15 +67,15 @@ const metaDescription = sermon.data.title + (sermon.data.series ? ` | ${sermon.d
       url: canonicalUrl,
       datePublished: sermon.data.date instanceof Date ? sermon.data.date.toISOString().split('T')[0] : sermon.data.date,
       author: sermon.data.preacher || sermon.data.pastor || 'Unknown',
-      about: sermon.data.series || undefined,
+      about: sermon.data.theme || undefined,
       text: undefined,
     })}</script>
   </Fragment>
   <section class="py-4 bg-white text-liturgical-black">
     <div class="container mx-auto px-4 max-w-3xl">
+      <div class="font-cinzel text-lg md:text-2xl text-liturgical-red font-bold leading-tight">{sermon.data.theme}</div>
       <div class="mb-2 text-sm text-liturgical-burgundy">{formatSermonDate(sermon.data.date)}</div>
       <div class="mb-2 text-sm text-liturgical-black">Pastor: {sermon.data.pastor}</div>
-      {sermon.data.series && <div class="mb-2 text-xs text-liturgical-gold">Series: {sermon.data.series}</div>}
       {sermon.data.scripture && <div class="mb-4 text-xs text-liturgical-black">Text: {sermon.data.scripture}</div>}
       <article class="prose prose-lg max-w-none">
         <Content />

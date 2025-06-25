@@ -71,7 +71,7 @@ const metaDescription = 'Listen to and read sermons from Christ Lutheran Church,
         url: `${siteUrl}/sermons/${sermon.data.slug}/`,
         datePublished: sermon.data.date instanceof Date ? sermon.data.date.toISOString().split('T')[0] : sermon.data.date,
         author: sermon.data.preacher || sermon.data.pastor || 'Unknown',
-        about: sermon.data.series || undefined,
+        about: sermon.data.theme || undefined,
       }))
     })}</script>
   </Fragment>
@@ -85,16 +85,15 @@ const metaDescription = 'Listen to and read sermons from Christ Lutheran Church,
               <img src="/logo_sm.jpg" alt="Sermon Thumbnail" class="object-cover w-full h-full rounded-xl" />
             </div>
             <div class="flex-1 min-w-0 flex flex-col gap-2">
-              <div class="font-cinzel text-lg md:text-2xl text-liturgical-red font-bold leading-tight truncate">{sermon.data.title}</div>
+              <div class="font-cinzel text-lg md:text-2xl text-liturgical-red font-bold leading-tight">{sermon.data.title}</div>
+              <div class="font-cinzel text-lg md:text-xl text-liturgical-red font-bold leading-tight">{sermon.data.theme}</div>
               <div class="flex flex-wrap gap-3 items-center text-sm md:text-base font-crimson text-liturgical-black/80">
                 <span>{formatSermonDate(sermon.data.date)}</span>
                 <span>•</span>
                 <span>{sermon.data.pastor}</span>
               </div>
-              {(sermon.data.series || sermon.data.scripture) && (
+              {(sermon.data.theme || sermon.data.scripture) && (
                 <div class="flex flex-wrap gap-3 items-center text-xs md:text-sm text-liturgical-gold font-semibold">
-                  {sermon.data.series && <span>{sermon.data.series}</span>}
-                  {sermon.data.series && sermon.data.scripture && <span>|</span>}
                   {sermon.data.scripture && <span class="text-liturgical-black font-normal">{sermon.data.scripture}</span>}
                 </div>
               )}
@@ -293,7 +292,7 @@ const metaDescription = 'Listen to and read sermons from Christ Lutheran Church,
       opacity: 0.85;
       align-items: center;
     }
-    .sermon-modern-series {
+    .sermon-modern-theme {
       color: var(--color-liturgical-gold, #bfa14a);
       font-weight: 600;
     }

@@ -17,7 +17,7 @@ const sermons = defineCollection({
     date: z.date(),
     slug: z.string(),
     preacher: z.string(),
-    series: z.string().optional(),
+    theme: z.string().optional(),
     scripture: z.string().optional(),
   }),
 });
