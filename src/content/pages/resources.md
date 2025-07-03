@@ -14,6 +14,7 @@ order: 6
 - **<a href="https://www.cph.org" target="_blank">CPH</a>** - Concordia Publishing House
 - **<a href="https://www.lutheranliturgy.org/" target="_blank">Evangelical-Lutheran Liturgical Congregations</a>** - Find other confessional, liturgical Lutheran congregations to attend when traveling
 - **<a href="https://thebookofconcord.org/" target="_blank">The Book of Concord (1580)</a>** - The Lutheran Confessions
+- **<a href="https://lectionary.christlutheranmanhattan.org" target="_blank">Lutheran Lectionary</a>** - Historic (One Year) Lutheran Lectionary with Daily Readings
 
 ### Christ Lutheran Church & Related Online
 

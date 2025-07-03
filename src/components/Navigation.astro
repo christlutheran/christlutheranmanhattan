@@ -36,7 +36,8 @@ const isCurrentPath = (path: string) => {
               ) : (
                 <NavLink 
                   href={item.path}
-                  target={item.target}
+                  target={item.target ? item.target : undefined}
+                  rel={item.target === '_blank' ? 'noopener noreferrer' : undefined}
                   isActive={isCurrentPath(item.path)}
                 >
                   {item.title}
@@ -76,6 +77,8 @@ const isCurrentPath = (path: string) => {
                       <li>
                         <NavLink 
                           href={child.path}
+                          target={child.target ? child.target : undefined}
+                          rel={child.target === '_blank' ? 'noopener noreferrer' : undefined}
                           isActive={isCurrentPath(child.path)}
                           class="block w-full py-2 px-6 font-cinzel text-sm hover:bg-white/5"
                         >
@@ -88,8 +91,9 @@ const isCurrentPath = (path: string) => {
               ) : (
                 <NavLink 
                   href={item.path}
+                  target={item.target ? item.target : undefined}
+                  rel={item.target === '_blank' ? 'noopener noreferrer' : undefined}
                   isActive={isCurrentPath(item.path)}
-                  target={item.target}
                   class="block w-full py-2 px-4 font-cinzel text-sm hover:bg-white/5"
                 >
                   {item.title}
