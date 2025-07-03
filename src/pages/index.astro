@@ -42,6 +42,41 @@ function formatSermonDate(dateInput) {
 }
 ---
 <Layout title="Historic Worship and Teaching">
+  <Fragment slot="head">
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Christ Lutheran Church Manhattan, KS",
+        "url": "https://www.christlutheranmanhattan.org",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.christlutheranmanhattan.org/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      })}
+    </script>
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Church",
+        "name": "Christ Lutheran Church",
+        "url": "https://www.christlutheranmanhattan.org",
+        "image": "https://www.christlutheranmanhattan.org/logo_sm.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4592 Green Valley Rd",
+          "addressLocality": "Manhattan",
+          "addressRegion": "KS",
+          "postalCode": "66502",
+          "addressCountry": "US"
+        },
+        "telephone": "(785) 776-2227",
+        "email": "christlutheran.mhk@gmail.com"
+      })}
+    </script>
+  </Fragment>
+
   <HomeHero />
   <HomeFeatures />
   <WelcomeSection image="/src/assets/images/altar.jpg" imageAlt="Christ Lutheran Church Sanctuary" />

@@ -23,8 +23,18 @@ if (typeof content === 'string') {
 
 const isPastorPage = title === "Our Pastor";
 const isAboutPage = title === "About Our Church";
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+// Social profile links for schema.org sameAs
+const socialProfiles = [
+  "https://www.facebook.com/people/Christ-Lutheran-Church-Missouri-Synod/100064606092871/",
+  "https://www.youtube.com/@ChristLutheranManhattan",
+  "https://open.spotify.com/show/6BvV5xhO1bsqMRKgOHchbv",
+  "https://christlutheranmanhattan.podbean.com/",
+  "https://podcasts.apple.com/us/podcast/christ-lutheran-church-manhattan-ks/id1820822361"
+];
 ---
 <Layout title={title} description={description}>
+  <meta name="robots" content="index, follow" />
   <PageHeader 
     title={title} 
     description={description}
@@ -191,3 +201,92 @@ const isAboutPage = title === "About Our Church";
     }
   }
 </style>
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Church",
+    "@id": canonicalURL.toString() + '#church',
+    "mainEntityOfPage": canonicalURL.toString(),
+    "inLanguage": "en",
+    "name": "Christ Lutheran Church",
+    "url": "https://www.christlutheranmanhattan.org",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.christlutheranmanhattan.org/logo_sm.jpg",
+      "width": 400,
+      "height": 400,
+      "caption": "Christ Lutheran Church logo"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4592 Green Valley Rd",
+      "addressLocality": "Manhattan",
+      "addressRegion": "KS",
+      "postalCode": "66502",
+      "addressCountry": "US"
+    },
+    "telephone": "(785) 776-2227",
+    "email": "christlutheran.mhk@gmail.com",
+    "sameAs": socialProfiles,
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "09:30",
+        "closes": "12:00",
+        "description": "Bible Study & Sunday School at 9:30 AM, Divine Service at 10:30 AM"
+      }
+    ],
+    "event": [
+      {
+        "@type": "Event",
+        "name": "Divine Service",
+        "eventSchedule": {
+          "@type": "Schedule",
+          "repeatFrequency": "P1W",
+          "byDay": "SU",
+          "startTime": "10:30",
+          "endTime": "11:45"
+        }
+      },
+      {
+        "@type": "Event",
+        "name": "Bible Study & Sunday School",
+        "eventSchedule": {
+          "@type": "Schedule",
+          "repeatFrequency": "P1W",
+          "byDay": "SU",
+          "startTime": "09:30",
+          "endTime": "10:15"
+        }
+      }
+    ]
+  })}
+</script>
+
+<!-- BreadcrumbList Structured Data -->
+<script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.christlutheranmanhattan.org/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": title,
+        "item": canonicalURL.toString()
+      }
+    ]
+  })}
+</script>

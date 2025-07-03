@@ -8,6 +8,17 @@ const icsUrl = "https://calendar.google.com/calendar/ical/c_8ab0516ed622252f3f8a
 const webcalUrl = icsUrl.replace(/^https?:\/\//, "webcal://");
 ---
 <Layout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": title,
+        "description": description,
+        "url": "https://www.christlutheranmanhattan.org/calendar/"
+      })}
+    </script>
+  </Fragment>
   <section class="py-16 bg-white text-liturgical-black">
     <div class="container mx-auto px-4">
       <h1 class="font-cinzel text-3xl md:text-4xl mb-6 text-center">Church Calendar</h1>

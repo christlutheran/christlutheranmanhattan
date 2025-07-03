@@ -58,6 +58,27 @@ const metaTitle = `${title} | Christ Lutheran Church Manhattan, KS`;
     
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Church",
+        "name": "Christ Lutheran Church",
+        "url": "https://www.christlutheranmanhattan.org",
+        "image": "https://www.christlutheranmanhattan.org/logo_sm.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4592 Green Valley Rd",
+          "addressLocality": "Manhattan",
+          "addressRegion": "KS",
+          "postalCode": "66502",
+          "addressCountry": "US"
+        },
+        "telephone": "(785) 776-2227",
+        "email": "christlutheran.mhk@gmail.com"
+      })}
+    </script>
     
     <!-- Standard favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

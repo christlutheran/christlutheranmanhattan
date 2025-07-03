@@ -59,21 +59,23 @@ const metaDescription = 'Listen to and read sermons from Christ Lutheran Church,
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Sermons | Christ Lutheran Church Manhattan KS" />
     <meta name="twitter:description" content={metaDescription} />
-    <script type="application/ld+json">{JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'CollectionPage',
-      name: 'Sermons',
-      description: metaDescription,
-      url: canonicalUrl,
-      mainEntity: paginatedSermons.map(sermon => ({
-        '@type': 'CreativeWork',
-        name: sermon.data.title,
-        url: `${siteUrl}/sermons/${sermon.data.slug}/`,
-        datePublished: sermon.data.date instanceof Date ? sermon.data.date.toISOString().split('T')[0] : sermon.data.date,
-        author: sermon.data.preacher || sermon.data.pastor || 'Unknown',
-        about: sermon.data.theme || undefined,
-      }))
-    })}</script>
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Sermons | Christ Lutheran Church Manhattan KS",
+        "description": metaDescription,
+        "url": canonicalUrl,
+        "mainEntity": paginatedSermons.map(sermon => ({
+          "@type": "Sermon",
+          "name": sermon.data.title,
+          "datePublished": sermon.data.date,
+          "author": sermon.data.pastor,
+          "about": sermon.data.theme || undefined,
+          "url": `${siteUrl}/sermons/${sermon.data.slug}/`
+        }))
+      })}
+    </script>
   </Fragment>
   <section class="py-16 bg-white text-liturgical-black">
     <div class="container mx-auto px-4">
