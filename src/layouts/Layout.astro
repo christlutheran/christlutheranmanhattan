@@ -26,8 +26,11 @@ const socialImageURL = image
   ? new URL(image.src, Astro.site)
   : new URL('/android-chrome-512x512.png', Astro.site);
 
-// Prepare meta title
-const metaTitle = `${title} | Christ Lutheran Church Manhattan, KS`;
+// Prepare meta title, with special case for home page
+const isHome = Astro.url.pathname === '/';
+const metaTitle = isHome
+  ? "Christ Lutheran Church – Manhattan, KS | Historic Worship and Teaching"
+  : `${title} | Christ Lutheran Church Manhattan, KS`;
 ---
 
 <!doctype html>
