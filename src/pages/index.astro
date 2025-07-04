@@ -7,6 +7,8 @@ import { churchConfig } from '../config/church';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import pastorImage from '../assets/images/pastor.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChurch, faBookBible, faCross } from '@fortawesome/free-solid-svg-icons';
 
 const sermons = await getCollection('sermons');
 const sortedSermons = sermons.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
@@ -40,6 +42,8 @@ function formatSermonDate(dateInput) {
     timeZone: 'UTC',
   }).replace(/(\d{1,2})(,)/, (m, d, c) => `${d}${daySuffix(Number(d))}${c}`);
 }
+
+// Remove server-side lectionary date logic
 ---
 <Layout title="Historic Worship and Teaching">
   <Fragment slot="head">
@@ -83,28 +87,48 @@ function formatSermonDate(dateInput) {
 
   {latestSermon && (
     <section class="py-12 bg-white text-liturgical-black">
-      <div class="container mx-auto px-4">
-        <h2 class="font-cinzel text-2xl md:text-3xl font-bold text-center mb-8 text-liturgical-red drop-shadow-sm tracking-tight">Latest Sermon</h2>
-        <div class="max-w-3xl mx-auto rounded-2xl shadow-xl border border-liturgical-red/20 bg-liturgical-cream flex flex-col md:flex-row items-center gap-6 md:gap-10 p-6 md:p-10">
-          <div class="flex-shrink-0 w-24 h-24 md:w-36 md:h-36 rounded-xl overflow-hidden bg-white border border-liturgical-red/20 flex items-center justify-center">
-            <img src="/logo_sm.jpg" alt="Sermon Thumbnail" class="object-cover w-full h-full rounded-xl" />
-          </div>
-          <div class="flex-1 min-w-0 flex flex-col gap-2">
-            <div class="font-cinzel text-lg md:text-2xl text-liturgical-red font-bold leading-tight truncate">{latestSermon.data.title}</div>
-            <div class="font-cinzel text-lg md:text-xl text-liturgical-red font-bold leading-tight truncate">{latestSermon.data.theme}</div>
-            <div class="flex flex-wrap gap-3 items-center text-sm md:text-base font-crimson text-liturgical-black/80">
-              <span>{formatSermonDate(latestSermon.data.date)}</span>
-              <span>•</span>
-              <span>{latestSermon.data.pastor}</span>
-            </div>
-            {(latestSermon.data.series || latestSermon.data.scripture) && (
-              <div class="flex flex-wrap gap-3 items-center text-xs md:text-sm text-liturgical-gold font-semibold">
-                {latestSermon.data.scripture && <span class="text-liturgical-black font-normal">{latestSermon.data.scripture}</span>}
+      <div class="container mx-auto max-w-6xl px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+          {/* Latest Sermon Card */}
+          <div class="rounded-2xl shadow-xl border border-liturgical-red/20 bg-liturgical-cream flex flex-col justify-center items-center p-6 md:p-10 h-full w-full min-w-0">
+            <h2 class="font-cinzel text-xl md:text-2xl font-bold mb-4 text-liturgical-red drop-shadow-sm tracking-tight text-center">Latest Sermon</h2>
+            <div class="flex-1 min-w-0 flex flex-col gap-2 w-full items-center">
+              <div class="font-cinzel text-lg md:text-xl text-liturgical-red font-bold leading-tight text-center w-full truncate">{latestSermon.data.title}</div>
+              <div class="font-cinzel text-base md:text-lg text-liturgical-red font-bold leading-tight text-center w-full truncate">{latestSermon.data.theme}</div>
+              <div class="flex flex-wrap gap-3 items-center justify-center text-sm md:text-base font-crimson text-liturgical-black/80 w-full">
+                <span>{formatSermonDate(latestSermon.data.date)}</span>
+                <span>•</span>
+                <span>{latestSermon.data.pastor}</span>
               </div>
-            )}
-            <a href={`/sermons/${latestSermon.data.slug}/`} class="inline-block mt-3 px-6 py-2 rounded font-cinzel bg-liturgical-red text-white hover:bg-liturgical-burgundy transition-colors text-base md:text-lg shadow-md font-semibold w-fit">
-              Read & Listen →
-            </a>
+              <a href={`/sermons/${latestSermon.data.slug}/`} class="inline-block mt-5 px-6 py-2 rounded font-cinzel bg-liturgical-red text-white hover:bg-liturgical-burgundy transition-colors text-base md:text-lg shadow-md font-semibold w-fit mx-auto">
+                Read & Listen →
+              </a>
+            </div>
+          </div>
+          {/* Today's Lectionary Readings (client-side date) */}
+          <div class="rounded-2xl shadow-xl border border-liturgical-gold/30 bg-liturgical-cream flex flex-col justify-center items-center p-6 md:p-10 h-full w-full min-w-0">
+            <span class="mb-3 flex items-center justify-center text-liturgical-gold" style="font-size:2.5rem; line-height:1;">
+              <FontAwesomeIcon icon={faBookBible} size="xl" fixedWidth />
+            </span>
+            <h3 class="font-cinzel text-xl md:text-2xl text-liturgical-gold font-bold mb-4 text-center">Today's Lectionary Readings</h3>
+            <span id="lectionary-link-container"></span>
+            <script is:inline>
+              (function() {
+                const today = new Date();
+                const year = today.getFullYear();
+                const month = today.getMonth() + 1;
+                const day = today.getDate();
+                const url = `https://lectionary.christlutheranmanhattan.org/#/${year}/${month}/${day}/`;
+                const label = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+                const a = document.createElement('a');
+                a.href = url;
+                a.target = '_blank';
+                a.rel = 'noopener';
+                a.className = 'inline-block px-6 py-2 rounded font-cinzel bg-liturgical-gold text-liturgical-black hover:bg-liturgical-red hover:text-white transition-colors text-base md:text-lg shadow font-semibold w-fit mt-2';
+                a.textContent = `View Readings for ${label} →`;
+                document.getElementById('lectionary-link-container').appendChild(a);
+              })();
+            </script>
           </div>
         </div>
       </div>
