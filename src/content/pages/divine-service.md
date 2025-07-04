@@ -79,7 +79,7 @@ The song of the angels at Christ's birth:
 Greeting of "The Lord be with you" from the Pastor and the congregation responding with "And with thy spirit". The collect (short prayer) of the day follows after this.
 
 #### The Readings
-Christ Lutheran Church uses the historic One-Year Lectionary for readings throughout the Church Year. Each Sunday will include the following readings:
+Christ Lutheran Church uses the <a href="https://lectionary.christlutheranmanhattan.org" target="_blank">historic One-Year Lectionary</a> for readings throughout the Church Year. Each Sunday will include the following readings:
 
 - Old Testament
 - Epistle (or New Testament)
@@ -140,7 +140,7 @@ Giving thanks for the gifts received.
 #### Salutation - Benedicamus - Benediction
 The service concludes with the Aaronic blessing:
 
-> The Lord bless you and keep you; the Lord make His face to shine upon you and be gracious to you; the Lord lift up His countenance upon you and give you peace.
+> The Lord bless you and keep you; the lord make His face to shine upon you and be gracious to you; the lord lift up His countenance upon you and give you peace.
 > <cite>Numbers 6:24-26</cite>
 
 #### Further Information

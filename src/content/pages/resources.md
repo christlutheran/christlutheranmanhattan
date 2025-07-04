@@ -18,10 +18,12 @@ order: 6
 
 ### Christ Lutheran Church & Related Online
 
+- **<a href="https://locator.lcms.org/church/C/925/" target="_blank">Christ Lutheran Church on LCMS.org</a>**
 - **<a href="https://www.facebook.com/people/Christ-Lutheran-Church-Missouri-Synod/100064606092871/" target="_blank">Christ Lutheran Church Facebook Page</a>**
 - **<a href="https://www.christclassicalmanhattan.org" target="_blank">Christ Classical Academy Website</a>**
 - **<a href="https://www.facebook.com/people/Christ-Classical-Academy-Manhattan-KS/61572215054968/" target="_blank">Christ Classical Academy Facebook Page</a>**
 - **<a href="https://www.facebook.com/LcmsUAtKansasStateUniversity/" target="_blank">LCMS U at Kansas State University (K-State)</a>**
+
 
 ## Media
 

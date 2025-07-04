@@ -77,6 +77,12 @@ const metaDescription = sermon.data.title + (sermon.data.theme ? ` | ${sermon.da
       <div class="mb-2 text-sm text-liturgical-burgundy">{formatSermonDate(sermon.data.date)}</div>
       <div class="mb-2 text-sm text-liturgical-black">Pastor: {sermon.data.pastor}</div>
       {sermon.data.scripture && <div class="mb-4 text-xs text-liturgical-black">Text: {sermon.data.scripture}</div>}
+      {sermon.data.lectionary && (
+        <div class="mb-4 text-xs text-liturgical-black">
+          Lectionary: <a href={sermon.data.lectionary} class="text-liturgical-red underline" target="_blank" rel="noopener">View Lectionary Readings</a>
+        </div>
+      )}
+      
       <article class="prose prose-lg max-w-none">
         <Content />
       </article>
