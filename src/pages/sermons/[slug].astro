@@ -1,6 +1,9 @@
 ---
 import { getEntryBySlug, getCollection } from 'astro:content';
 import PageLayout from '../../layouts/PageLayout.astro';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function formatSermonDate(dateInput) {
   let date;
@@ -82,7 +85,21 @@ const metaDescription = sermon.data.title + (sermon.data.theme ? ` | ${sermon.da
           Lectionary: <a href={sermon.data.lectionary} class="text-liturgical-red underline" target="_blank" rel="noopener">View Lectionary Readings</a>
         </div>
       )}
-      
+
+      {/* Social Share Icons */}
+      <div class="flex gap-4 mb-6 items-center">
+        <span class="font-cinzel text-base text-liturgical-black">Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(canonicalUrl)}`} target="_blank" rel="noopener" title="Share on Facebook" class="social-share-icon">
+          <FontAwesomeIcon icon={faFacebookF} size="lg" />
+        </a>
+        <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(canonicalUrl)}&text=${encodeURIComponent(sermon.data.title)}`} target="_blank" rel="noopener" title="Share on Twitter/X" class="social-share-icon">
+          <FontAwesomeIcon icon={faXTwitter} size="lg" />
+        </a>
+        <a href={`mailto:?subject=${encodeURIComponent(sermon.data.title)}&body=${encodeURIComponent(canonicalUrl)}`} title="Share by Email" class="social-share-icon">
+          <FontAwesomeIcon icon={faEnvelope} size="lg" />
+        </a>
+      </div>
+
       <article class="prose prose-lg max-w-none">
         <Content />
       </article>
@@ -137,6 +154,28 @@ const metaDescription = sermon.data.title + (sermon.data.theme ? ` | ${sermon.da
       padding: 0 !important;
       margin: 0 !important;
       display: inline-block;
+    }
+    .social-share-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #fff;
+      border: 1.5px solid #e5e7eb;
+      box-shadow: 0 1px 4px 0 rgba(185,28,28,0.04);
+      width: 2.5rem;
+      height: 2.5rem;
+      transition: border-color 0.18s, box-shadow 0.18s, background 0.18s;
+    }
+    .social-share-icon:hover, .social-share-icon:focus {
+      border-color: #b91c1c;
+      background: #f9f6f2;
+      box-shadow: 0 2px 8px 0 rgba(185,28,28,0.08);
+    }
+    .social-share-icon img {
+      width: 1.5rem;
+      height: 1.5rem;
+      display: block;
     }
   </style>
 </PageLayout>
