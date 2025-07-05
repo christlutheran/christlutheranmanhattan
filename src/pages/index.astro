@@ -106,11 +106,11 @@ function formatSermonDate(dateInput) {
             </div>
           </div>
           {/* Today's Lectionary Readings (client-side date) */}
-          <div class="rounded-2xl shadow-xl border border-liturgical-gold/30 bg-liturgical-cream flex flex-col justify-center items-center p-6 md:p-10 h-full w-full min-w-0">
-            <span class="mb-3 flex items-center justify-center text-liturgical-gold" style="font-size:2.5rem; line-height:1;">
+          <div class="rounded-2xl shadow-xl border border-liturgical-red/30 bg-liturgical-cream flex flex-col justify-center items-center p-6 md:p-10 h-full w-full min-w-0">
+            <span class="mb-3 flex items-center justify-center text-liturgical-red" style="font-size:2.5rem; line-height:1;">
               <FontAwesomeIcon icon={faBookBible} size="xl" fixedWidth />
             </span>
-            <h3 class="font-cinzel text-xl md:text-2xl text-liturgical-gold font-bold mb-4 text-center">Today's Lectionary Readings</h3>
+            <h3 class="font-cinzel text-xl md:text-2xl text-liturgical-red font-bold mb-4 text-center">Today's Lectionary Readings</h3>
             <span id="lectionary-link-container"></span>
             <script is:inline>
               (function() {
@@ -124,8 +124,8 @@ function formatSermonDate(dateInput) {
                 a.href = url;
                 a.target = '_blank';
                 a.rel = 'noopener';
-                a.className = 'inline-block px-6 py-2 rounded font-cinzel bg-liturgical-gold text-liturgical-black hover:bg-liturgical-red hover:text-white transition-colors text-base md:text-lg shadow font-semibold w-fit mt-2';
-                a.textContent = `View Readings for ${label} →`;
+                a.className = 'inline-block px-6 py-2 rounded font-cinzel bg-liturgical-red text-white hover:bg-liturgical-burgundy hover:text-white transition-colors text-base md:text-lg shadow font-semibold w-fit mt-2';
+                a.textContent = `Readings for ${label} →`;
                 document.getElementById('lectionary-link-container').appendChild(a);
               })();
             </script>
