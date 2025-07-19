@@ -25,8 +25,9 @@ export const navItems: NavItem[] = [
     path: '/resources/',
     children: [
       { title: 'Sermons', path: '/sermons/' },
-      { title: 'Lectionary', path: 'https://lectionary.christlutheranmanhattan.org', target: '_blank' },
+      { title: 'Papers', path: '/papers/' },
       { title: 'Other Resources', path: '/resources/' },
+      { title: 'Lectionary', path: 'https://lectionary.christlutheranmanhattan.org', target: '_blank' }
     ]
   },
   { title: 'Giving', path: '/giving/' },
