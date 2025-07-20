@@ -20,15 +20,18 @@ order: 6
 
 - **<a href="https://locator.lcms.org/church/C/925/" target="_blank">Christ Lutheran Church on LCMS.org</a>**
 - **<a href="https://www.facebook.com/people/Christ-Lutheran-Church-Missouri-Synod/100064606092871/" target="_blank">Christ Lutheran Church Facebook Page</a>**
-- **<a href="https://www.christclassicalmanhattan.org" target="_blank">Christ Classical Academy Website</a>**
-- **<a href="https://www.facebook.com/people/Christ-Classical-Academy-Manhattan-KS/61572215054968/" target="_blank">Christ Classical Academy Facebook Page</a>**
+- **<a href="https://www.christlutheranmanhattan.org/papers" target="_blank" title="Christ Lutheran Church Papers">Papers</a>** - Documents and Resources from Pastor Woelmer
+- **<a href="https://github.com/christlutheran" target="_blank" rel="noopener" title="GitHub">GitHub</a>** - Source Code for Christ Lutheran's Websites and Tools
 - **<a href="https://www.facebook.com/LcmsUAtKansasStateUniversity/" target="_blank">LCMS U at Kansas State University (K-State)</a>**
 
+### Christ Classical Academy
+
+- **<a href="https://www.christclassicalmanhattan.org" target="_blank">Christ Classical Academy Website</a>**
+- **<a href="https://www.facebook.com/people/Christ-Classical-Academy-Manhattan-KS/61572215054968/" target="_blank">Christ Classical Academy Facebook Page</a>**
 
 ## Media
 
 ### Christ Lutheran Church Sermons & More
-
 - **<a href="https://podcasts.apple.com/us/podcast/christ-lutheran-church-manhattan-ks/id1820822361" target="_blank" rel="noopener" title="Apple Podcasts">Apple Podcasts</a>**
 - **<a href="https://music.amazon.com/podcasts/92f71b50-b4ba-4e71-b727-e4fe1ca4c5ac" target="_blank" rel="noopener" title="Amazon Music">Amazon Music</a>**
 - **<a href="https://christlutheranmanhattan.podbean.com/" target="_blank" rel="noopener" title="Podbean">Podbean</a>**
