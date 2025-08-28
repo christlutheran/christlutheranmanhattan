@@ -36,7 +36,7 @@ This page provides a curated set of confessional Lutheran websites, books, podca
 ## Media
 
 ### Daily Office
-Evening & Morning: The Music of Lutheran Daily Prayer - Listen to beautiful recordings of the Concordia Seminary Kantorei from prayer services for the Daily Office according to the Lutheran Service Book (Matins, Vespers, Morning Prayer, Evening Prayer, Compline, and the Litany). ***Note: The full recordings at some of these links may require an account for that service and/or contain ads***
+Evening & Morning: The Music of Lutheran Daily Prayer - Listen to beautiful recordings of the Concordia Seminary Kantorei for the Daily Office prayer services according to the Lutheran Service Book (Matins, Vespers, Morning Prayer, Evening Prayer, Compline, and the Litany). ***Note: The full recordings at some of these links may require an account for that service and/or contain ads***
 
 - **<a href="https://www.amazon.com/Evening-Morning-Music-Lutheran-Prayer/dp/B00FL8LMAS" target="_blank">Amazon</a>**
 - **<a href="https://music.apple.com/in/album/evening-morning-the-music-of-lutheran-daily-prayer/723151786" target="_blank">Apple</a>**
