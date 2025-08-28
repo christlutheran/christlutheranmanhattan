@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import PageLayout from '../../../layouts/PageLayout.astro';
+import headerImage from '../../../assets/images/stained-glass.jpg';
 
 function formatSermonDate(dateInput) {
   let date;
@@ -53,7 +54,7 @@ const metaDescription = `Page ${currentPage} of sermons from Christ Lutheran Chu
 const prevUrl = currentPage > 2 ? `/sermons/page/${currentPage - 1}/` : currentPage === 2 ? '/sermons/' : undefined;
 const nextUrl = currentPage < totalPages ? `/sermons/page/${currentPage + 1}/` : undefined;
 ---
-<PageLayout title={`Sermons (Page ${currentPage})`}>
+<PageLayout title={`Sermons (Page ${currentPage})`} image={headerImage}>
   <Fragment slot="head">
     <meta name="description" content={metaDescription} />
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
@@ -94,7 +95,7 @@ const nextUrl = currentPage < totalPages ? `/sermons/page/${currentPage + 1}/` :
         <div class="text-sm font-cinzel">Page {currentPage} of {totalPages}</div>
         <a href={nextUrl} class={`pag-ctrl ${!nextUrl ? 'disabled' : ''}`} aria-disabled={!nextUrl}>Next →</a>
       </nav>
-      <div class="sermon-list-modern">
+  <div class="sermon-list-modern">
         {paginatedSermons.map(sermon => (
           <a href={`/sermons/${sermon.data.slug}/`} class="sermon-row group">
             <span class="sermon-row-thumb">
@@ -118,7 +119,7 @@ const nextUrl = currentPage < totalPages ? `/sermons/page/${currentPage + 1}/` :
           </a>
         ))}
       </div>
-      <nav class="flex justify-center gap-2 mt-8 mb-10" aria-label="Pagination">
+  <nav class="flex justify-center gap-2 mt-4 mb-8" aria-label="Pagination">
         {Array.from({ length: totalPages }, (_, i) => {
           const pageNum = i + 1;
             const isActive = currentPage === pageNum;
@@ -159,7 +160,7 @@ const nextUrl = currentPage < totalPages ? `/sermons/page/${currentPage + 1}/` :
   </section>
   <style>
     /* Reuse styles (duplicated from main sermons page) */
-    .sermon-list-modern { display:flex; flex-direction:column; gap:0.5rem; width:100%; align-items:stretch; margin-bottom:3rem; }
+  .sermon-list-modern { display:flex; flex-direction:column; gap:0.5rem; width:100%; align-items:stretch; margin-bottom:1.75rem; }
     .sermon-row { display:grid; grid-template-columns:3.2rem 1fr auto; align-items:center; gap:1.1rem; width:100%; background:none; border-bottom:1px solid #ececec; padding:0.7rem 0.2rem 0.7rem 0; text-decoration:none; transition:background .15s; cursor:pointer; position:relative; min-width:0; }
     .sermon-row:last-child { border-bottom:none; }
     .sermon-row:hover,.sermon-row:focus { background:#f9f6f2; }

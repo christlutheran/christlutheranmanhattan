@@ -1,6 +1,7 @@
 ---
 import { getEntryBySlug, getCollection } from 'astro:content';
 import PageLayout from '../../layouts/PageLayout.astro';
+import headerImage from '../../assets/images/stained-glass.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -51,7 +52,7 @@ const siteUrl = Astro.site ? Astro.site.toString() : '';
 const canonicalUrl = siteUrl ? `${siteUrl}/sermons/${sermon.data.slug}/` : undefined;
 const metaDescription = sermon.data.title + (sermon.data.theme ? ` | ${sermon.data.theme}` : '') + ' - Sermon at Christ Lutheran Church, Manhattan, KS.';
 ---
-<PageLayout title={sermon.data.title} description={sermon.data.description}>
+<PageLayout title={sermon.data.title} description={sermon.data.description} image={headerImage}>
   <Fragment slot="head">
     <meta name="description" content={metaDescription} />
     <meta property="og:title" content={`${sermon.data.title} | Christ Lutheran Church Manhattan KS`} />
