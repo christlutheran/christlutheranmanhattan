@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import stainedGlass from '../assets/images/stained-glass.jpg';
 import Container from './Container.astro';
 ---
-<section class="relative min-h-[60vh] md:h-[80vh] overflow-hidden">
+<section class="relative min-h-[70vh] md:min-h-[70vh] overflow-hidden pt-20 md:pt-24 pb-16 md:pb-20">
   <div class="absolute inset-0 bg-liturgical-black/70 z-10"></div>
   <Image 
     src={stainedGlass}
@@ -12,29 +12,45 @@ import Container from './Container.astro';
     height={1080}
     class="absolute inset-0 w-full h-full object-cover"
   />
-  <Container size="lg" class="relative z-20 h-full flex flex-col items-center justify-center text-center py-16">
-    <h1 class="font-cinzel text-3xl sm:text-4xl md:text-5xl lg:text-7xl mb-4 tracking-wide text-white">
-      Christ Lutheran Church Manhattan, KS
-    </h1>
-    <h2 class="font-crimson text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-white/90">
-      Historic Worship and Teaching
-    </h2>
-    <p class="font-crimson text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl text-white/90">
-      A congregation of The Lutheran Church—Missouri Synod, proclaiming Christ crucified through Word and Sacrament
-    </p>
-    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
-      <a 
-        href="/about/" 
-        class="bg-liturgical-red hover:bg-liturgical-burgundy text-white px-6 py-3 rounded font-cinzel transition-colors text-center"
-      >
-        Visitor Information
-      </a>
-      <a 
-        href="/beliefs/" 
-        class="bg-white hover:bg-liturgical-cream text-liturgical-red hover:text-liturgical-burgundy border-2 border-white px-6 py-3 rounded font-cinzel transition-colors text-center"
-      >
-        Our Beliefs
-      </a>
+  <Container size="lg" class="relative z-20 flex flex-col items-center justify-center">
+    <div class="w-full max-w-5xl flex flex-col items-center text-center">
+      <!-- Logo + decorative frame -->
+  <div class="relative mb-6">
+        <img 
+          src="/logo.png" 
+          alt="Christ Lutheran Church Logo" 
+          class="hero-logo w-40 sm:w-48 md:w-56 lg:w-60 xl:w-64 h-auto object-contain drop-shadow-xl select-none relative"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+      <h1 class="font-cinzel text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-wide text-white leading-tight mb-3">
+        Christ Lutheran Church
+      </h1>
+  <div class="font-cinzel text-xl sm:text-2xl md:text-3xl lg:text-[2.1rem] text-liturgical-gold/90 tracking-wide mb-5">
+        Manhattan, Kansas
+      </div>
+      <h2 class="font-crimson text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-white/90 leading-snug mb-5">
+        Historic Worship and Teaching
+      </h2>
+      <p class="font-crimson text-lg sm:text-xl md:text-2xl max-w-3xl text-white/90 mb-10">
+        A congregation of The Lutheran Church—Missouri Synod, proclaiming Christ crucified through Word and Sacrament
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto justify-center">
+        <a 
+          href="/about/" 
+          class="bg-liturgical-red hover:bg-liturgical-burgundy text-white px-7 py-3 rounded font-cinzel transition-colors text-center shadow-lg shadow-black/30 focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-liturgical-black/40"
+        >
+          Visitor Information
+        </a>
+        <a 
+          href="/beliefs/" 
+          class="bg-white hover:bg-liturgical-cream text-liturgical-red hover:text-liturgical-burgundy border-2 border-white px-7 py-3 rounded font-cinzel transition-colors text-center shadow-lg shadow-black/20 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2 focus:ring-offset-liturgical-black/40"
+        >
+          Our Beliefs
+        </a>
+      </div>
+      <div class="mt-12 w-40 h-0.5 bg-gradient-to-r from-transparent via-liturgical-gold to-transparent"></div>
     </div>
   </Container>
 </section>
@@ -43,6 +59,21 @@ import Container from './Container.astro';
     Full Service Schedule →
   </a>
 </div>
+
+<style>
+  .hero-logo {
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.55));
+    transition: transform 0.6s ease, filter 0.6s ease;
+  }
+  .hero-logo:hover, .hero-logo:focus-visible {
+    transform: scale(1.03);
+    filter: drop-shadow(0 6px 16px rgba(0,0,0,0.65));
+  }
+  /* Adjust top padding for very large screens to keep vertical balance */
+  @media (min-width:1280px){
+    section.relative.min-h-[70vh] { padding-top: 6rem; }
+  }
+</style>
 
 <!-- 
 <div class="bg-liturgical-red text-white text-center py-6">
