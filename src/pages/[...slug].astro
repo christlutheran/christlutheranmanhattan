@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 import PageLayout from '../layouts/PageLayout.astro';
 import ContactLayout from '../layouts/ContactLayout.astro';
 
@@ -11,7 +12,7 @@ export async function getStaticPaths() {
   }));
 }
 
-const { page } = Astro.props;
+const { page } = Astro.props as { page: CollectionEntry<'pages'> };
 
 // Use ContactLayout for contact page, PageLayout for others
 const Layout = page.slug === 'contact' ? ContactLayout : PageLayout;
@@ -22,4 +23,28 @@ const Layout = page.slug === 'contact' ? ContactLayout : PageLayout;
   description={page.data.description}
   content={page.body}
   image={page.data.image}
+  relatedLinks={(() => {
+    const links = [
+      { title: 'About Our Church', href: '/about/' },
+      { title: 'Service Times', href: '/service-times/' },
+      { title: 'Calendar', href: '/calendar/' },
+      { title: 'Contact / Find Us', href: '/contact/' },
+    ];
+    if (page.slug === 'k-state-students') {
+      links.unshift({ title: 'For Ft. Riley Families', href: '/ft-riley-families/' });
+    }
+    if (page.slug === 'ft-riley-families') {
+      links.unshift({ title: 'For K-State Students', href: '/k-state-students/' });
+    }
+    if (page.slug === 'community') {
+      links.unshift({ title: 'Plan Your Visit', href: '/plan-your-visit/' });
+    }
+    if (page.slug === 'plan-your-visit') {
+      links.unshift(
+        { title: 'For K-State Students', href: '/k-state-students/' },
+        { title: 'For Ft. Riley Families', href: '/ft-riley-families/' },
+      );
+    }
+    return links;
+  })()}
 />

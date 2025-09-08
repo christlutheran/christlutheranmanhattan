@@ -20,6 +20,15 @@ export const navItems: NavItem[] = [
       { title: 'Vacation Bible School', path: '/vacation-bible-school/' },
     ]
   },
+  {
+    title: 'Plan Your Visit',
+    path: '/plan-your-visit/',
+    children: [
+      { title: 'Community & Neighbors', path: '/community/' },
+      { title: 'For K-State Students', path: '/k-state-students/' },
+      { title: 'For Ft. Riley Families', path: '/ft-riley-families/' },
+    ],
+  },
   { 
     title: 'Resources', 
     path: '/resources/',

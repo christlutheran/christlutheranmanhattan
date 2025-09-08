@@ -11,9 +11,10 @@ interface Props {
   description?: string;
   content?: string; // Make content optional
   image?: ImageMetadata | string;
+  relatedLinks?: { title: string; href: string }[];
 }
 
-const { title, description, content, image } = Astro.props;
+const { title, description, content, image, relatedLinks } = Astro.props;
 
 let htmlContent = '';
 if (typeof content === 'string') {
@@ -101,6 +102,20 @@ const socialProfiles = [
         ) : (
           <div class="prose prose-lg max-w-none">
             {htmlContent ? <Fragment set:html={htmlContent} /> : <slot />}
+            {Array.isArray(relatedLinks) && relatedLinks.length > 0 && (
+              <div class="mt-10 pt-6 border-t border-liturgical-gold/20">
+                <h3 class="font-cinzel text-xl sm:text-2xl text-liturgical-red mb-4">Related Pages</h3>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {relatedLinks.map(link => (
+                    <li>
+                      <a href={link.href} class="text-liturgical-red hover:text-liturgical-burgundy transition-colors">
+                        {link.title} →
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         )}
       </div>
