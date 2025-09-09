@@ -35,8 +35,8 @@ When you visit for the Divine Service, you'll experience:
 ### For First Time Visitors
 
 - Take a bulletin (available in the narthex / entryway)
-- Feel free to sit anywhere, please fill out the red attendence book available in each row after being seated
-- Grab a Lutheran Service Book (under the chairs) that we will follow during the Divine Service
+- Feel free to sit anywhere, please fill out the attendence book available in each row after being seated
+- Grab a Lutheran Service Book (on the back of the pews) that we will follow during the Divine Service
 - The service typically lasts a little over an hour
 - We practice closed communion ***see note below***
 - Our Pastor will greet everyone as they leave
