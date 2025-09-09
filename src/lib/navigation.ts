@@ -13,21 +13,13 @@ export const navItems: NavItem[] = [
     children: [
       { title: 'About Us', path: '/about/' },
       { title: 'Beliefs', path: '/beliefs/' },
+      { title: 'Calendar', path: '/calendar/' },
       { title: 'Divine Service', path: '/divine-service/' },
       { title: 'Our Pastor', path: '/our-pastor/' },
       { title: 'Service Times', path: '/service-times/' },
-      { title: 'Calendar', path: '/calendar/' },
       { title: 'Vacation Bible School', path: '/vacation-bible-school/' },
+      { title: 'Who We Serve', path: '/who-we-serve/' },
     ]
-  },
-  {
-    title: 'Plan Your Visit',
-    path: '/plan-your-visit/',
-    children: [
-      { title: 'Community & Neighbors', path: '/community/' },
-      { title: 'For K-State Students', path: '/k-state-students/' },
-      { title: 'For Ft. Riley Families', path: '/ft-riley-families/' },
-    ],
   },
   { 
     title: 'Resources', 

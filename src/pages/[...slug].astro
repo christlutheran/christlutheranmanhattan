@@ -13,9 +13,10 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props as { page: CollectionEntry<'pages'> };
+const currentSlug = (page as any).slug || '';
 
 // Use ContactLayout for contact page, PageLayout for others
-const Layout = page.slug === 'contact' ? ContactLayout : PageLayout;
+const Layout = currentSlug === 'contact' ? ContactLayout : PageLayout;
 ---
 
 <Layout
@@ -24,27 +25,24 @@ const Layout = page.slug === 'contact' ? ContactLayout : PageLayout;
   content={page.body}
   image={page.data.image}
   relatedLinks={(() => {
-    const links = [
+    const common = [
       { title: 'About Our Church', href: '/about/' },
       { title: 'Service Times', href: '/service-times/' },
       { title: 'Calendar', href: '/calendar/' },
       { title: 'Contact / Find Us', href: '/contact/' },
     ];
-    if (page.slug === 'k-state-students') {
-      links.unshift({ title: 'For Ft. Riley Families', href: '/ft-riley-families/' });
+  const whoWeServeSlugs = ['k-state-students', 'ft-riley-families', 'community', 'who-we-serve'];
+  if (whoWeServeSlugs.includes(currentSlug)) {
+      const audience = [
+        { title: 'Who We Serve', href: '/who-we-serve/' },
+        { title: 'K-State Students', href: '/k-state-students/' },
+        { title: 'Ft. Riley Families', href: '/ft-riley-families/' },
+        { title: 'Our Community', href: '/community/' },
+      ];
+      // Filter out self link and then append common links
+  const filtered = audience.filter(l => !l.href.includes(`/${currentSlug}/`));
+      return [...filtered, ...common];
     }
-    if (page.slug === 'ft-riley-families') {
-      links.unshift({ title: 'For K-State Students', href: '/k-state-students/' });
-    }
-    if (page.slug === 'community') {
-      links.unshift({ title: 'Plan Your Visit', href: '/plan-your-visit/' });
-    }
-    if (page.slug === 'plan-your-visit') {
-      links.unshift(
-        { title: 'For K-State Students', href: '/k-state-students/' },
-        { title: 'For Ft. Riley Families', href: '/ft-riley-families/' },
-      );
-    }
-    return links;
+    return common;
   })()}
 />

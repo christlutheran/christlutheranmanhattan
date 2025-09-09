@@ -4,7 +4,7 @@ description: "Christ Lutheran welcomes K-State students to historic Lutheran wor
 image: /images/church.jpg
 ---
 
-> Christ Lutheran for Kansas State Students
+# Christ Lutheran for Kansas State Students
 
 Are you a Kansas State student looking for a church home during your years in Manhattan?  
 Christ Lutheran Church welcomes you with historic Lutheran worship, steadfast teaching, and a caring community.  
@@ -21,22 +21,11 @@ Located just minutes from campus, we provide a place of rest and renewal in Chri
 
 ---
 
-## Plan Your Visit
+## Who We Serve
 
-Join us this Sunday for:
+Join us this Sunday:
 
 - **Divine Service at 10:30 AM**  
 - **Bible Study & Sunday School at 9:30 AM**
 
-### Helpful Links
-
-- [About Our Church](/about/)
-- [Service Times](/service-times/)
-- [Calendar](/calendar/)
-- [Contact / Find Us](/contact/)
-
 Whether you are a lifelong Lutheran or just curious, you’ll find a welcoming congregation and Christ-centered teaching here.
-
----
-
-Military family at Ft. Riley? [See how Christ Lutheran welcomes you](/ft-riley-families/).

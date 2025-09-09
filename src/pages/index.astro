@@ -8,7 +8,7 @@ import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import pastorImage from '../assets/images/pastor.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChurch, faBookBible, faCross } from '@fortawesome/free-solid-svg-icons';
+import { faChurch, faBookBible, faCross, faPeopleGroup, faGraduationCap, faShieldHalved } from '@fortawesome/free-solid-svg-icons';
 
 const sermons = await getCollection('sermons');
 const sortedSermons = sermons.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
@@ -90,25 +90,40 @@ function formatSermonDate(dateInput) {
     <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
     <div class="container mx-auto px-4 max-w-6xl">
       <div class="text-center mb-8 md:mb-10">
-        <h2 class="font-cinzel text-3xl md:text-4xl text-liturgical-red tracking-wide">Plan your Visit</h2>
+        <h2 class="font-cinzel text-3xl md:text-4xl text-liturgical-red tracking-wide">Who We Serve</h2>
         <div class="mt-6 w-40 h-0.5 bg-gradient-to-r from-transparent via-liturgical-gold to-transparent mx-auto"></div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
         <a href="/community/" class="group block rounded-2xl bg-white border border-liturgical-gold/20 shadow-md hover:shadow-lg transition-all p-6 md:p-8">
-          <div class="border-t-4 border-liturgical-gold rounded-t-xl -mt-6 mb-4"></div>
-          <h3 class="font-cinzel text-xl md:text-2xl text-liturgical-red mb-2">Community & Neighbors</h3>
+          <div class="flex items-center gap-4 mb-4">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-liturgical-cream text-liturgical-red border border-liturgical-gold/40 shadow-sm">
+              <FontAwesomeIcon icon={faPeopleGroup} size="lg" fixedWidth />
+            </span>
+            <div class="border-t-4 border-liturgical-gold rounded-t-xl flex-1"></div>
+          </div>
+          <h3 class="font-cinzel text-xl md:text-2xl text-liturgical-red mb-2">Our Community</h3>
           <p class="text-sm md:text-base font-crimson text-liturgical-black/80">Manhattan, Junction City, Ogden, St. George, Westmoreland, Wamego & Pottawatomie County</p>
           <span class="inline-block mt-4 text-liturgical-red group-hover:underline font-cinzel">Learn more →</span>
         </a>
         <a href="/k-state-students/" class="group block rounded-2xl bg-white border border-liturgical-gold/20 shadow-md hover:shadow-lg transition-all p-6 md:p-8">
-          <div class="border-t-4 border-liturgical-gold rounded-t-xl -mt-6 mb-4"></div>
-          <h3 class="font-cinzel text-xl md:text-2xl text-liturgical-red mb-2">For K-State Students</h3>
+          <div class="flex items-center gap-4 mb-4">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-liturgical-cream text-liturgical-red border border-liturgical-gold/40 shadow-sm">
+              <FontAwesomeIcon icon={faGraduationCap} size="lg" fixedWidth />
+            </span>
+            <div class="border-t-4 border-liturgical-gold rounded-t-xl flex-1"></div>
+          </div>
+          <h3 class="font-cinzel text-xl md:text-2xl text-liturgical-red mb-2">K-State Students</h3>
           <p class="text-sm md:text-base font-crimson text-liturgical-black/80">Historic worship and Christ-centered community near campus</p>
           <span class="inline-block mt-4 text-liturgical-red group-hover:underline font-cinzel">Learn more →</span>
         </a>
         <a href="/ft-riley-families/" class="group block rounded-2xl bg-white border border-liturgical-gold/20 shadow-md hover:shadow-lg transition-all p-6 md:p-8">
-          <div class="border-t-4 border-liturgical-gold rounded-t-xl -mt-6 mb-4"></div>
-          <h3 class="font-cinzel text-xl md:text-2xl text-liturgical-red mb-2">For Ft. Riley Families</h3>
+          <div class="flex items-center gap-4 mb-4">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-liturgical-cream text-liturgical-red border border-liturgical-gold/40 shadow-sm">
+              <FontAwesomeIcon icon={faShieldHalved} size="lg" fixedWidth />
+            </span>
+            <div class="border-t-4 border-liturgical-gold rounded-t-xl flex-1"></div>
+          </div>
+          <h3 class="font-cinzel text-xl md:text-2xl text-liturgical-red mb-2">Ft. Riley Families</h3>
           <p class="text-sm md:text-base font-crimson text-liturgical-black/80">A stable spiritual home for soldiers and families</p>
           <span class="inline-block mt-4 text-liturgical-red group-hover:underline font-cinzel">Learn more →</span>
         </a>
