@@ -5,7 +5,7 @@ image: /images/church.jpg
 order: 6
 ---
 
-# Lutheran Resources
+## Lutheran Resources
 
 This page provides a curated set of confessional Lutheran websites, books, podcasts, daily prayer and worship media to support study, catechesis, and devotional life.
 
@@ -50,7 +50,6 @@ Evening & Morning: The Music of Lutheran Daily Prayer - Listen to beautiful reco
 ### Worship & Music
 - **<a href="https://lutheranpublicradio.org/" target="_blank">Lutheran Public Radio</a>** - Lutheran Public Radio streams Sacred Music for the World, 24/7, following the course of the Church Year
 - **<a href="https://www.youtube.com/playlist?list=PL25VGM2PKRc9YRXq2iU4QI-oSN8gS9Wtj" target="_blank">Lutheran Public Radio Choir Recordings</a>** - Lutheran Public Radio Choir Recordings of hymns in the Lutheran Service Book
-
 
 
 

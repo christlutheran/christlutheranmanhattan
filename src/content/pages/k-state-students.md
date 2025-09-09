@@ -1,10 +1,10 @@
 ---
-title: "Lutheran Church Near Kansas State University | Christ Lutheran Manhattan, KS"
+title: "K-State Students"
 description: "Christ Lutheran welcomes K-State students to historic Lutheran worship, Christ-centered teaching, and a supportive Christian community minutes from campus in Manhattan, KS."
 image: /images/church.jpg
 ---
 
-# Christ Lutheran for Kansas State Students
+## Christ Lutheran for Kansas State Students
 
 Are you a Kansas State student looking for a church home during your years in Manhattan?  
 Christ Lutheran Church welcomes you with historic Lutheran worship, steadfast teaching, and a caring community.  

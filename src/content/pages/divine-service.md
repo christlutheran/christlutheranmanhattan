@@ -5,7 +5,7 @@ image: /assets/images/sanctuary.jpg
 order: 3
 ---
 
-# Divine Service
+## Divine Service
 
 **In the Divine Service, God comes to us with His gifts of forgiveness, life, and salvation**. We receive these gifts, then we give Him thanksgiving and praise. Please join us to receive these gifts and give God praise and thanksgiving on Sundays at 10:30 AM.
 
@@ -35,7 +35,7 @@ When you visit for the Divine Service, you'll experience:
 ### For First Time Visitors
 
 - Take a bulletin (available in the narthex / entryway)
-- Feel free to sit anywhere, please fill out the attendence book available in each row after being seated
+- Feel free to sit anywhere, please fill out the attendance book available in each row after being seated
 - Grab a Lutheran Service Book (on the back of the pews) that we will follow during the Divine Service
 - The service typically lasts a little over an hour
 - We practice closed communion ***see note below***
@@ -134,7 +134,7 @@ Luther explains in the Large Catechism:
 > We must never regard the Sacrament as a harmful thing from which we should flee, but as a pure, wholesome, soothing medicine which aids and quickens us in both soul and body. For where the soul is healed, the body has benefited also. Here in the Sacrament you receive from Christ's lips the forgiveness of sins, protection, defense, and power against death and the devil and all evils.
 > <cite>Luther's Large Catechism, Part V – The Sacrament of the Altar, paragraphs 68 & 70</cite>
 
-#### Nunc Dimittis - Thankgsiving - Post-Communion Collect
+#### Nunc Dimittis - Thanksgiving - Post-Communion Collect
 Giving thanks for the gifts received.
 
 #### Salutation - Benedicamus - Benediction

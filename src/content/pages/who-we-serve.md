@@ -4,7 +4,7 @@ description: "Serving the greater Manhattan, KS area including Kansas State Univ
 image: /images/church.jpg
 ---
 
-# Who We Serve at Christ Lutheran Church
+## Who We Serve at Christ Lutheran Church
 
 Visiting a new church for the first time can feel overwhelming. At Christ Lutheran Church, we want you to feel welcomed, comfortable, and ready to hear Christ’s Word and receive His gifts.
 

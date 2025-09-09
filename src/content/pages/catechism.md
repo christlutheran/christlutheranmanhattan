@@ -5,7 +5,7 @@ image: /assets/images/altar.jpg
 order: 7
 ---
 
-# Luther's Small Catechism
+## Luther's Small Catechism
 
 ## Introduction
 

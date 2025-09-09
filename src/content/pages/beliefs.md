@@ -5,7 +5,7 @@ image: /assets/images/altar.jpg
 order: 4
 ---
 
-# Our Beliefs
+## Our Beliefs
 
 ## The Christian Faith
 

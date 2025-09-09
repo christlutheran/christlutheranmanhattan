@@ -42,3 +42,6 @@ examples/**/env.d.ts
 *.code-workspace
 .astro
 indexnow.json
+
+action-plan.md
+AGENTS.md

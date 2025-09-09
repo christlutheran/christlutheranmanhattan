@@ -5,7 +5,7 @@ image: /assets/images/altar.jpg
 order: 4
 ---
 
-# Support Our Ministry
+## Support Our Ministry
 
 <div align="center" style="margin-bottom:2em;">
   <span style="display:inline-block;color:#991b1b;font-family:'Cinzel',serif;font-size:1.2em;font-weight:bold;">Thank you for supporting Christ Lutheran Church!</span>

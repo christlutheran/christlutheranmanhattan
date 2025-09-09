@@ -5,7 +5,7 @@ image: /images/church.jpg
 order: 2
 ---
 
-# About Christ Lutheran Church
+## About Christ Lutheran Church
 
 Christ Lutheran Church is a congregation of The Lutheran Church—Missouri Synod (LCMS) located on the east side of Manhattan, Kansas. Founded in 1997, we have faithfully served our community by proclaiming the Gospel of Jesus Christ in its truth and purity.
 
@@ -21,13 +21,13 @@ Christ Lutheran Church is distinctly Lutheran in theology, historic in worship, 
 
 Christ Lutheran Church is faithful to the Scriptures and to the Lutheran Confessions
 
-[Find out more about our beliefs →](/beliefs)
+[Find out more about our beliefs →](/beliefs/)
 
 ## Our Pastor
 
 Pastor Woelmer has served as our pastor since August 2023. He received his Master of Divinity from Concordia Theological Seminary, Fort Wayne, IN, and is committed to faithful Lutheran preaching and teaching.
 
-[Meet Pastor Woelmer →](/our-pastor)
+[Meet Pastor Woelmer →](/our-pastor/)
 
 ## Who We Serve
 
@@ -53,7 +53,7 @@ When you visit Christ Lutheran Church, you'll experience:
 ### For First Time Visitors
 
 - Take a bulletin (available in the narthex / entryway)
-- Feel free to sit anywhere, please fill out the attendence book available in each row after being seated
+- Feel free to sit anywhere, please fill out the attendance book available in each row after being seated
 - Grab a Lutheran Service Book (on the back of the pews) that we will follow during the Divine Service
 - The service typically lasts a little over an hour
 - We practice closed communion ***see note below***
@@ -61,4 +61,4 @@ When you visit Christ Lutheran Church, you'll experience:
 
 **Regarding Holy Communion**: Closed communion is an ancient practice dating back to the Apostles' themselves. Those who do not properly confess what Scripture teaches regarding Christ and His Supper must not be given the Sacrament (1 Cor 10:17 | 1 Cor 11:27 | 1 Cor 11:29). Those who are members of the Lutheran Church—Missouri Synod are invited to the Lord's Supper. We invite others to learn about the Gospel and Sacrament in a new member class before taking communion.
 
-[Learn more about the Divine Service →](/divine-service)
+[Learn more about the Divine Service →](/divine-service/)

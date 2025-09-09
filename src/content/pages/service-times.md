@@ -5,7 +5,7 @@ image: /assets/images/altar.jpg
 order: 4
 ---
 
-# Service Times
+## Service Times
 
 <div align="center">
 

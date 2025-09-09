@@ -69,3 +69,12 @@ from = "/photo-gallery.html"
 to = "/"
 status = 301
 
+[[redirects]]
+from = "/plan-your-visit"
+to = "/who-we-serve/"
+status = 301
+
+[[redirects]]
+from = "/plan-your-visit/"
+to = "/who-we-serve/"
+status = 301

@@ -1,10 +1,10 @@
 ---
-title: "A Lutheran Church for Manhattan, Junction City, St. George, Westmoreland, Ogden, Wamego and Pottawatomie County"
+title: "Our Community & Neighbors"
 description: "Christ Lutheran Church in Manhattan, KS serves neighbors from Junction City, St. George, Westmoreland, Ogden, Wamego, Pottawatomie County, and across the Flint Hills with historic Lutheran worship."
 image: /images/church.jpg
 ---
 
-# Christ Lutheran for Our Community & Neighbors
+## Christ Lutheran for Our Community & Neighbors
 
 Christ Lutheran Church in Manhattan, KS, is a confessional Lutheran parish serving not only the people of Manhattan but also our neighbors across the Flint Hills.  
 Whether you live in Junction City, St. George, Westmoreland, Ogden, Wamego, Pottawatomie County, or the surrounding countryside, you are warmly invited to gather with us around Christ’s Word and Sacraments.
