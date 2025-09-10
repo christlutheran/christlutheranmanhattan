@@ -14,13 +14,15 @@ const sermons = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    // Accept YAML date; Astro parses to Date. If not, consider z.string().transform(d=>new Date(d))
     date: z.date(),
-    slug: z.string(),
-    pastor: z.string(),
+    // Make frontmatter slug optional; the entry slug still exists as entry.slug
+    slug: z.string().optional(),
+    pastor: z.string().optional(),
+    preacher: z.string().optional(),
     theme: z.string().optional(),
     scripture: z.string().optional(),
   }),
 });
 
 export const collections = { pages, sermons };
-

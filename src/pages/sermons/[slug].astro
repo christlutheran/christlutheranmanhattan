@@ -49,7 +49,7 @@ if (!sermon) {
 const { Content } = await sermon.render();
 
 const siteUrl = Astro.site ? Astro.site.toString() : '';
-const canonicalUrl = siteUrl ? `${siteUrl}/sermons/${sermon.data.slug}/` : undefined;
+const canonicalUrl = siteUrl ? `${siteUrl}/sermons/${sermon.slug}/` : undefined;
 const metaDescription = sermon.data.title + (sermon.data.theme ? ` | ${sermon.data.theme}` : '') + ' - Sermon at Christ Lutheran Church, Manhattan, KS.';
 ---
 <PageLayout title={sermon.data.title} description={sermon.data.description} image={headerImage}>

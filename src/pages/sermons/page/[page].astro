@@ -75,7 +75,7 @@ const nextUrl = currentPage < totalPages ? `/sermons/page/${currentPage + 1}/` :
         datePublished: sermon.data.date,
         author: sermon.data.pastor,
         about: sermon.data.theme || undefined,
-        url: `${siteUrl}/sermons/${sermon.data.slug}/`
+        url: `${siteUrl}/sermons/${sermon.slug}/`
       }))
     })}</script>
     <script type="application/ld+json">{JSON.stringify({
@@ -97,7 +97,7 @@ const nextUrl = currentPage < totalPages ? `/sermons/page/${currentPage + 1}/` :
       </nav>
   <div class="sermon-list-modern">
         {paginatedSermons.map(sermon => (
-          <a href={`/sermons/${sermon.data.slug}/`} class="sermon-row group">
+          <a href={`/sermons/${sermon.slug}/`} class="sermon-row group">
             <span class="sermon-row-thumb">
               <img src="/logo_sm.jpg" alt="Sermon Podcast Cover" class="sermon-row-img" />
             </span>
