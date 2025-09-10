@@ -183,6 +183,11 @@ const socialProfiles = [
     @apply text-liturgical-red hover:text-liturgical-burgundy transition-colors no-underline border-b border-liturgical-red/30 hover:border-liturgical-burgundy;
   }
 
+  /* Anchor targets: ensure in-page jumps clear fixed header */
+  .prose :global(div[id]) {
+    @apply scroll-mt-16;
+  }
+
   /* Button-like Links: ensure readable contrast and remove underline/border */
   .prose :global(a.bg-liturgical-red),
   .prose :global(a.bg-liturgical-burgundy) {

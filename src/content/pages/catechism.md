@@ -7,7 +7,7 @@ order: 7
 
 ## Luther's Small Catechism
 
-Christians of every age benefit from learning and praying the Small Catechism. If you would like a copy, visit [Concordia Publishing House (CPH)](https://www.cph.org) or speak with our pastor about instruction and preparation for the Lord’s Supper.
+Christians of every age benefit from learning and praying the Small Catechism. If you would like a copy, visit <a href="https://www.cph.org" target="_blank">Concordia Publishing House (CPH)</a> or speak with our pastor about instruction and preparation for the Lord’s Supper.
 
 ## Introduction
 
@@ -26,23 +26,19 @@ The Small Catechism serves several important purposes:
 
 The Small Catechism is organized into the following parts:
 
-- The Ten Commandments (God's Law)
-- The Apostles' Creed (What We Believe)
-- The Lord's Prayer (How We Pray)
-- The Sacrament of Holy Baptism
-- Confession and Absolution
-- The Sacrament of the Altar
-- Daily Prayers
-- Table of Duties
-- Christian Questions and Answers
+- [The Ten Commandments (God's Law)](#the-ten-commandments)
+- [The Apostles' Creed (What We Believe)](#the-apostles-creed)
+- [The Lord's Prayer (How We Pray)](#the-lords-prayer)
+- [The Sacrament of Holy Baptism](#the-sacrament-of-holy-baptism)
+- [Confession and Absolution](#confession-and-absolution)
+- [The Sacrament of the Altar](#the-sacrament-of-the-altar)
+- [Daily Prayers](#daily-prayers)
+- [Table of Duties](#table-of-duties)
+- [Christian Questions and Answers](#christian-questions-and-answers)
 
 Each section follows a simple pattern of stating the teaching, asking "What does this mean?", and providing a clear explanation supported by Scripture.
 
-## Get the Catechism
-
-- Purchase a copy from [Concordia Publishing House (CPH)](https://www.cph.org)
-- Learn the basics of the faith with our [Lutheran Resources →](/resources/)
-- Talk with the pastor about instruction: [Contact / Find Us →](/contact/)
+<div id="the-ten-commandments"></div>
 
 ## The Ten Commandments
 
@@ -114,6 +110,8 @@ Answer. He says thus (Exod. 20:5f): I the Lord, thy God, am a jealous God, visit
 *What does this mean?*  
 God threatens to punish all that transgress these commandments. Therefore we should dread His wrath and not act contrary to these commandments. But He promises grace and every blessing to all that keep these commandments. Therefore we should also love and trust in Him, and gladly do [zealously and diligently order our whole life] according to His commandments.
 
+<div id="the-apostles-creed"></div>
+
 ## The Apostles' Creed
 
 ### The First Article: Of Creation
@@ -133,6 +131,8 @@ I believe in the Holy Ghost; one holy Christian Church, the communion of saints;
 
 *What does this mean?*  
 I believe that I cannot by my own reason or strength believe in Jesus Christ, my Lord, or come to Him; but the Holy Ghost has called me by the Gospel, enlightened me with His gifts, sanctified and kept me in the true faith; even as He calls, gathers, enlightens, and sanctifies the whole Christian Church on earth, and keeps it with Jesus Christ in the one true faith; in which Christian Church He forgives daily and richly all sins to me and all believers, and at the last day will raise up me and all the dead, and will give to me and to all believers in Christ everlasting life. This is most certainly true.
+
+<div id="the-lords-prayer"></div>
 
 ## The Lord's Prayer
 
@@ -204,6 +204,8 @@ Amen.
 *What does this mean?*  
 That I should be certain that these petitions are acceptable to our Father in heaven and heard; for He Himself has commanded us so to pray, and has promised that He will hear us. Amen, Amen; that is, Yea, yea, it shall be so.
 
+<div id="the-sacrament-of-holy-baptism"></div>
+
 ## The Sacrament of Holy Baptism
 
 As the head of the family should teach it in a simple way to his household.
@@ -232,6 +234,8 @@ It signifies that the old Adam in us should, by daily contrition and repentance,
 
 *Where is this written?*  
 St. Paul says Romans, chapter 6: We are buried with Christ by Baptism into death, that, like as He was raised up from the dead by the glory of the Father, even so we also should walk in newness of life.
+
+<div id="confession-and-absolution"></div>
 
 ## Confession and Absolution
 
@@ -273,6 +277,8 @@ As thou believest, so be it done unto thee. And by the command of our Lord Jesus
 
 But those who have great burdens upon their consciences, or are distressed and tempted, the confessor will know how to comfort and to encourage to faith with more passages of Scripture. This is to be merely a general form of confession for the unlearned.
 
+<div id="the-sacrament-of-the-altar"></div>
+
 ## The Sacrament of the Altar
 
 As the head of the family should teach it in a simple way to his household.
@@ -298,6 +304,8 @@ It is not the eating and drinking, indeed, that does them, but the words which s
 *Who, then, receives such Sacrament worthily?*  
 Fasting and bodily preparation is, indeed, a fine outward training; but he is truly worthy and well prepared who has faith in these words: Given, and shed for you, for the remission of sins.
 But he that does not believe these words, or doubts, is unworthy and unfit; for the words For you require altogether believing hearts.
+
+<div id="daily-prayers"></div>
 
 ## Daily Prayers
 
@@ -341,6 +349,8 @@ O give thanks unto the Lord, for He is good; for His mercy endureth forever. He 
 
 Then the Lord’s Prayer and the prayer here following:
 We thank Thee, Lord God, Father, through Jesus Christ, our Lord, for all Thy benefits, who livest and reignest forever and ever. Amen.
+
+<div id="table-of-duties"></div>
 
 ## Table of Duties
 *Certain passages of scripture for various holy orders and positions, admonishing them about their duties and responsibilities*  
@@ -390,6 +400,8 @@ Ut domus officiis stet decorata suis.
 
 Πας ιδιην αναγνωσιν εης πραπιδεσσιν αθρησας,
 Οιχον εχει πυχινων ευπορεοντα χαλων
+
+<div id="christian-questions-and-answers"></div>
 
 ## Christian Questions and Answers
 Prepared by Dr. Martin Luther for those who intend to go to the Sacrament
@@ -458,3 +470,9 @@ To such a person no better advice can be given than this: first, he should touch
 
 *Note:*  
 These questions and answers are no child’s play, but are drawn up with great earnestness of purpose by the venerable and devout Dr. Luther for both young and old. Let each one pay attention and consider it a serious matter; for St. Paul writes to the Galatians in chapter six: “Do not be deceived: God cannot be mocked.
+
+## Next Steps
+
+- Purchase a copy from <a href="https://www.cph.org" target="_blank">Concordia Publishing House (CPH)</a>
+- Learn the basics of the faith with our [Lutheran Resources →](/resources/)
+- Talk with the pastor about instruction: [Contact / Find Us →](/contact/)
