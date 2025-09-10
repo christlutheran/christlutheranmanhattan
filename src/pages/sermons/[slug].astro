@@ -70,7 +70,7 @@ const metaDescription = sermon.data.title + (sermon.data.theme ? ` | ${sermon.da
       description: metaDescription,
       url: canonicalUrl,
       datePublished: sermon.data.date instanceof Date ? sermon.data.date.toISOString().split('T')[0] : sermon.data.date,
-      author: sermon.data.preacher || sermon.data.pastor || 'Unknown',
+      author: sermon.data.pastor || 'Unknown',
       about: sermon.data.theme || undefined,
       text: undefined,
     })}</script>
