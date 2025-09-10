@@ -8,7 +8,7 @@ import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import pastorImage from '../assets/images/pastor.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChurch, faBookBible, faCross } from '@fortawesome/free-solid-svg-icons';
+import { faChurch, faBookBible, faCross, faPeopleGroup, faGraduationCap, faShieldHalved } from '@fortawesome/free-solid-svg-icons';
 
 const sermons = await getCollection('sermons');
 const sortedSermons = sermons.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
@@ -60,34 +60,65 @@ function formatSermonDate(dateInput) {
         }
       })}
     </script>
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Church",
-        "name": "Christ Lutheran Church",
-        "url": "https://www.christlutheranmanhattan.org",
-        "image": "https://www.christlutheranmanhattan.org/logo_sm.jpg",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "4592 Green Valley Rd",
-          "addressLocality": "Manhattan",
-          "addressRegion": "KS",
-          "postalCode": "66502",
-          "addressCountry": "US"
-        },
-        "telephone": "(785) 776-2227",
-        "email": "christlutheran.mhk@gmail.com"
-      })}
-    </script>
   </Fragment>
 
   <HomeHero />
   <HomeFeatures />
-  <WelcomeSection image="/src/assets/images/altar.jpg" imageAlt="Christ Lutheran Church Sanctuary" />
+  <WelcomeSection imageAlt="Christ Lutheran Church Sanctuary" />
+
+  <!-- Audience Callouts (distinct styling) -->
+  <section class="relative pt-16 pb-10 md:pt-16 md:pb-10 bg-gradient-to-b from-liturgical-red/5 via-liturgical-gold/8 to-white text-liturgical-black">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="text-center mb-8 md:mb-10">
+        <h2 class="font-cinzel text-3xl md:text-4xl text-liturgical-red tracking-wide">Who We Serve</h2>
+        <div class="mt-6 w-40 h-0.5 bg-gradient-to-r from-transparent via-liturgical-gold to-transparent mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <a href="/community/" class="group block rounded-2xl bg-white border border-liturgical-gold/20 shadow-md hover:shadow-lg transition-all p-6 md:p-8">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-liturgical-cream text-liturgical-red border border-liturgical-gold/40 shadow-sm">
+              <FontAwesomeIcon icon={faPeopleGroup} size="lg" fixedWidth />
+            </span>
+            <div class="border-t-4 border-liturgical-gold rounded-t-xl flex-1"></div>
+          </div>
+          <h3 class="font-cinzel text-xl md:text-2xl text-liturgical-red mb-2">Our Community</h3>
+          <p class="text-sm md:text-base font-crimson text-liturgical-black/80">Manhattan, Junction City, Ogden, St. George, Westmoreland, Wamego & Pottawatomie County</p>
+          <span class="inline-block mt-4 text-liturgical-red group-hover:underline font-cinzel">Learn more →</span>
+        </a>
+        <a href="/k-state-students/" class="group block rounded-2xl bg-white border border-liturgical-gold/20 shadow-md hover:shadow-lg transition-all p-6 md:p-8">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-liturgical-cream text-liturgical-red border border-liturgical-gold/40 shadow-sm">
+              <FontAwesomeIcon icon={faGraduationCap} size="lg" fixedWidth />
+            </span>
+            <div class="border-t-4 border-liturgical-gold rounded-t-xl flex-1"></div>
+          </div>
+          <h3 class="font-cinzel text-xl md:text-2xl text-liturgical-red mb-2">K-State Students</h3>
+          <p class="text-sm md:text-base font-crimson text-liturgical-black/80">Historic worship and Christ-centered community near campus</p>
+          <span class="inline-block mt-4 text-liturgical-red group-hover:underline font-cinzel">Learn more →</span>
+        </a>
+        <a href="/ft-riley-families/" class="group block rounded-2xl bg-white border border-liturgical-gold/20 shadow-md hover:shadow-lg transition-all p-6 md:p-8">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-liturgical-cream text-liturgical-red border border-liturgical-gold/40 shadow-sm">
+              <FontAwesomeIcon icon={faShieldHalved} size="lg" fixedWidth />
+            </span>
+            <div class="border-t-4 border-liturgical-gold rounded-t-xl flex-1"></div>
+          </div>
+          <h3 class="font-cinzel text-xl md:text-2xl text-liturgical-red mb-2">Ft. Riley Families</h3>
+          <p class="text-sm md:text-base font-crimson text-liturgical-black/80">A stable spiritual home for soldiers and families</p>
+          <span class="inline-block mt-4 text-liturgical-red group-hover:underline font-cinzel">Learn more →</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
   {latestSermon && (
-    <section class="py-12 bg-white text-liturgical-black">
+    <section class="pt-3 pb-12 bg-white text-liturgical-black">
       <div class="container mx-auto max-w-6xl px-4">
+      <div class="text-center mb-6 md:mb-8">
+        <h2 class="font-cinzel text-3xl md:text-4xl text-liturgical-red tracking-wide">Weekly Resources</h2>
+        <div class="mt-6 w-40 h-0.5 bg-gradient-to-r from-transparent via-liturgical-gold to-transparent mx-auto"></div>
+      </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {/* Latest Sermon Card */}
           <div class="rounded-2xl shadow-xl border border-liturgical-red/20 bg-liturgical-cream flex flex-col justify-center items-center p-6 md:p-10 h-full w-full min-w-0">
@@ -100,7 +131,7 @@ function formatSermonDate(dateInput) {
                 <span>•</span>
                 <span>{latestSermon.data.pastor}</span>
               </div>
-              <a href={`/sermons/${latestSermon.data.slug}/`} class="inline-block mt-5 px-6 py-2 rounded font-cinzel bg-liturgical-red text-white hover:bg-liturgical-burgundy transition-colors text-base md:text-lg shadow-md font-semibold w-fit mx-auto">
+          <a href={`/sermons/${latestSermon.slug}/`} class="inline-block mt-5 px-6 py-2 rounded font-cinzel bg-liturgical-red text-white hover:bg-liturgical-burgundy transition-colors text-base md:text-lg shadow-md font-semibold w-fit mx-auto">
                 Read & Listen →
               </a>
             </div>

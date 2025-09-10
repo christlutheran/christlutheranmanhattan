@@ -1,11 +1,11 @@
 ---
 title: The Divine Service
-description: Learn about our Lutheran worship service, the Liturgy, and what to expect
+description: Reverent, historic Lutheran worship—Word and Sacrament in the Divine Service at Christ Lutheran Church, Manhattan, KS.
 image: /assets/images/sanctuary.jpg
 order: 3
 ---
 
-# Divine Service
+## Divine Service
 
 **In the Divine Service, God comes to us with His gifts of forgiveness, life, and salvation**. We receive these gifts, then we give Him thanksgiving and praise. Please join us to receive these gifts and give God praise and thanksgiving on Sundays at 10:30 AM.
 
@@ -35,13 +35,13 @@ When you visit for the Divine Service, you'll experience:
 ### For First Time Visitors
 
 - Take a bulletin (available in the narthex / entryway)
-- Feel free to sit anywhere, please fill out the red attendence book available in each row after being seated
-- Grab a Lutheran Service Book (under the chairs) that we will follow during the Divine Service
+- Feel free to sit anywhere, please fill out the attendance book available in each row after being seated
+- Grab a Lutheran Service Book (on the back of the pews) that we will follow during the Divine Service
 - The service typically lasts a little over an hour
 - We practice closed communion ***see note below***
 - Our Pastor will greet everyone as they leave
 
-**Regarding Holy Communion**: Closed communion is an ancient practice dating back to the Apostles' themselves. Those who do not properly confess what Scripture teaches regarding Christ and His Supper must not be given the Sacrament (1 Cor 10:17 | 1 Cor 11:27 | 1 Cor 11:29). Those who are members of the Lutheran Church—Missouri Synod are invited to the Lord's Supper. We invite others to learn about the Gospel and Sacrament in a new member class before taking communion.
+**Regarding Holy Communion**: Closed communion is an ancient practice dating back to the Apostles' themselves. Those who do not properly confess what Scripture teaches regarding Christ and His Supper must not be given the Sacrament (1 Cor 10:17 | 1 Cor 11:27 | 1 Cor 11:29). Those who are members of the Lutheran Church—Missouri Synod are invited to the Lord's Supper. We invite others to learn about the Gospel and Sacrament in a new member class before taking communion. If you have questions, please [contact us](/contact/), or learn more about [what we believe](/beliefs/).
 
 ## The Liturgy
 
@@ -134,7 +134,7 @@ Luther explains in the Large Catechism:
 > We must never regard the Sacrament as a harmful thing from which we should flee, but as a pure, wholesome, soothing medicine which aids and quickens us in both soul and body. For where the soul is healed, the body has benefited also. Here in the Sacrament you receive from Christ's lips the forgiveness of sins, protection, defense, and power against death and the devil and all evils.
 > <cite>Luther's Large Catechism, Part V – The Sacrament of the Altar, paragraphs 68 & 70</cite>
 
-#### Nunc Dimittis - Thankgsiving - Post-Communion Collect
+#### Nunc Dimittis - Thanksgiving - Post-Communion Collect
 Giving thanks for the gifts received.
 
 #### Salutation - Benedicamus - Benediction

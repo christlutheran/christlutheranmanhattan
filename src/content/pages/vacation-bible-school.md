@@ -21,6 +21,7 @@ order: 4
     Phone: 785-776-2227<br/>
     Email: <a href="mailto:christlutheran.mhk@gmail.com">christlutheran.mhk@gmail.com</a></p>
     <!--<a href="https://vbsmate.com/events/ChristLutheranMHK/30999#about" target="_blank" class="inline-block mt-4 bg-liturgical-red hover:bg-liturgical-burgundy text-white !text-white px-4 py-2 rounded font-cinzel transition-colors">Register for VBS →</a>-->
+    <p class="mt-4">Questions or want to be notified for next year’s VBS? <a href="/contact/">Contact us</a>.</p>
   </div>
   <div>
     <img src="/2025vbs.png" alt="Vacation Bible School 2025" class="mx-auto w-full max-w-md md:max-w-lg mb-6" />

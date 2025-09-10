@@ -1,13 +1,13 @@
 ---
 title: Lutheran Resources
-description: A curated collection of Lutheran resources including podcasts, videos, books, and websites.
+description: Explore Lutheran resources, papers, and study helps alongside our sermons from Christ Lutheran Church, Manhattan, KS.
 image: /images/church.jpg
 order: 6
 ---
 
-# Lutheran Resources
+## Lutheran Resources
 
-This page provides a curated set of confessional Lutheran websites, books, podcasts, daily prayer and worship media to support study, catechesis, and devotional life.
+This page provides a curated set of confessional Lutheran websites, books, podcasts, daily prayer and worship media to support study, catechesis, and devotional life. Looking for weekly preaching? Visit our [Sermons →](/sermons/). New to Lutheran teaching? See [Luther’s Small Catechism →](/catechism/).
 
 ## Websites
 
@@ -45,12 +45,10 @@ Evening & Morning: The Music of Lutheran Daily Prayer - Listen to beautiful reco
 
 ### Podcasts
 - **<a href="https://issuesetc.org/" target="_blank">Issues, Etc.</a>** - Podcast featuring expert guests in theology, Biblical interpretation, apologetics, ethics, philosophy, law and culture
+- **<a href="https://ontheline.net/" target="_blank">On The Line</a>** - Podcast hosted by LCMS pastor Bryan Stecker. Pastor Stecker seeks to offer a long-form podcast (think Joe Rogan) that covers all sorts of theological topics.
 - **<a href="https://thewordendures.org/" target="_blank">The Word of the Lord Endures Forever</a>** - Study the Bible with the Church, Past and Present with Pr. William Weedon
 
 ### Worship & Music
 - **<a href="https://lutheranpublicradio.org/" target="_blank">Lutheran Public Radio</a>** - Lutheran Public Radio streams Sacred Music for the World, 24/7, following the course of the Church Year
 - **<a href="https://www.youtube.com/playlist?list=PL25VGM2PKRc9YRXq2iU4QI-oSN8gS9Wtj" target="_blank">Lutheran Public Radio Choir Recordings</a>** - Lutheran Public Radio Choir Recordings of hymns in the Lutheran Service Book
-
-
-
 

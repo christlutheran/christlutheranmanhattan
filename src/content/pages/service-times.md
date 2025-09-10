@@ -1,11 +1,11 @@
 ---
 title: Service Times
-description: Divine Service and Other Service Times Throughout the Church Year.
+description: Service times at Christ Lutheran Church (LCMS), Manhattan, KS—Divine Service at 10:30 AM; Bible Study & Sunday School at 9:30 AM.
 image: /assets/images/altar.jpg
 order: 4
 ---
 
-# Service Times
+## Service Times
 
 <div align="center">
 
@@ -21,6 +21,8 @@ order: 4
 [<span style="background:#fff;color:#991b1b;padding:0.5em 1.2em;border-radius:0.5em;font-family:'Cinzel',serif;font-weight:bold;border:2px solid #991b1b;display:inline-block;margin-top:0.5em;">Read & Listen to Sermons →</span>](/sermons/)
 
 </div>
+
+> Midweek services are held during Advent and Lent, and special feast days are observed. See the [Calendar →](/calendar/) for the latest schedule.
 
 ---
 

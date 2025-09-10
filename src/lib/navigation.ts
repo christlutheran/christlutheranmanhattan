@@ -13,11 +13,12 @@ export const navItems: NavItem[] = [
     children: [
       { title: 'About Us', path: '/about/' },
       { title: 'Beliefs', path: '/beliefs/' },
+      { title: 'Calendar', path: '/calendar/' },
       { title: 'Divine Service', path: '/divine-service/' },
       { title: 'Our Pastor', path: '/our-pastor/' },
       { title: 'Service Times', path: '/service-times/' },
-      { title: 'Calendar', path: '/calendar/' },
       { title: 'Vacation Bible School', path: '/vacation-bible-school/' },
+      { title: 'Who We Serve', path: '/who-we-serve/' },
     ]
   },
   { 
@@ -27,6 +28,7 @@ export const navItems: NavItem[] = [
       { title: 'Sermons', path: '/sermons/' },
       { title: 'Papers', path: '/papers/' },
       { title: 'Other Resources', path: '/resources/' },
+      { title: 'Small Catechism', path: '/catechism/' },
       { title: 'Lectionary', path: 'https://lectionary.christlutheranmanhattan.org', target: '_blank' }
     ]
   },

@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 import PageLayout from '../layouts/PageLayout.astro';
 import ContactLayout from '../layouts/ContactLayout.astro';
 
@@ -11,10 +12,11 @@ export async function getStaticPaths() {
   }));
 }
 
-const { page } = Astro.props;
+const { page } = Astro.props as { page: CollectionEntry<'pages'> };
+const currentSlug = (page as any).slug || '';
 
 // Use ContactLayout for contact page, PageLayout for others
-const Layout = page.slug === 'contact' ? ContactLayout : PageLayout;
+const Layout = currentSlug === 'contact' ? ContactLayout : PageLayout;
 ---
 
 <Layout
@@ -22,4 +24,25 @@ const Layout = page.slug === 'contact' ? ContactLayout : PageLayout;
   description={page.data.description}
   content={page.body}
   image={page.data.image}
+  relatedLinks={(() => {
+    const common = [
+      { title: 'About Our Church', href: '/about/' },
+      { title: 'Service Times', href: '/service-times/' },
+      { title: 'Calendar', href: '/calendar/' },
+      { title: 'Contact / Find Us', href: '/contact/' },
+    ];
+  const whoWeServeSlugs = ['k-state-students', 'ft-riley-families', 'community', 'who-we-serve'];
+  if (whoWeServeSlugs.includes(currentSlug)) {
+      const audience = [
+        { title: 'Who We Serve', href: '/who-we-serve/' },
+        { title: 'K-State Students', href: '/k-state-students/' },
+        { title: 'Ft. Riley Families', href: '/ft-riley-families/' },
+        { title: 'Our Community', href: '/community/' },
+      ];
+      // Filter out self link and then append common links
+  const filtered = audience.filter(l => !l.href.includes(`/${currentSlug}/`));
+      return [...filtered, ...common];
+    }
+    return common;
+  })()}
 />

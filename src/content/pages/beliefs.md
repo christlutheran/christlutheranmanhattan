@@ -1,11 +1,13 @@
 ---
-title: What We Believe
-description: Our beliefs and teachings, based on Holy Scripture and the Lutheran Confessions.
+title: Our Beliefs
+description: What we believe and teach at Christ Lutheran Church (LCMS) in Manhattan, KS—rooted in Holy Scripture and the Lutheran Confessions.
 image: /assets/images/altar.jpg
 order: 4
 ---
 
-# Our Beliefs
+## Our Beliefs
+
+Christ Lutheran Church confesses the faith once delivered to the saints, grounded in Holy Scripture and faithfully summarized in the Lutheran Confessions. We invite you to explore the summary below and join us to receive Christ’s gifts in the Divine Service.
 
 ## The Christian Faith
 
@@ -94,3 +96,8 @@ As a congregation of The LCMS, we hold fast to the historic, confessional Luther
 - <a href="https://thebookofconcord.org/formula-of-concord-solid-declaration/" target="_blank">The Formula of Concord: Solid Declaration</a>
 
 Together these documents form the Book of Concord of 1580, which we believe to be a true and faithful exposition of Holy Scripture.
+## Learn More
+
+- [The Divine Service →](/divine-service/)
+- [Luther’s Small Catechism →](/catechism/)
+- [Service Times →](/service-times/)

@@ -1,6 +1,6 @@
 ---
-title: Contact Us
-description: Get in touch with Christ Lutheran Church in Manhattan, Kansas.
+title: Contact / Find Us
+description: Contact Christ Lutheran Church (LCMS) in Manhattan, KS—address, directions, and service times.
 image: /assets/images/church.jpg
 order: 6
 ---
