@@ -28,6 +28,7 @@ export const navItems: NavItem[] = [
       { title: 'Sermons', path: '/sermons/' },
       { title: 'Papers', path: '/papers/' },
       { title: 'Other Resources', path: '/resources/' },
+      { title: 'Small Catechism', path: '/catechism/' },
       { title: 'Lectionary', path: 'https://lectionary.christlutheranmanhattan.org', target: '_blank' }
     ]
   },
