@@ -22,6 +22,8 @@ order: 4
 
 </div>
 
+> Midweek services are held during Advent and Lent, and special feast days are observed. See the [Calendar →](/calendar/) for the latest schedule.
+
 ---
 
 ## Church Year 2025

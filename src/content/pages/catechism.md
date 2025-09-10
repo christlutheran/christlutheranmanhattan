@@ -7,6 +7,8 @@ order: 7
 
 ## Luther's Small Catechism
 
+Christians of every age benefit from learning and praying the Small Catechism. If you would like a copy, visit [Concordia Publishing House (CPH)](https://www.cph.org) or speak with our pastor about instruction and preparation for the Lord’s Supper.
+
 ## Introduction
 
 Luther's Small Catechism, first published in 1529, was written by Dr. Martin Luther to help teach the basics of the Christian faith. The Small Catechism presents the central teachings of Scripture in a simple question-and-answer format that is easy to understand and memorize.
@@ -32,6 +34,12 @@ The Small Catechism is organized into six chief parts:
 - The Sacrament of the Altar
 
 Each section follows a simple pattern of stating the teaching, asking "What does this mean?", and providing a clear explanation supported by Scripture.
+
+## Get the Catechism
+
+- Purchase a copy from [Concordia Publishing House (CPH)](https://www.cph.org)
+- Learn the basics of the faith with our [Lutheran Resources →](/resources/)
+- Talk with the pastor about instruction: [Contact / Find Us →](/contact/)
 
 ## The Ten Commandments
 

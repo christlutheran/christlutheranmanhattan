@@ -8,8 +8,11 @@ image: /images/church.jpg
 
 Visiting a new church for the first time can feel overwhelming. At Christ Lutheran Church, we want you to feel welcomed, comfortable, and ready to hear Christ’s Word and receive His gifts.
 
+Explore pages for your situation:
 
-Here’s everything you need to know for your first visit.
+- [K‑State Students →](/k-state-students/)
+- [Ft. Riley Soldiers & Families →](/ft-riley-families/)
+- [Our Community & Neighbors →](/community/)
 
 ---
 
@@ -28,14 +31,45 @@ See the full schedule: [Service Times](/service-times/)
 - **Christ-Centered Preaching** – Rooted in Scripture and the Lutheran Confessions.  
 - **Community for All** – Students, families, children, and neighbors from all walks of life are welcome.  
 
+### First-Time Visitors
+
+- Sit anywhere; ushers can help if needed.  
+- Please sign the attendance book; hymnals are available to follow the liturgy.  
+- We practice closed communion. LCMS members are invited to commune; others are warmly invited to speak with the pastor about instruction. See [Our Beliefs](/beliefs/), [About Our Church](/about/), or [Contact / Find Us](/contact/).  
+- The Divine Service typically lasts a little over an hour. 
+
 ---
 
-## Families, Students, and Military Welcome
+## Worship & Beliefs
 
-Whether you are a Kansas State student, a Ft. Riley soldier or family, or a resident of the greater Manhattan, KS area, you will find a spiritual home with us. Please join us this Sunday at 10:30 AM.
+Christ gathers us around His Word and Sacraments each Lord’s Day. Learn how we worship and what we confess:
 
-Explore more:
+- [The Divine Service →](/divine-service/)
+- [Our Beliefs →](/beliefs/)
 
-- [For Our Community](/community/)
-- [For K-State Students](/k-state-students/)
-- [For Ft. Riley Families](/ft-riley-families/)
+---
+
+## Sermons & Resources
+
+Listen to recent preaching and find faithful Lutheran resources for study and devotion:
+
+- [Sermons →](/sermons/)
+- [Lutheran Resources →](/resources/)
+- [Luther’s Small Catechism →](/catechism/)
+
+---
+
+## Visit & Contact
+
+Find our location, directions, and contact details; see upcoming services and events:
+
+- [Contact / Find Us →](/contact/)
+- [Calendar →](/calendar/)
+
+---
+
+## Meet Our Pastor
+
+Learn about our pastor and reach out for pastoral care or conversation:
+
+- [Our Pastor →](/our-pastor/)

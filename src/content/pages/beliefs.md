@@ -7,6 +7,8 @@ order: 4
 
 ## Our Beliefs
 
+Christ Lutheran Church confesses the faith once delivered to the saints, grounded in Holy Scripture and faithfully summarized in the Lutheran Confessions. We invite you to explore the summary below and join us to receive Christ’s gifts in the Divine Service.
+
 ## The Christian Faith
 
 The Christian faith confesses that Jesus was sent by the Father to redeem and save us by His death and resurrection (Jn 14:6). We learn about Jesus from the Bible.
@@ -94,3 +96,8 @@ As a congregation of The LCMS, we hold fast to the historic, confessional Luther
 - <a href="https://thebookofconcord.org/formula-of-concord-solid-declaration/" target="_blank">The Formula of Concord: Solid Declaration</a>
 
 Together these documents form the Book of Concord of 1580, which we believe to be a true and faithful exposition of Holy Scripture.
+## Learn More
+
+- [The Divine Service →](/divine-service/)
+- [Luther’s Small Catechism →](/catechism/)
+- [Service Times →](/service-times/)

@@ -20,14 +20,17 @@ Whether you live in Junction City, St. George, Westmoreland, Ogden, Wamego, Pott
 
 ---
 
-## Who We Serve
+## Join Us
 
-Join us for worship every Sunday:
+Come worship with us each Sunday:
 
 - **Divine Service at 10:30 AM**  
 - **Bible Study & Sunday School at 9:30 AM**
 
 No matter where you call home in the Flint Hills region, Christ Lutheran Church is here for you and your family in Christ.
 
-[Service Times →](/service-times/)
-[Who We Serve →](/who-we-serve/)
+<div class="mt-4 flex flex-wrap gap-2">
+  <a href="/service-times/" class="inline-block bg-liturgical-red hover:bg-liturgical-burgundy text-white px-4 py-2 rounded font-cinzel transition-colors">Service Times →</a>
+  <a href="/who-we-serve/" class="inline-block bg-white border border-liturgical-red/40 text-liturgical-red hover:bg-liturgical-cream px-4 py-2 rounded font-cinzel transition-colors">Who We Serve →</a>
+  <a href="/contact/" class="inline-block bg-white border border-liturgical-red/40 text-liturgical-red hover:bg-liturgical-cream px-4 py-2 rounded font-cinzel transition-colors">Contact / Map & Directions →</a>
+</div>
