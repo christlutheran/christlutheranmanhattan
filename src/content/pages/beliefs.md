@@ -1,6 +1,6 @@
 ---
-title: What We Believe
-description: Our beliefs and teachings, based on Holy Scripture and the Lutheran Confessions.
+title: Our Beliefs
+description: What we believe and teach at Christ Lutheran Church (LCMS) in Manhattan, KS—rooted in Holy Scripture and the Lutheran Confessions.
 image: /assets/images/altar.jpg
 order: 4
 ---

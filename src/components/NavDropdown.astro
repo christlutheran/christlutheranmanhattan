@@ -75,10 +75,53 @@ const dropdownId = `dropdown-${item.title.toLowerCase().replace(/[^a-z0-9]+/g, '
       }, 0);
     });
 
+    const focusItems = () => Array.from(menu.querySelectorAll('a[href]')) as HTMLElement[];
+
     btn.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         setExpanded(false);
         btn.blur();
+      }
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        setExpanded(true);
+        const items = focusItems();
+        if (items.length) items[0].focus();
+      }
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        setExpanded(true);
+        const items = focusItems();
+        if (items.length) items[0].focus();
+      }
+    });
+
+    menu.addEventListener('keydown', (e) => {
+      const items = focusItems();
+      if (!items.length) return;
+      const index = items.indexOf(document.activeElement as HTMLElement);
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        const next = items[(index + 1) % items.length];
+        next?.focus();
+      }
+      if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        const prev = items[(index - 1 + items.length) % items.length];
+        prev?.focus();
+      }
+      if (e.key === 'Home') {
+        e.preventDefault();
+        items[0]?.focus();
+      }
+      if (e.key === 'End') {
+        e.preventDefault();
+        items[items.length - 1]?.focus();
+      }
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        setExpanded(false);
+        btn.focus();
       }
     });
   })();

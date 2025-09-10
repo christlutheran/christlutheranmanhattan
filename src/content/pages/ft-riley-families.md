@@ -1,6 +1,6 @@
 ---
 title: "Ft. Riley Soldiers & Families"
-description: "Find a stable spiritual home near Ft. Riley. Christ Lutheran Church in Manhattan, KS offers traditional Lutheran worship and community for soldiers and their families."
+description: "Find a stable, faithful Lutheran church near Ft. Riley—historic worship and supportive community in Manhattan, KS."
 image: /images/church.jpg
 ---
 
@@ -29,3 +29,6 @@ Come worship with us each Sunday:
 - **Bible Study & Sunday School at 9:30 AM**
 
 Whether you are stationed here temporarily or settling with your family in the Flint Hills, Christ Lutheran provides a place of peace and belonging.
+
+[Learn more about Our Community →](/community/)
+[Who We Serve →](/who-we-serve/)

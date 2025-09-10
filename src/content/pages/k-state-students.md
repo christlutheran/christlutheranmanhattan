@@ -1,6 +1,6 @@
 ---
 title: "K-State Students"
-description: "Christ Lutheran welcomes K-State students to historic Lutheran worship, Christ-centered teaching, and a supportive Christian community minutes from campus in Manhattan, KS."
+description: "K‑State students are welcomed to historic Lutheran worship and Christ‑centered community minutes from campus in Manhattan, KS."
 image: /images/church.jpg
 ---
 
@@ -29,3 +29,6 @@ Join us this Sunday:
 - **Bible Study & Sunday School at 9:30 AM**
 
 Whether you are a lifelong Lutheran or just curious, you’ll find a welcoming congregation and Christ-centered teaching here.
+
+[Learn more about Our Community →](/community/)
+[Who We Serve →](/who-we-serve/)

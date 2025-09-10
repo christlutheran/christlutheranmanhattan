@@ -1,6 +1,6 @@
 ---
 title: The Divine Service
-description: Learn about our Lutheran worship service, the Liturgy, and what to expect
+description: Reverent, historic Lutheran worship—Word and Sacrament in the Divine Service at Christ Lutheran Church, Manhattan, KS.
 image: /assets/images/sanctuary.jpg
 order: 3
 ---

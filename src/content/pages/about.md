@@ -1,11 +1,11 @@
 ---
 title: About Our Church
-description: Learn about Christ Lutheran Church, our history, and our mission in Manhattan, Kansas.
+description: Christ Lutheran Church (LCMS) in Manhattan, KS—historic, confessional worship and Christ‑centered teaching for the Flint Hills.
 image: /images/church.jpg
 order: 2
 ---
 
-## About Christ Lutheran Church
+## About Christ Lutheran Church in Manhattan, KS
 
 Christ Lutheran Church is a congregation of The Lutheran Church—Missouri Synod (LCMS) located on the east side of Manhattan, Kansas. Founded in 1997, we have faithfully served our community by proclaiming the Gospel of Jesus Christ in its truth and purity.
 
@@ -17,7 +17,9 @@ Christ Lutheran Church delivers the Gospel in Word and Sacrament so that sinners
 
 Christ Lutheran Church is distinctly Lutheran in theology, historic in worship, faithful in preaching God's Word, and devoted to reflecting the light of Christ.
 
-## Our Beliefs
+## Our Beliefs (LCMS)
+
+Christ Lutheran Church confesses the faith of the one, holy, catholic and apostolic Church as taught in Holy Scripture and summarized in the Lutheran Confessions. We rejoice in the Lord’s gifts given in Word and Sacrament for the forgiveness of sins.
 
 Christ Lutheran Church is faithful to the Scriptures and to the Lutheran Confessions
 
@@ -35,7 +37,9 @@ Christ Lutheran serves students from Kansas State University, Ft. Riley soldiers
 
 [Who We Serve →](/who-we-serve/)
 
-## Sunday Worship
+## Sunday Worship in the Flint Hills
+
+Join us this Sunday in Manhattan, serving neighbors throughout Riley and Pottawatomie Counties, including Junction City, Ogden, St. George, Westmoreland, and Wamego.
 
 ### What to Expect
 

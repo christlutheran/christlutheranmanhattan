@@ -22,7 +22,5 @@ const sermons = defineCollection({
   }),
 });
 
-export const collections = {
-  pages,
-  sermons,
-};
+export const collections = { pages, sermons };
+
